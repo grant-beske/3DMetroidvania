@@ -23,10 +23,9 @@ public class UserInterface : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetMouseButtonDown(2)) {
+        if (activeVisor != Visor.SELECT && Input.GetMouseButtonDown(2)) {
             SetVisorSelect();
-        }
-        if (activeVisor == Visor.SELECT && Input.GetKeyDown(KeyCode.Escape)) {
+        } else if (activeVisor == Visor.SELECT && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(2))) {
             SetCombatVisor();
         }
     }

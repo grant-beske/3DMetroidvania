@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Platform
+  - BouncePlatform
+  - Level1Boundary
+  - Level2Boundary
   layers:
   - Default
   - TransparentFX

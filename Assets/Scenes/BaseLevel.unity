@@ -32843,8 +32843,6 @@ MonoBehaviour:
   mouseXObj: {fileID: 727692974}
   mouseYObj: {fileID: 788791583}
   visorSelectSound: {fileID: 8300000, guid: 6f751a186cc382247a8c6cd2e186028f, type: 3}
-  combatVisorSelectSound: {fileID: 8300000, guid: 1495060bbdc8fcd4a85206fba504169f, type: 3}
-  scanVisorSelectSound: {fileID: 8300000, guid: 63798b4af74944d4d88e47f5d32da01b, type: 3}
 --- !u!82 &1288174132
 AudioSource:
   m_ObjectHideFlags: 0

@@ -4,27 +4,65 @@ using UnityEngine;
 
 public class UserInterface : MonoBehaviour {
 
-    enum Visor {COMBAT, SCAN};
+    enum Visor {SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.COMBAT;
 
-    public GameObject crosshair;
-    public GameObject scanTarget;
+    public GameObject visorSelect;
+    public GameObject combatVisor;
+    public GameObject scanVisor;
+    private GameObject _activeVisorObj;
+
+    public Texture2D mouseCursor;
 
     void Start() {
-        scanTarget.SetActive(false);
+        visorSelect.SetActive(false);
+        scanVisor.SetActive(false);
+        combatVisor.SetActive(true);
+        _activeVisorObj = combatVisor;
+        Cursor.SetCursor(mouseCursor, Vector2.zero, CursorMode.Auto);
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.F)) {
-            if (activeVisor == Visor.COMBAT) {
-                activeVisor = Visor.SCAN;
-                crosshair.SetActive(false);
-                scanTarget.SetActive(true);
-            } else if (activeVisor == Visor.SCAN) {
-                activeVisor = Visor.COMBAT;
-                crosshair.SetActive(true);
-                scanTarget.SetActive(false);
-            }
+        if (Input.GetMouseButtonDown(2)) {
+            SetVisorSelect();
         }
+        if (activeVisor == Visor.SELECT && Input.GetKeyDown(KeyCode.Escape)) {
+            SetCombatVisor();
+        }
+    }
+
+    public void SetVisorSelect() {
+        EnableCursor();
+        activeVisor = Visor.SELECT;
+        _activeVisorObj.SetActive(false);
+        _activeVisorObj = visorSelect;
+        visorSelect.SetActive(true);
+    }
+
+    public void SetCombatVisor() {
+        DisableCursor();
+        activeVisor = Visor.COMBAT;
+        _activeVisorObj.SetActive(false);
+        _activeVisorObj = combatVisor;
+        combatVisor.SetActive(true);
+    }
+
+    public void SetScanVisor() {
+        DisableCursor();
+        activeVisor = Visor.COMBAT;
+        _activeVisorObj.SetActive(false);
+        _activeVisorObj = scanVisor;
+        scanVisor.SetActive(true);
+    }
+
+    private void EnableCursor() {
+        // TODO - reset cursor position to center of screen.
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    private void DisableCursor() {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

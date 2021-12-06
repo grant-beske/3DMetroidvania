@@ -36,6 +36,7 @@ sysinfo.txt
 
 # Unity heavy crap
 UnityPlayer.dll
+UnityCrashHandler64.exe
 
 # Builds
 *.apk

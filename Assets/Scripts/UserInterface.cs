@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class UserInterface : MonoBehaviour {
 
+    // Visor state variables.
     enum Visor {SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.COMBAT;
 
+    // Visor gameobjects.
     public GameObject visorSelect;
     public GameObject combatVisor;
     public GameObject scanVisor;
     private GameObject _activeVisorObj;
 
+    // Mouse cursor texture. Set on UI initialization.
     public Texture2D mouseCursor;
 
+    // Variables to enable / disable mouse look when in menu.
+    public GameObject mouseXObj;
+    private MouseLook mouseXController;
+    public GameObject mouseYObj;
+    private MouseLook mouseYController;
+
     void Start() {
+        // Initialize visor behavior.
         visorSelect.SetActive(false);
         scanVisor.SetActive(false);
         combatVisor.SetActive(true);
         _activeVisorObj = combatVisor;
+
+        // Initialize cursor and mouse behavior.
         Cursor.SetCursor(mouseCursor, Vector2.zero, CursorMode.Auto);
+        mouseXController = mouseXObj.GetComponent<MouseLook>();
+        mouseYController = mouseYObj.GetComponent<MouseLook>();
+        DisableCursor();
     }
 
     void Update() {
@@ -58,10 +73,16 @@ public class UserInterface : MonoBehaviour {
         // TODO - reset cursor position to center of screen.
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+        // Disable mouse look while cursor is enabled.
+        mouseXController.isEnabled = false;
+        mouseYController.isEnabled = false;
     }
 
     private void DisableCursor() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        // Enable mouse look while cursor is disabled.
+        mouseXController.isEnabled = true;
+        mouseYController.isEnabled = true;
     }
 }

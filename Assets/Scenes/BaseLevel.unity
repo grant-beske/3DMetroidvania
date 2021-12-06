@@ -8141,6 +8141,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &788791583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
+  m_PrefabInstance: {fileID: 706682120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &824347477
 GameObject:
   m_ObjectHideFlags: 0
@@ -32834,6 +32839,8 @@ MonoBehaviour:
   combatVisor: {fileID: 274454928}
   scanVisor: {fileID: 1178769936}
   mouseCursor: {fileID: 2800000, guid: bb6f4b7097d4502458adb015b6dea18b, type: 3}
+  mouseXObj: {fileID: 727692974}
+  mouseYObj: {fileID: 788791583}
 --- !u!4 &1322068737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6144639778002546335, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}

@@ -23,6 +23,9 @@ public class UserInterface : MonoBehaviour {
     public GameObject mouseYObj;
     private MouseLook mouseYController;
 
+    // Audio variables for menu and UI sounds.
+    public AudioClip visorSelectSound;
+
     void Start() {
         // Initialize visor behavior.
         visorSelect.SetActive(false);
@@ -46,6 +49,7 @@ public class UserInterface : MonoBehaviour {
     }
 
     public void SetVisorSelect() {
+        PlaySound(visorSelectSound);
         EnableCursor();
         activeVisor = Visor.SELECT;
         _activeVisorObj.SetActive(false);
@@ -62,6 +66,7 @@ public class UserInterface : MonoBehaviour {
     }
 
     public void SetScanVisor() {
+        PlaySound(visorSelectSound);
         DisableCursor();
         activeVisor = Visor.COMBAT;
         _activeVisorObj.SetActive(false);
@@ -84,5 +89,10 @@ public class UserInterface : MonoBehaviour {
         // Enable mouse look while cursor is disabled.
         mouseXController.isEnabled = true;
         mouseYController.isEnabled = true;
+    }
+
+    private void PlaySound(AudioClip clip) {
+        GetComponent<AudioSource>().clip = clip;
+        GetComponent<AudioSource>().Play();
     }
 }

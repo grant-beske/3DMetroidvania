@@ -1,10 +1,12 @@
 Temp/UnityLockfile
 [Aa]ssets/[Ee]tc
+3D*Metroidvania_Data/
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+[Mm]onoBleedingEdge/
 Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
@@ -31,6 +33,9 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+# Unity heavy crap
+UnityPlayer.dll
 
 # Builds
 *.apk

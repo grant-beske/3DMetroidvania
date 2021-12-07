@@ -74,7 +74,7 @@ public class UserInterface : MonoBehaviour {
         scanVisor.SetActive(true);
     }
 
-    private void EnableCursor() {
+    public void EnableCursor() {
         // TODO - reset cursor position to center of screen.
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
@@ -83,7 +83,7 @@ public class UserInterface : MonoBehaviour {
         mouseYController.isEnabled = false;
     }
 
-    private void DisableCursor() {
+    public void DisableCursor() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         // Enable mouse look while cursor is disabled.

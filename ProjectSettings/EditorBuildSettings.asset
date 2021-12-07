@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AdditiveTest.unity
     guid: 4b83477758dc40d43ade1e0e1589fb88
+  - enabled: 1
+    path: Assets/Scenes/JunctionPoint.unity
+    guid: cb750f9f3e8b7da4895d0aaad38b8945
   m_configObjects: {}

@@ -45,7 +45,7 @@ public class ScanVisor : MonoBehaviour {
                         out hit,
                         Mathf.Infinity,
                         1 << 6, // Only look at layer 6: Scannable
-                        QueryTriggerInteraction.Ignore)) {
+                        QueryTriggerInteraction.Collide)) {
                     SwitchToViewScanState(hit);
                 }
             } else {
@@ -56,7 +56,7 @@ public class ScanVisor : MonoBehaviour {
                         out hit,
                         Mathf.Infinity,
                         1 << 6, // Only look at layer 6: Scannable
-                        QueryTriggerInteraction.Ignore)) {
+                        QueryTriggerInteraction.Collide)) {
                     ToggleScanHighlight(true);
                 } else {
                     ToggleScanHighlight(false);

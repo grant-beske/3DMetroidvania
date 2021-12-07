@@ -7,6 +7,8 @@ public class UserInterface : MonoBehaviour {
     // Visor state variables.
     enum Visor {SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.COMBAT;
+    // Enable / disable game control. Useful for displaying menus, etc.
+    private bool enableGameControls = true;
 
     // Visor gameobjects.
     public GameObject visorSelect;
@@ -41,10 +43,12 @@ public class UserInterface : MonoBehaviour {
     }
 
     void Update() {
-        if (activeVisor != Visor.SELECT && Input.GetMouseButtonDown(2)) {
-            SetVisorSelect();
-        } else if (activeVisor == Visor.SELECT && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(2))) {
-            SetCombatVisor();
+        if (enableGameControls) {
+            if (activeVisor != Visor.SELECT && Input.GetMouseButtonDown(2)) {
+                SetVisorSelect();
+            } else if (activeVisor == Visor.SELECT && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(2))) {
+                SetCombatVisor();
+            }
         }
     }
 
@@ -89,6 +93,14 @@ public class UserInterface : MonoBehaviour {
         // Enable mouse look while cursor is disabled.
         mouseXController.isEnabled = true;
         mouseYController.isEnabled = true;
+    }
+
+    public void EnableGameControls() {
+        enableGameControls = true;
+    }
+
+    public void DisableGameControls() {
+        enableGameControls = false;
     }
 
     private void PlaySound(AudioClip clip) {

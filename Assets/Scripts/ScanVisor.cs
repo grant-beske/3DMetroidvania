@@ -85,6 +85,7 @@ public class ScanVisor : MonoBehaviour {
         normalStateObj.SetActive(true);
         activeState = State.NORMAL;
         uiController.DisableCursor();
+        uiController.EnableGameControls();
 
         // Time flows regularly in normal scan mode.
         Time.timeScale = 1f;
@@ -95,6 +96,7 @@ public class ScanVisor : MonoBehaviour {
         viewScanStateObj.SetActive(true);
         activeState = State.VIEWSCAN;
         uiController.EnableCursor();
+        uiController.DisableGameControls();
 
         // Set scan interface based on item scanned
         Scannable scan = hit.collider.gameObject.GetComponent<Scannable>();

@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 802199142}
   - component: {fileID: 802199141}
   - component: {fileID: 802199140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foundation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2469,7 +2469,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-117634
+  m_Name: pb_Mesh92514
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 1931092964}
   - component: {fileID: 1931092963}
   - component: {fileID: 1931092962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3110,7 +3110,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78974
+  m_Name: pb_Mesh92490
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

@@ -12,6 +12,10 @@ public class ScanVisor : MonoBehaviour {
     public GameObject userInterface;
     private UserInterface uiController;
 
+    // SFX for scanning
+    public AudioClip scanHighlightSound;
+    public AudioClip scanViewScanSound;
+
     // Scan state gameobjects
     public GameObject normalStateObj;
     public GameObject viewScanStateObj;
@@ -20,6 +24,7 @@ public class ScanVisor : MonoBehaviour {
     public GameObject scanTargetBlank;
     public GameObject scanTargetHighlighted;
     public GameObject scanTargetSelected;
+    private bool targetIsHighlighted = false;
 
     // View scan gameobjects
     [SerializeField] Text scanDescription;
@@ -52,11 +57,9 @@ public class ScanVisor : MonoBehaviour {
                         Mathf.Infinity,
                         1 << 6, // Only look at layer 6: Scannable
                         QueryTriggerInteraction.Ignore)) {
-                    scanTargetBlank.SetActive(false);
-                    scanTargetHighlighted.SetActive(true);
+                    ToggleScanHighlight(true);
                 } else {
-                    scanTargetHighlighted.SetActive(false);
-                    scanTargetBlank.SetActive(true);
+                    ToggleScanHighlight(false);
                 }
             }
         } else if (activeState == State.VIEWSCAN) {
@@ -97,7 +100,32 @@ public class ScanVisor : MonoBehaviour {
         Scannable scan = hit.collider.gameObject.GetComponent<Scannable>();
         scanDescription.text = scan.scanDescription;
 
+        // Play view scan sound effect
+        PlaySound(scanViewScanSound);
+
         // Pause time while viewing scan description.
         Time.timeScale = 0f;
+    }
+
+    private void ToggleScanHighlight(bool shouldHighlight) {
+        if (targetIsHighlighted) {
+            if (!shouldHighlight) {
+                scanTargetHighlighted.SetActive(false);
+                scanTargetBlank.SetActive(true);
+                targetIsHighlighted = false;
+            }
+        } else {
+            if (shouldHighlight) {
+                scanTargetBlank.SetActive(false);
+                scanTargetHighlighted.SetActive(true);
+                targetIsHighlighted = true;
+                PlaySound(scanHighlightSound);
+            }
+        }
+    }
+
+    private void PlaySound(AudioClip clip) {
+        GetComponent<AudioSource>().clip = clip;
+        GetComponent<AudioSource>().Play();
     }
 }

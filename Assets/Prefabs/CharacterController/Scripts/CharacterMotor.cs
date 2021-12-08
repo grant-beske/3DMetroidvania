@@ -58,9 +58,7 @@ public class CharacterMotor : MonoBehaviour
 	private Transform tr;
 
 	private CharacterController controller;
-
-    public Scoreboard sb;
-
+	
 	[System.Serializable]
 	public class CharacterMotorMovement
 	{
@@ -328,7 +326,7 @@ public class CharacterMotor : MonoBehaviour
 			tr.position += pushDownOffset * Vector3.up;
 		}
 		// We were not grounded but just landed on something
-		else if (!grounded && IsGroundedTest ()) {
+		else if (!grounded && IsGroundedTest()) {
 
 			// Play SFX
 			jumpLandAudioSource.clip = landingSound1;
@@ -337,14 +335,6 @@ public class CharacterMotor : MonoBehaviour
 			grounded = true;
 			jumping.jumping = false;
 			SubtractNewPlatformVelocity ();
-
-			// Set the score accordingly
-			// platformNum = 
-            if (score < transform.position.y)
-            {
-                score = transform.position.y;
-                sb.SetScore(score);
-            }
 
 			SendMessage ("OnLand", SendMessageOptions.DontRequireReceiver);
 		}

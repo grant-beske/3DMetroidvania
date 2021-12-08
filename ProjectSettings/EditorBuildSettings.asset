@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BaseLevel.unity
+    path: Assets/Scenes/Undersea Dock/MoonPool.unity
+    guid: 9c7ab3753a8803c47a1fd889e7c4c4e5
+  - enabled: 1
+    path: Assets/Scenes/Testing/BaseLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/AdditiveTest.unity
+    path: Assets/Scenes/Testing/AdditiveTest.unity
     guid: 4b83477758dc40d43ade1e0e1589fb88
   - enabled: 1
-    path: Assets/Scenes/JunctionPoint.unity
+    path: Assets/Scenes/Testing/JunctionPoint.unity
     guid: cb750f9f3e8b7da4895d0aaad38b8945
   m_configObjects: {}

@@ -5,13 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ProximityDoor : MonoBehaviour {
 
-    // Doorway gameobject which will be translated on proximity trigger.
-    public GameObject doorObject;
-
-    // Audio clips to play when door opens or closes.
-    public AudioClip doorOpenSound;
-    public AudioClip doorCloseSound;
-
     // Variables to control the loaded scenes. 
     public string sceneName1;
     public GameObject level1Boundary;
@@ -20,6 +13,17 @@ public class ProximityDoor : MonoBehaviour {
     public string sceneName2;
     private bool isScene2Loaded = false;
 
+    // Door animation variables.
+    private int trDoorOpen = Animator.StringToHash("DoorOpen");
+    private int trDoorClose = Animator.StringToHash("DoorClose");
+    private Animator animator;
+    private AudioSource audioSource;
+
+	void Start() {
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+	}
+
     void Awake() {
         levelBoundaryState = level1Boundary.GetComponent<LevelBoundary>();
     }
@@ -27,6 +31,8 @@ public class ProximityDoor : MonoBehaviour {
     // If player enters the door proximity zone, then open the door.
     void OnTriggerEnter (Collider col) {
         if (col.gameObject.tag == "Player") {
+            audioSource.Play();
+            animator.SetTrigger(trDoorOpen);
             if (!isScene1Loaded) {
                 isScene1Loaded = true;
                 SceneManager.LoadScene(sceneName1, LoadSceneMode.Additive);
@@ -35,25 +41,31 @@ public class ProximityDoor : MonoBehaviour {
                 isScene2Loaded = true;
                 SceneManager.LoadScene(sceneName2, LoadSceneMode.Additive);
             }
-            doorObject.transform.position += Vector3.down * 3.59f;
-            GetComponent<AudioSource>().clip = doorOpenSound;
-            GetComponent<AudioSource>().Play();
         }
     }
 
     // If player leaves the zone, then close the door.
     void OnTriggerExit (Collider col) {
         if (col.gameObject.tag == "Player") {
+            audioSource.Play();
+            animator.SetTrigger(trDoorClose);
             if (levelBoundaryState.IsPlayerInLevel()) {
-                isScene2Loaded = false;
-                SceneManager.UnloadSceneAsync(sceneName2);
+                StartCoroutine(UnloadScene2AfterDoorClose());
             } else {
-                isScene1Loaded = false;
-                SceneManager.UnloadSceneAsync(sceneName1);
+                StartCoroutine(UnloadScene1AfterDoorClose());
             }
-            doorObject.transform.position += Vector3.up * 3.59f;
-            GetComponent<AudioSource>().clip = doorCloseSound;
-            GetComponent<AudioSource>().Play();
         }
+    }
+
+    private IEnumerator UnloadScene1AfterDoorClose() {
+        yield return new WaitForSeconds(0.75f);
+        isScene1Loaded = false;
+        SceneManager.UnloadSceneAsync(sceneName1);
+    }
+
+    private IEnumerator UnloadScene2AfterDoorClose() {
+        yield return new WaitForSeconds(0.75f);
+        isScene2Loaded = false;
+        SceneManager.UnloadSceneAsync(sceneName2);
     }
 }

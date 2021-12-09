@@ -106,7 +106,7 @@ public class ScanVisor : MonoBehaviour {
 
         // Set scan interface based on item scanned
         Scannable scan = hit.collider.gameObject.GetComponent<Scannable>();
-        scanDescription.text = scan.scanDescription;
+        scanDescription.text = scan.GetScan();
 
         // Play view scan sound effect
         PlaySound(scanViewScanSound);

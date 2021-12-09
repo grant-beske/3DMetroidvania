@@ -112,7 +112,6 @@ public class UserInterface : MonoBehaviour {
     }
 
     public void SetRenderModeForNewRoom() {
-        Debug.Log(previouslyActiveVisor);
         switch (previouslyActiveVisor) {
             case Visor.COMBAT:
                 SetNormalRenderMode();

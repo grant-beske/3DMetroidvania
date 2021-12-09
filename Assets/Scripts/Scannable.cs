@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Scannable : MonoBehaviour {
-    // Contains the text of the scannable object.
-    public string scanDescription;
+    // GameObject with a ScanGroup script attached.
+    public GameObject parentScanGroupObj;
+    private ScanGroup parentScanGroup;
+
+    void Start() {
+        parentScanGroup = parentScanGroupObj.GetComponent<ScanGroup>();
+    }
+
+    public string GetScan() {
+        return parentScanGroup.description;
+    }
 }

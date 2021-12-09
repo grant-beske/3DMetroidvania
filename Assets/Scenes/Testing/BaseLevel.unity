@@ -6307,6 +6307,10 @@ PrefabInstance:
       propertyPath: scanDescription
       value: Morphological disturbances detected in deck beta.
       objectReference: {fileID: 0}
+    - target: {fileID: 5291483265507957531, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
+      propertyPath: description
+      value: Stores of Resinox are holding at 99% optimal.
+      objectReference: {fileID: 0}
     - target: {fileID: 5717762991102234675, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
@@ -6765,6 +6769,10 @@ PrefabInstance:
     - target: {fileID: 3766032532711148482, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
       propertyPath: scanDescription
       value: Global environment holding steady at 0.035 PSI.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291483265507957531, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
+      propertyPath: description
+      value: Radiological constant holding at a variable Q-hypothesis of 3.304.
       objectReference: {fileID: 0}
     - target: {fileID: 5717762991102234675, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11839,7 +11847,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278806
+  m_Name: pb_Mesh-209696
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25560,7 +25568,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278766
+  m_Name: pb_Mesh-209656
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25827,7 +25835,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278786
+  m_Name: pb_Mesh-209676
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34969,6 +34977,10 @@ PrefabInstance:
     - target: {fileID: 3766032532711148482, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
       propertyPath: scanDescription
       value: Passcode to get to deck omega is 0451.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291483265507957531, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
+      propertyPath: description
+      value: Check data processing room B for anomolous readings.
       objectReference: {fileID: 0}
     - target: {fileID: 6144639778002546304, guid: 7013145e547b0e342b7ac62b90b2ea1a, type: 3}
       propertyPath: m_Name

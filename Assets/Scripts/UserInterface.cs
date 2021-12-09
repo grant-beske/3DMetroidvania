@@ -7,6 +7,8 @@ public class UserInterface : MonoBehaviour {
     // Visor state variables.
     enum Visor {SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.COMBAT;
+    // Previously active visor, not counting technical visor states like SELECT.
+    private Visor previouslyActiveVisor = Visor.COMBAT;
     // Enable / disable game control. Useful for displaying menus, etc.
     private bool enableGameControls = true;
 
@@ -64,6 +66,7 @@ public class UserInterface : MonoBehaviour {
     public void SetCombatVisor() {
         DisableCursor();
         activeVisor = Visor.COMBAT;
+        previouslyActiveVisor = Visor.COMBAT;
         _activeVisorObj.SetActive(false);
         _activeVisorObj = combatVisor;
         combatVisor.SetActive(true);
@@ -74,7 +77,8 @@ public class UserInterface : MonoBehaviour {
     public void SetScanVisor() {
         PlaySound(visorSelectSound);
         DisableCursor();
-        activeVisor = Visor.COMBAT;
+        activeVisor = Visor.SCAN;
+        previouslyActiveVisor = Visor.SCAN;
         _activeVisorObj.SetActive(false);
         _activeVisorObj = scanVisor;
         scanVisor.SetActive(true);
@@ -105,6 +109,21 @@ public class UserInterface : MonoBehaviour {
 
     public void DisableGameControls() {
         enableGameControls = false;
+    }
+
+    public void SetRenderModeForNewRoom() {
+        Debug.Log(previouslyActiveVisor);
+        switch (previouslyActiveVisor) {
+            case Visor.COMBAT:
+                SetNormalRenderMode();
+                break;
+            case Visor.SCAN:
+                SetScanRenderMode();
+                break;
+            default:
+                SetNormalRenderMode();
+                break;
+        }
     }
 
     private void PlaySound(AudioClip clip) {

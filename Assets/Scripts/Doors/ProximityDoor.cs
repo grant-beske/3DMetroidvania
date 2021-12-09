@@ -36,10 +36,12 @@ public class ProximityDoor : MonoBehaviour {
             if (!isScene1Loaded) {
                 isScene1Loaded = true;
                 SceneManager.LoadScene(sceneName1, LoadSceneMode.Additive);
+                StartCoroutine(RenderNewScenesForCurrentVisor());
             }
             if (!isScene2Loaded) {
                 isScene2Loaded = true;
                 SceneManager.LoadScene(sceneName2, LoadSceneMode.Additive);
+                StartCoroutine(RenderNewScenesForCurrentVisor());
             }
         }
     }
@@ -67,5 +69,11 @@ public class ProximityDoor : MonoBehaviour {
         yield return new WaitForSeconds(0.75f);
         isScene2Loaded = false;
         SceneManager.UnloadSceneAsync(sceneName2);
+    }
+
+    private IEnumerator RenderNewScenesForCurrentVisor() {
+        // Wait for a tenth of a sec to give the scene time to load.
+        yield return new WaitForSeconds(0.1f);
+        GameObject.Find("UIController").GetComponent<UserInterface>().SetRenderModeForNewRoom();
     }
 }

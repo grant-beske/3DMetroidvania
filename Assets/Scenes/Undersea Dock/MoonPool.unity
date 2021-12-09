@@ -152,8 +152,8 @@ Transform:
   m_Children:
   - {fileID: 1024532924}
   - {fileID: 513494949}
-  - {fileID: 2080913545}
   - {fileID: 2136082512}
+  - {fileID: 2080913545}
   - {fileID: 502709081}
   m_Father: {fileID: 618159502}
   m_RootOrder: 3
@@ -33159,7 +33159,7 @@ GameObject:
   - component: {fileID: 1673023205}
   - component: {fileID: 1673023206}
   m_Layer: 5
-  m_Name: UI
+  m_Name: UIController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

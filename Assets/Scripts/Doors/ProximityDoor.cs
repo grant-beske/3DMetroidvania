@@ -74,6 +74,6 @@ public class ProximityDoor : MonoBehaviour {
     private IEnumerator RenderNewScenesForCurrentVisor() {
         // Wait for a tenth of a sec to give the scene time to load.
         yield return new WaitForSeconds(0.1f);
-        GameObject.Find("UIController").GetComponent<UserInterface>().SetRenderModeForNewRoom();
+        GameObject.Find("UIController").GetComponent<UserInterface>().ReInitRenderMode();
     }
 }

@@ -12,6 +12,10 @@ public class Scannable : MonoBehaviour {
     }
 
     public string GetScan() {
-        return parentScanGroup.description;
+        return parentScanGroup.ViewScan();
+    }
+
+    public ScanGroup.State GetState() {
+        return parentScanGroup.GetActiveState();
     }
 }

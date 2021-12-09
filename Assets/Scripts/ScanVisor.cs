@@ -44,9 +44,10 @@ public class ScanVisor : MonoBehaviour {
                         Camera.main.transform.forward,
                         out hit,
                         Mathf.Infinity,
-                        (1 << 7) | (1 << 10), // Layer 7: Terrain, Layer 10: ScannableNormal
+                        // Layer 7: Terrain, Layer 10-12: Scannable
+                        (1 << 7) | (1 << 10) | (1 << 11) | (1 << 12),
                         QueryTriggerInteraction.Collide)) {
-                    if (hit.collider.gameObject.layer == 10) {
+                    if (hit.collider.gameObject.layer >= 10 && hit.collider.gameObject.layer <= 12) {
                         SwitchToViewScanState(hit);
                     }
                 }
@@ -57,9 +58,10 @@ public class ScanVisor : MonoBehaviour {
                         Camera.main.transform.forward,
                         out hit,
                         Mathf.Infinity,
-                        (1 << 7) | (1 << 10), // Layer 7: Terrain, Layer 10: ScannableNormal
+                        // Layer 7: Terrain, Layer 10-12: Scannable
+                        (1 << 7) | (1 << 10) | (1 << 11) | (1 << 12),
                         QueryTriggerInteraction.Collide)) {
-                    if (hit.collider.gameObject.layer == 10) {
+                    if (hit.collider.gameObject.layer >= 10 && hit.collider.gameObject.layer <= 12) {
                         ToggleScanHighlight(true);
                     } else {
                         ToggleScanHighlight(false);
@@ -113,6 +115,9 @@ public class ScanVisor : MonoBehaviour {
 
         // Pause time while viewing scan description.
         Time.timeScale = 0f;
+
+        // Re-render all scannable objects to update highlight colors.
+        ReRenderScannableObjects();
     }
 
     private void ToggleScanHighlight(bool shouldHighlight) {
@@ -135,5 +140,9 @@ public class ScanVisor : MonoBehaviour {
     private void PlaySound(AudioClip clip) {
         GetComponent<AudioSource>().clip = clip;
         GetComponent<AudioSource>().Play();
+    }
+
+    private void ReRenderScannableObjects() {
+        GameObject.Find("UIController").GetComponent<UserInterface>().ReInitRenderMode();
     }
 }

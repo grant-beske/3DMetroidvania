@@ -402,6 +402,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 626964826}
     m_Modifications:
+    - target: {fileID: 2220136762479496668, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
+    - target: {fileID: 3511103012691075325, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
     - target: {fileID: 6235179199450627280, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
       propertyPath: m_Name
       value: MetalPipes
@@ -462,7 +470,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7077492685670660015, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
     - target: {fileID: 7168840971151988173, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
+    - target: {fileID: 7894115084727662189, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
+    - target: {fileID: 8722889072368335872, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
       propertyPath: parentScanGroupObj
       value: 
       objectReference: {fileID: 224147738}
@@ -628,7 +648,8 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -20.34, y: 29.18, z: -77.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1101230970}
   m_Father: {fileID: 1825491337}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -2068,6 +2089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: These cylindrical rods contain reinforcement core rods for use in
     armoring undersea drones.
+  initialState: 0
 --- !u!1 &226878907
 GameObject:
   m_ObjectHideFlags: 0
@@ -18408,6 +18430,10 @@ PrefabInstance:
       propertyPath: description
       value: Quantum chip required to decrypt lock on moon pool grate controls.
       objectReference: {fileID: 0}
+    - target: {fileID: 1892628564527401551, guid: ddf922fdb4a32b04289f5d1a4c7585f1, type: 3}
+      propertyPath: initialState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7488763101323052719, guid: ddf922fdb4a32b04289f5d1a4c7585f1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -21540,6 +21566,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765166230}
   m_CullTransparentMesh: 1
+--- !u!1 &803398601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 12fb649219c481749a005e29f2611c46, type: 3}
+  m_PrefabInstance: {fileID: 1098819961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &803398605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803398601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 1900564651}
 --- !u!1001 &806587088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22181,11 +22225,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1825491337}
+    m_TransformParent: {fileID: 114467516}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalScale.x
@@ -22193,7 +22237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 0.050000004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalScale.z
@@ -22201,19 +22245,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.4289007
+      value: -15.047472
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.41
+      value: 5.2299995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -62.30253
+      value: 26.768904
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalRotation.x
@@ -22221,7 +22265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12fb649219c481749a005e29f2611c46, type: 3}
       propertyPath: m_LocalRotation.z
@@ -22417,6 +22461,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 626964826}
     m_Modifications:
+    - target: {fileID: 2220136762479496668, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
+    - target: {fileID: 3511103012691075325, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
     - target: {fileID: 6235179199450627280, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
       propertyPath: m_Name
       value: MetalPipes (1)
@@ -22477,7 +22529,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7077492685670660015, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
     - target: {fileID: 7168840971151988173, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
+    - target: {fileID: 7894115084727662189, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
+      propertyPath: parentScanGroupObj
+      value: 
+      objectReference: {fileID: 224147738}
+    - target: {fileID: 8722889072368335872, guid: 8f8fdf51c5d6dab4bb72adbb3d7fb487, type: 3}
       propertyPath: parentScanGroupObj
       value: 
       objectReference: {fileID: 224147738}
@@ -28168,6 +28232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: This grate controls access to the moon pool. A nearby control can
     open/close the grate.
+  initialState: 0
 --- !u!1 &1560130592
 GameObject:
   m_ObjectHideFlags: 0
@@ -33668,7 +33733,6 @@ Transform:
   m_Children:
   - {fileID: 114467516}
   - {fileID: 618159502}
-  - {fileID: 1101230970}
   m_Father: {fileID: 293880522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33819,6 +33883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Submersible drone used for patrolling nearby waters. Currently recharging
     in drydock. Manufacturer unknown; X-Corp is not believed to have a drone program.
+  initialState: 1
 --- !u!1 &1924196260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 44b9a7bb83b07104b989101fd5d11c8e, type: 3}

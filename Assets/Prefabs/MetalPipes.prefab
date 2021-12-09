@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6235179199449751760}
   - component: {fileID: 6235179199448621584}
   - component: {fileID: 6235179200189277725}
+  - component: {fileID: 8722889072368335872}
   m_Layer: 0
   m_Name: MetalPipes
   m_TagString: Scannable
@@ -115,6 +116,19 @@ LODGroup:
     - renderer: {fileID: 6235179199448621588}
     - renderer: {fileID: 6235179199448621592}
   m_Enabled: 1
+--- !u!114 &8722889072368335872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235179199450627280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 0}
 --- !u!1 &6235179199450627284
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6235179199451046132}
   - component: {fileID: 6235179199449751764}
+  - component: {fileID: 3511103012691075325}
   - component: {fileID: 6235179199448621588}
   m_Layer: 0
   m_Name: Cap_lod_1
@@ -155,6 +170,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6235179199450627284}
   m_Mesh: {fileID: 4300010, guid: 90d297a9c04db3c45a8b5c04b48bf41b, type: 3}
+--- !u!114 &3511103012691075325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235179199450627284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 0}
 --- !u!23 &6235179199448621588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -206,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6235179199451046134}
   - component: {fileID: 6235179199449751766}
+  - component: {fileID: 2220136762479496668}
   - component: {fileID: 6235179199448621590}
   m_Layer: 0
   m_Name: Cap_lod_0
@@ -236,6 +265,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6235179199450627286}
   m_Mesh: {fileID: 4300008, guid: 90d297a9c04db3c45a8b5c04b48bf41b, type: 3}
+--- !u!114 &2220136762479496668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235179199450627286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 0}
 --- !u!23 &6235179199448621590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -287,6 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6235179199451046136}
   - component: {fileID: 6235179199449751768}
+  - component: {fileID: 7077492685670660015}
   - component: {fileID: 6235179199448621592}
   m_Layer: 0
   m_Name: Latch_lod_1
@@ -317,6 +360,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6235179199450627288}
   m_Mesh: {fileID: 4300004, guid: 90d297a9c04db3c45a8b5c04b48bf41b, type: 3}
+--- !u!114 &7077492685670660015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235179199450627288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 0}
 --- !u!23 &6235179199448621592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -368,6 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6235179199451046138}
   - component: {fileID: 6235179199449751770}
+  - component: {fileID: 7894115084727662189}
   - component: {fileID: 6235179199448621594}
   m_Layer: 0
   m_Name: Latch_lod_0
@@ -398,6 +455,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6235179199450627290}
   m_Mesh: {fileID: 4300006, guid: 90d297a9c04db3c45a8b5c04b48bf41b, type: 3}
+--- !u!114 &7894115084727662189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235179199450627290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 0}
 --- !u!23 &6235179199448621594
 MeshRenderer:
   m_ObjectHideFlags: 0

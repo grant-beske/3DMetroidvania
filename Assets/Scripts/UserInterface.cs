@@ -111,7 +111,7 @@ public class UserInterface : MonoBehaviour {
         enableGameControls = false;
     }
 
-    public void SetRenderModeForNewRoom() {
+    public void ReInitRenderMode() {
         switch (previouslyActiveVisor) {
             case Visor.COMBAT:
                 SetNormalRenderMode();
@@ -131,11 +131,22 @@ public class UserInterface : MonoBehaviour {
     }
 
     // Set the scan render mode by moving all objects tagged scannable into the
-    // ScannableNormal layer. This is hacky and maybe there is a better way to do this.
+    // ScannableXXXXXX layer. This is hacky and maybe there is a better way to do this.
     private void SetScanRenderMode() {
         var scannables = GameObject.FindGameObjectsWithTag("Scannable");
         foreach (GameObject obj in scannables) {
-            obj.layer = 10; // Layer 10: ScannableNormal
+            ScanGroup.State scanGroupState = obj.GetComponent<Scannable>().GetState();
+            switch (scanGroupState) {
+                case ScanGroup.State.NORMAL:
+                    obj.layer = 10; // Layer 10: ScannableNormal
+                    break;
+                case ScanGroup.State.CRITICAL:
+                    obj.layer = 11; // Layer 11: ScannableCritical
+                    break;
+                case ScanGroup.State.SCANNED:
+                    obj.layer = 12; // Layer 12: ScannableScanned
+                    break;
+            }
         }
     }
 

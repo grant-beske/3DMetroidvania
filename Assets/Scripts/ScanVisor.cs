@@ -40,6 +40,8 @@ public class ScanVisor : MonoBehaviour {
         // UI gameobjects
         [SerializeField] Text scanningText;
         public GameObject progressBar;
+        public GameObject scanningSound;
+        [HideInInspector] public AudioSource scanningAudioSource;
 
         // Scanning state objects
         public float timeRequiredToScan = 1.0f;
@@ -150,6 +152,8 @@ public class ScanVisor : MonoBehaviour {
 
     private void InitializeScanningState() {
         scanningStateVars.stateObj.SetActive(false);
+        scanningStateVars.scanningAudioSource =
+            scanningStateVars.scanningSound.GetComponent<AudioSource>();
     }
 
     private void InitializeViewScanState() {
@@ -163,6 +167,9 @@ public class ScanVisor : MonoBehaviour {
         activeState = State.NORMAL;
         uiController.DisableCursor();
         uiController.EnableGameControls();
+
+        // Pause the scanning sound for now, may resume later.
+        scanningStateVars.scanningAudioSource.Pause();
 
         // Time flows regularly in normal scan mode.
         Time.timeScale = 1f;
@@ -186,11 +193,16 @@ public class ScanVisor : MonoBehaviour {
             scanningStateVars.scanGroup = hitScanGroup;
             scanningStateVars.timeElapsed = 0.0f;
             ResetProgressBar();
+            // Reset the scanning sound on new scan target.
+            scanningStateVars.scanningAudioSource.Stop();
         }
 
         // If the hit scan group was already scanned, just directly go to VIEWSCAN state.
         if (hitScanGroup.GetComponent<ScanGroup>().GetActiveState() == ScanGroup.State.SCANNED) {
             SwitchToViewScanState(hit);
+        } else {
+            // Only play the audio source for incomplete scans.
+            scanningStateVars.scanningAudioSource.Play();
         }
     }
 
@@ -201,6 +213,9 @@ public class ScanVisor : MonoBehaviour {
         activeState = State.VIEWSCAN;
         uiController.EnableCursor();
         uiController.DisableGameControls();
+
+        // Reset the scanning sound.
+        scanningStateVars.scanningAudioSource.Stop();
 
         // Set scan interface based on item scanned
         Scannable scan = hit.collider.gameObject.GetComponent<Scannable>();

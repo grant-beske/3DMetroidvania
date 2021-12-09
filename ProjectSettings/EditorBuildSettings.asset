@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Undersea Dock/MoonPool.unity
+    path: Assets/Scenes/Undersea Dock/DronePoolA.unity
     guid: 9c7ab3753a8803c47a1fd889e7c4c4e5
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/ResearchHallway.unity
+    guid: ff3e68714539e7e4fb1d043568799189
   - enabled: 1
     path: Assets/Scenes/Testing/BaseLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

@@ -44,9 +44,9 @@ public class ScanVisor : MonoBehaviour {
                         Camera.main.transform.forward,
                         out hit,
                         Mathf.Infinity,
-                        (1 << 6) | (1 << 7), // Layer 6: Scannable, & Layer 7: Terrain
+                        (1 << 7) | (1 << 10), // Layer 7: Terrain, Layer 10: ScannableNormal
                         QueryTriggerInteraction.Collide)) {
-                    if (hit.collider.gameObject.layer == 6) {
+                    if (hit.collider.gameObject.layer == 10) {
                         SwitchToViewScanState(hit);
                     }
                 }
@@ -57,9 +57,9 @@ public class ScanVisor : MonoBehaviour {
                         Camera.main.transform.forward,
                         out hit,
                         Mathf.Infinity,
-                        (1 << 6) | (1 << 7), // Layer 6: Scannable, & Layer 7: Terrain
+                        (1 << 7) | (1 << 10), // Layer 7: Terrain, Layer 10: ScannableNormal
                         QueryTriggerInteraction.Collide)) {
-                    if (hit.collider.gameObject.layer == 6) {
+                    if (hit.collider.gameObject.layer == 10) {
                         ToggleScanHighlight(true);
                     } else {
                         ToggleScanHighlight(false);

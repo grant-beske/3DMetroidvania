@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 1962986219108620988}
   m_Layer: 6
   m_Name: Computer
-  m_TagString: Untagged
+  m_TagString: Scannable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

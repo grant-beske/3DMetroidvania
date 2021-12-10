@@ -574,7 +574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7092941562770761859, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: sceneName2
-      value: BaseLevel
+      value: ResearchSaveStation
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
@@ -11641,6 +11641,14 @@ PrefabInstance:
     - target: {fileID: 470786, guid: a00ebc22e8e3c3a48a29d11fdcdb7086, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19905044, guid: a00ebc22e8e3c3a48a29d11fdcdb7086, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19991318, guid: a00ebc22e8e3c3a48a29d11fdcdb7086, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19996208, guid: a00ebc22e8e3c3a48a29d11fdcdb7086, type: 3}
       propertyPath: m_SortingOrder

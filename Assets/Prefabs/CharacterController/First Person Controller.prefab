@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 14300000}
+  - component: {fileID: 5192080922111622240}
   - component: {fileID: 11400000}
   - component: {fileID: 11400002}
   - component: {fileID: 11400004}
@@ -54,6 +55,19 @@ CharacterController:
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5192080922111622240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769906047bf9ccb4d89db703f21d2efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerState: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +87,7 @@ MonoBehaviour:
   maximumX: 360
   minimumY: 0
   maximumY: 0
+  isEnabled: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,11 +112,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c00394b5a5b346b4a82cd8e0aeadeb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump_1: {fileID: 0}
-  jump_2: {fileID: 0}
-  jump_3: {fileID: 0}
-  jump_4: {fileID: 0}
-  landing: {fileID: 0}
+  jumpLandAudioSource: {fileID: 0}
+  footstepAudioSource: {fileID: 0}
+  jumpSound1: {fileID: 0}
+  jumpSound2: {fileID: 0}
+  jumpSound3: {fileID: 0}
+  jumpSound4: {fileID: 0}
+  landingSound1: {fileID: 0}
+  footstepSound1: {fileID: 0}
+  footstepSoundInterval: 0.5
   canControl: 1
   useFixedUpdate: 1
   score: 0
@@ -200,7 +219,6 @@ MonoBehaviour:
   grounded: 1
   groundNormal: {x: 0, y: 0, z: 0}
   lastGroundNormal: {x: 0, y: 0, z: 0}
-  sb: {fileID: 0}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +323,7 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+  isEnabled: 1
 --- !u!81 &8100000
 AudioListener:
   m_ObjectHideFlags: 0

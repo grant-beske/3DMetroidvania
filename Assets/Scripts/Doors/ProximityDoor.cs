@@ -63,12 +63,16 @@ public class ProximityDoor : MonoBehaviour {
         yield return new WaitForSeconds(0.75f);
         isScene1Loaded = false;
         SceneManager.UnloadSceneAsync(sceneName1);
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName2));
     }
 
     private IEnumerator UnloadScene2AfterDoorClose() {
         yield return new WaitForSeconds(0.75f);
         isScene2Loaded = false;
         SceneManager.UnloadSceneAsync(sceneName2);
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName1));
     }
 
     private IEnumerator RenderNewScenesForCurrentVisor() {

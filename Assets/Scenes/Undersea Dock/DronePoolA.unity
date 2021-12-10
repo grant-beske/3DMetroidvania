@@ -162,7 +162,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29828
+  m_Name: pb_Mesh53536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2089,6 +2089,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: These cylindrical rods contain reinforcement core rods for use in
     armoring undersea drones.
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   initialState: 0
 --- !u!1 &226878907
 GameObject:
@@ -7251,7 +7254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291710405}
   m_LocalRotation: {x: -0, y: 0.6791984, z: -0, w: 0.7339547}
-  m_LocalPosition: {x: -4.79, y: 18.72, z: -47.64}
+  m_LocalPosition: {x: 11.88, y: 18.72, z: -46.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1222059767}
@@ -7376,7 +7379,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29894
+  m_Name: pb_Mesh53602
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17469,7 +17472,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29708
+  m_Name: pb_Mesh53416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22549,7 +22552,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4208657604598613785, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: ID
-      value: doorsystem-moonpool
+      value: ds-dronepoola-researchhallway
       objectReference: {fileID: 0}
     - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: m_RootOrder
@@ -22917,7 +22920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23017,15 +23020,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: movement.maxForwardSpeed
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: movement.maxSidewaysSpeed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: movement.maxBackwardsSpeed
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: maximumY
@@ -23034,6 +23037,10 @@ PrefabInstance:
     - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: minimumY
       value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
+      propertyPath: m_Height
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
@@ -28506,6 +28513,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: This grate controls access to the moon pool. A nearby control can
     open/close the grate.
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   initialState: 0
 --- !u!1 &1560130592
 GameObject:
@@ -34231,6 +34241,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Submersible drone used for patrolling nearby waters. Currently recharging
     in drydock. Manufacturer unknown; X-Corp is not believed to have a drone program.
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   initialState: 1
 --- !u!1 &1924196260 stripped
 GameObject:

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &578690937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3582544330115499783, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+  m_PrefabInstance: {fileID: 1009971124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1009971124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2757202836602532391, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3582544329874648097, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
       propertyPath: m_Name
       value: Player
@@ -178,6 +187,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3582544330230423347, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
 --- !u!1 &1009971125 stripped
@@ -215,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1009971125}
+  uiControllerObj: {fileID: 578690937}
   targetSceneName: DronePoolA
 --- !u!4 &1063829243
 Transform:

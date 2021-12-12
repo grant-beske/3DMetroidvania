@@ -5,78 +5,127 @@ using UnityEngine;
 public class UserInterface : MonoBehaviour {
 
     // Visor state variables.
-    enum Visor {SELECT, COMBAT, SCAN};
-    private Visor activeVisor = Visor.COMBAT;
+    enum Visor {LOADING, SELECT, COMBAT, SCAN};
+    private Visor activeVisor = Visor.LOADING;
     // Previously active visor, not counting technical visor states like SELECT.
     private Visor previouslyActiveVisor = Visor.COMBAT;
     // Enable / disable game control. Useful for displaying menus, etc.
     private bool enableGameControls = true;
 
-    // Visor gameobjects.
-    public GameObject visorSelect;
-    public GameObject combatVisor;
-    public GameObject scanVisor;
-    private GameObject _activeVisorObj;
-
     // Gun gameobjects.
     public GameObject gunControlObj;
     private GenericGunController gunControl;
 
-    // Mouse cursor texture. Set on UI initialization.
-    public Texture2D mouseCursor;
+    // Contains visor related variables.
+    public VisorControlVars visorControlVars;
 
-    // Variables to enable / disable mouse look when in menu.
-    public GameObject mouseXObj;
-    private MouseLook mouseXController;
-    public GameObject mouseYObj;
-    private MouseLook mouseYController;
+    // Contains mouse control variables.
+    public MouseControlVars mouseControlVars;
 
-    // Audio variables for menu and UI sounds.
-    public AudioClip visorSelectSound;
+    [System.Serializable]
+    public class VisorControlVars {
+        // Visor gameobjects.
+        public GameObject loadingState;
+        public GameObject visorSelect;
+        public GameObject combatVisor;
+        public GameObject scanVisor;
+        [HideInInspector] public GameObject activeVisorObj;
+        public AudioClip visorSelectSound;
+    }
+    
+    [System.Serializable]
+    public class MouseControlVars {
+        // Variables to enable / disable mouse look when in menu.
+        public GameObject mouseXObj;
+        [HideInInspector] public MouseLook mouseXController;
+        public GameObject mouseYObj;
+        [HideInInspector] public MouseLook mouseYController;
+
+        // Mouse cursor texture. Set on UI initialization.
+        public Texture2D mouseCursor;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    // MonoBehavior Functions
+    /////////////////////////////////////////////////////////////////////////////////////
 
     void Start() {
         // Initialize weapon behavior.
         gunControl = gunControlObj.GetComponent<GenericGunController>();
 
-        // Initialize visor behavior.
-        visorSelect.SetActive(false);
-        scanVisor.SetActive(false);
-        combatVisor.SetActive(true);
-        _activeVisorObj = combatVisor;
+        // Initialize visor behavior. Default to LOADING. The LevelLoader script will
+        // handle changing state from LOADING to COMBAT.
+        visorControlVars.loadingState.SetActive(true);
+        visorControlVars.visorSelect.SetActive(false);
+        visorControlVars.scanVisor.SetActive(false);
+        visorControlVars.combatVisor.SetActive(false);
+        visorControlVars.activeVisorObj = visorControlVars.loadingState;
 
         // Initialize cursor and mouse behavior.
-        Cursor.SetCursor(mouseCursor, Vector2.zero, CursorMode.Auto);
-        mouseXController = mouseXObj.GetComponent<MouseLook>();
-        mouseYController = mouseYObj.GetComponent<MouseLook>();
+        Cursor.SetCursor(mouseControlVars.mouseCursor, Vector2.zero, CursorMode.Auto);
+        mouseControlVars.mouseXController = mouseControlVars.mouseXObj.GetComponent<MouseLook>();
+        mouseControlVars.mouseYController = mouseControlVars.mouseYObj.GetComponent<MouseLook>();
         DisableCursor();
     }
 
     void Update() {
-        if (enableGameControls) {
-            if (activeVisor != Visor.SELECT && Input.GetMouseButtonDown(2)) {
-                SetVisorSelect();
-            } else if (activeVisor == Visor.SELECT && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(2))) {
-                SetCombatVisor();
-            }
+        // Dispatch UI behavior based on currently active visor aka state.
+        if (activeVisor == Visor.LOADING) {
+            // Loading is currently a noop.
+        } else if (activeVisor == Visor.SELECT) {
+            UpdateVisorSelect();
+        } else if (activeVisor == Visor.COMBAT) {
+            UpdateCombatVisor();
+        } else if (activeVisor == Visor.SCAN) {
+            UpdateScanVisor();
         }
     }
 
+    private void UpdateVisorSelect() {
+        if (!enableGameControls) return;
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(2)) {
+            SetCombatVisor();
+        }
+    }
+
+    private void UpdateCombatVisor() {
+        if (!enableGameControls) return;
+        if (Input.GetMouseButtonDown(2)) {
+            SetVisorSelect();
+        }
+    }
+
+    private void UpdateScanVisor() {
+        if (!enableGameControls) return;
+        if (Input.GetMouseButtonDown(2)) {
+            SetVisorSelect();
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    // Game logic functions
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    public void FinishLoading() {
+        SetCombatVisor();
+    }
+
     public void SetVisorSelect() {
-        PlaySound(visorSelectSound);
+        PlaySound(visorControlVars.visorSelectSound);
         EnableCursor();
         activeVisor = Visor.SELECT;
-        _activeVisorObj.SetActive(false);
-        _activeVisorObj = visorSelect;
-        visorSelect.SetActive(true);
+        visorControlVars.activeVisorObj.SetActive(false);
+        visorControlVars.activeVisorObj = visorControlVars.visorSelect;
+        visorControlVars.visorSelect.SetActive(true);
     }
 
     public void SetCombatVisor() {
         DisableCursor();
         activeVisor = Visor.COMBAT;
         previouslyActiveVisor = Visor.COMBAT;
-        _activeVisorObj.SetActive(false);
-        _activeVisorObj = combatVisor;
-        combatVisor.SetActive(true);
+        visorControlVars.activeVisorObj.SetActive(false);
+        visorControlVars.activeVisorObj = visorControlVars.combatVisor;
+        visorControlVars.combatVisor.SetActive(true);
 
         // Disable any open weapons.
         gunControl.ActivateWeapon();
@@ -85,13 +134,13 @@ public class UserInterface : MonoBehaviour {
     }
 
     public void SetScanVisor() {
-        PlaySound(visorSelectSound);
+        PlaySound(visorControlVars.visorSelectSound);
         DisableCursor();
         activeVisor = Visor.SCAN;
         previouslyActiveVisor = Visor.SCAN;
-        _activeVisorObj.SetActive(false);
-        _activeVisorObj = scanVisor;
-        scanVisor.SetActive(true);
+        visorControlVars.activeVisorObj.SetActive(false);
+        visorControlVars.activeVisorObj = visorControlVars.scanVisor;
+        visorControlVars.scanVisor.SetActive(true);
 
         // Disable any open weapons.
         gunControl.DeactivateWeapon();
@@ -104,16 +153,16 @@ public class UserInterface : MonoBehaviour {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         // Disable mouse look while cursor is enabled.
-        mouseXController.isEnabled = false;
-        mouseYController.isEnabled = false;
+        mouseControlVars.mouseXController.isEnabled = false;
+        mouseControlVars.mouseYController.isEnabled = false;
     }
 
     public void DisableCursor() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         // Enable mouse look while cursor is disabled.
-        mouseXController.isEnabled = true;
-        mouseYController.isEnabled = true;
+        mouseControlVars.mouseXController.isEnabled = true;
+        mouseControlVars.mouseYController.isEnabled = true;
     }
 
     public void EnableGameControls() {

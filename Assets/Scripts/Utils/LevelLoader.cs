@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour {
 
     public GameObject player;
+    public GameObject uiControllerObj;
+    private UserInterface uiController;
     public string targetSceneName;
     private bool sceneLoaded = false;
     private bool shouldUnload = false;
 
     void Start() {
         SceneManager.sceneLoaded += HandleSceneLoaded;
+        uiController = uiControllerObj.GetComponent<UserInterface>();
     }
 
     void OnDisable() {
@@ -31,6 +34,7 @@ public class LevelLoader : MonoBehaviour {
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode) {
         player.transform.position = GetDockingPoint().transform.position;
+        uiController.FinishLoading();
         shouldUnload = true;
     }
 

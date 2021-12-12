@@ -18,6 +18,10 @@ public class UserInterface : MonoBehaviour {
     public GameObject scanVisor;
     private GameObject _activeVisorObj;
 
+    // Gun gameobjects.
+    public GameObject gunControlObj;
+    private GenericGunController gunControl;
+
     // Mouse cursor texture. Set on UI initialization.
     public Texture2D mouseCursor;
 
@@ -31,6 +35,9 @@ public class UserInterface : MonoBehaviour {
     public AudioClip visorSelectSound;
 
     void Start() {
+        // Initialize weapon behavior.
+        gunControl = gunControlObj.GetComponent<GenericGunController>();
+
         // Initialize visor behavior.
         visorSelect.SetActive(false);
         scanVisor.SetActive(false);
@@ -71,7 +78,10 @@ public class UserInterface : MonoBehaviour {
         _activeVisorObj = combatVisor;
         combatVisor.SetActive(true);
 
-        SetNormalRenderMode();
+        // Disable any open weapons.
+        gunControl.ActivateWeapon();
+
+        SetCombatRenderMode();
     }
 
     public void SetScanVisor() {
@@ -82,6 +92,9 @@ public class UserInterface : MonoBehaviour {
         _activeVisorObj.SetActive(false);
         _activeVisorObj = scanVisor;
         scanVisor.SetActive(true);
+
+        // Disable any open weapons.
+        gunControl.DeactivateWeapon();
 
         SetScanRenderMode();
     }
@@ -114,13 +127,13 @@ public class UserInterface : MonoBehaviour {
     public void ReInitRenderMode() {
         switch (previouslyActiveVisor) {
             case Visor.COMBAT:
-                SetNormalRenderMode();
+                SetCombatRenderMode();
                 break;
             case Visor.SCAN:
                 SetScanRenderMode();
                 break;
             default:
-                SetNormalRenderMode();
+                SetCombatRenderMode();
                 break;
         }
     }
@@ -131,7 +144,7 @@ public class UserInterface : MonoBehaviour {
     }
 
     // Set the scan render mode by moving all objects tagged scannable into the
-    // ScannableXXXXXX layer. This is hacky and maybe there is a better way to do this.
+    // ScannableXXXXXX layer.
     private void SetScanRenderMode() {
         var scannables = GameObject.FindGameObjectsWithTag("Scannable");
         foreach (GameObject obj in scannables) {
@@ -150,7 +163,8 @@ public class UserInterface : MonoBehaviour {
         }
     }
 
-    private void SetNormalRenderMode() {
+    // Set the combat render mode by moving all scannable objects back to terrain layer.
+    private void SetCombatRenderMode() {
         var scannables = GameObject.FindGameObjectsWithTag("Scannable");
         foreach (GameObject obj in scannables) {
             obj.layer = 6; // Layer 6: Scannable

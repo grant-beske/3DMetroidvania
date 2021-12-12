@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Scannable
   - Level1Boundary
+  - DoorSystem
   layers:
   - Default
   - TransparentFX

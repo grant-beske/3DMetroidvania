@@ -5,7 +5,7 @@ using UnityEngine;
 public class UserInterface : MonoBehaviour {
 
     // Visor state variables.
-    enum Visor {LOADING, SELECT, COMBAT, SCAN};
+    enum Visor {LOADING, PAUSED, SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.LOADING;
     // Previously active visor, not counting technical visor states like SELECT.
     private Visor previouslyActiveVisor = Visor.COMBAT;
@@ -26,6 +26,7 @@ public class UserInterface : MonoBehaviour {
     public class VisorControlVars {
         // Visor gameobjects.
         public GameObject loadingState;
+        public GameObject pauseMenu;
         public GameObject visorSelect;
         public GameObject combatVisor;
         public GameObject scanVisor;
@@ -56,6 +57,7 @@ public class UserInterface : MonoBehaviour {
         // Initialize visor behavior. Default to LOADING. The LevelLoader script will
         // handle changing state from LOADING to COMBAT.
         visorControlVars.loadingState.SetActive(true);
+        visorControlVars.pauseMenu.SetActive(false);
         visorControlVars.visorSelect.SetActive(false);
         visorControlVars.scanVisor.SetActive(false);
         visorControlVars.combatVisor.SetActive(false);
@@ -72,12 +74,20 @@ public class UserInterface : MonoBehaviour {
         // Dispatch UI behavior based on currently active visor aka state.
         if (activeVisor == Visor.LOADING) {
             // Loading is currently a noop.
+        } else if (activeVisor == Visor.PAUSED) {
+            UpdatePauseMenu();
         } else if (activeVisor == Visor.SELECT) {
             UpdateVisorSelect();
         } else if (activeVisor == Visor.COMBAT) {
             UpdateCombatVisor();
         } else if (activeVisor == Visor.SCAN) {
             UpdateScanVisor();
+        }
+    }
+
+    private void UpdatePauseMenu() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            UnpauseGame();
         }
     }
 
@@ -93,12 +103,18 @@ public class UserInterface : MonoBehaviour {
         if (Input.GetMouseButtonDown(2)) {
             SetVisorSelect();
         }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            PauseGame();
+        }
     }
 
     private void UpdateScanVisor() {
         if (!enableGameControls) return;
         if (Input.GetMouseButtonDown(2)) {
             SetVisorSelect();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            PauseGame();
         }
     }
 
@@ -108,6 +124,23 @@ public class UserInterface : MonoBehaviour {
 
     public void FinishLoading() {
         SetCombatVisor();
+        Time.timeScale = 1f;
+    }
+
+    public void PauseGame() {
+        visorControlVars.pauseMenu.SetActive(true);
+        EnableCursor();
+        DisableGameControls();
+        activeVisor = Visor.PAUSED;
+        Time.timeScale = 0f;
+    }
+
+    public void UnpauseGame() {
+        visorControlVars.pauseMenu.SetActive(false);
+        DisableCursor();
+        EnableGameControls();
+        activeVisor = previouslyActiveVisor;
+        Time.timeScale = 1f;
     }
 
     public void SetVisorSelect() {

@@ -11,6 +11,10 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void HandlePlayClick() {
-         SceneManager.LoadScene("Loader");
-     }
+        SceneManager.LoadScene("Loader");
+    }
+
+    public void HandleQuitToDesktopClick() {
+        Application.Quit();
+    }
 }

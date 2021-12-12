@@ -15,6 +15,12 @@ public class LevelLoader : MonoBehaviour {
 
     void Start() {
         SceneManager.sceneLoaded += HandleSceneLoaded;
+        if (player == null) {
+            player = GetPlayer();
+        }
+        if (uiControllerObj == null) {
+            uiControllerObj = GetUiControllerObj();
+        }
         uiController = uiControllerObj.GetComponent<UserInterface>();
     }
 
@@ -40,5 +46,13 @@ public class LevelLoader : MonoBehaviour {
 
     private GameObject GetDockingPoint() {
         return GameObject.Find("PlayerDockingPoint");
+    }
+
+    private GameObject GetPlayer() {
+        return GameObject.Find("Player");
+    }
+
+    private GameObject GetUiControllerObj() {
+        return GameObject.Find("UIController");
     }
 }

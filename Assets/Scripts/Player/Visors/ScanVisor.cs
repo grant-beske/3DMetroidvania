@@ -138,7 +138,7 @@ public class ScanVisor : MonoBehaviour {
                 SwitchToNormalState();
             }
         } else if (activeState == State.VIEWSCAN) {
-            if (Input.GetMouseButtonDown(0)) {
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(0)) {
                 SwitchToNormalState();
             }
         }

@@ -163,7 +163,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh87392
+  m_Name: pb_Mesh30602
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2040,6 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb585095744e04597fc0b612370b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scanId: UnderseaDock-DronePoolA-MetalPipes
   description: These cylindrical rods contain reinforcement core rods for use in
     armoring undersea drones.
   triggerEvent:
@@ -7225,7 +7226,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh87424
+  m_Name: pb_Mesh30634
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17222,7 +17223,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh87300
+  m_Name: pb_Mesh30510
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17891,6 +17892,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 12490268}
     m_Modifications:
+    - target: {fileID: 1892628564527401551, guid: ddf922fdb4a32b04289f5d1a4c7585f1, type: 3}
+      propertyPath: scanId
+      value: UnderseaDock-DronePoolA-GrateControlComputer
+      objectReference: {fileID: 0}
     - target: {fileID: 1892628564527401551, guid: ddf922fdb4a32b04289f5d1a4c7585f1, type: 3}
       propertyPath: description
       value: Quantum chip required to decrypt lock on moon pool grate controls.
@@ -21215,7 +21220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26508,6 +26513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb585095744e04597fc0b612370b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scanId: UnderseaDock-DronePoolA-Grate
   description: This grate controls access to the moon pool. A nearby control can
     open/close the grate.
   triggerEvent:
@@ -31806,6 +31812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb585095744e04597fc0b612370b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scanId: UnderseaDock-DronePoolA-Submarine
   description: Submersible drone used for patrolling nearby waters. Currently recharging
     in drydock. Manufacturer unknown; X-Corp is not believed to have a drone program.
   triggerEvent:
@@ -36952,6 +36959,37 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &2075141484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075141485}
+  m_Layer: 0
+  m_Name: PlayerDockingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075141485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075141484}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 11.88, y: 18.72, z: -46.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &2080913544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37022,6 +37060,10 @@ PrefabInstance:
     - target: {fileID: 4007566617203786008, guid: cbf505231d326f34fa419f96775586c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949595164244517443, guid: cbf505231d326f34fa419f96775586c4, type: 3}
+      propertyPath: scanId
+      value: UnderseaDock-DronePoolA-LargeContainer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf505231d326f34fa419f96775586c4, type: 3}
@@ -37281,132 +37323,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 44b9a7bb83b07104b989101fd5d11c8e, type: 3}
   m_PrefabInstance: {fileID: 2107668505}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3582544329621080548
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.466
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.401
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.481
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99426264
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.044160534
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.084412694
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.04864462
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 4.566
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 9.945
-      objectReference: {fileID: 0}
-    - target: {fileID: 2910276469943118212, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 5.999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648097, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -46.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582544329874648099, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314680606292, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314680606292, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314680606292, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314681025136, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314681025138, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314681025140, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314681025142, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3998912314681025148, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}

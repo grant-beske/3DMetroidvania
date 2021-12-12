@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Loader.unity
+    guid: 96759ae39a1524c4984dd2c7d5c86e23
+  - enabled: 1
     path: Assets/Scenes/Undersea Dock/DronePoolA.unity
     guid: 9c7ab3753a8803c47a1fd889e7c4c4e5
   - enabled: 1

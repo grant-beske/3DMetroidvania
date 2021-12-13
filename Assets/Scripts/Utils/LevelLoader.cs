@@ -17,7 +17,6 @@ public class LevelLoader : MonoBehaviour {
         playerState.GetComponent<PlayerState>().Deserialize(PlayerStateToLoad.state);
         targetSceneName = playerState.GetComponent<PlayerState>().saveFileSceneName;
         SceneManager.sceneLoaded += HandleSceneLoaded;
-        SceneManager.sceneUnloaded += HandleSceneUnloaded;
         if (player == null) {
             player = GetPlayer();
         }
@@ -29,7 +28,6 @@ public class LevelLoader : MonoBehaviour {
 
     void OnDisable() {
         SceneManager.sceneLoaded -= HandleSceneLoaded;
-        SceneManager.sceneUnloaded -= HandleSceneUnloaded;
     }
 
     void Update() {
@@ -41,13 +39,14 @@ public class LevelLoader : MonoBehaviour {
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode) {
         SceneManager.UnloadSceneAsync("Loader");
-    }
-
-    private void HandleSceneUnloaded(Scene scene) {
         GameObject dockingPoint = GetDockingPoint();
         player.transform.position = dockingPoint.transform.position;
         player.transform.rotation = dockingPoint.transform.rotation;
         uiController.FinishLoading();
+
+        // Deserialize the save file again to make sure PlayerState Start() does not
+        // override the coreStateValues and generalStateDict.
+        playerState.GetComponent<PlayerState>().Deserialize(PlayerStateToLoad.state);
         Destroy(gameObject);
     }
 

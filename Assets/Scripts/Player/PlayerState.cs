@@ -64,4 +64,8 @@ public class PlayerState : MonoBehaviour {
 
         generalStateDict = saveDataJson.GetField("generalStateDict").ToDictionary();
     }
+
+    public string PrintState() {
+        return Serialize().Print(true);
+    }
 }

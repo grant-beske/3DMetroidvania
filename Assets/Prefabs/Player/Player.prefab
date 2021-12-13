@@ -583,6 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05011a808069bf4b9b5e72712a25bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStateObj: {fileID: 3582544330647471636}
   debugOutput: {fileID: 3367230330841853987}
 --- !u!1 &3231563003362573471
 GameObject:

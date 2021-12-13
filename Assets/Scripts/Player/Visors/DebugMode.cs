@@ -5,9 +5,17 @@ using UnityEngine.UI;
 
 public class DebugMode : MonoBehaviour {
 
+    public GameObject playerStateObj;
+    private PlayerState playerState;
     [SerializeField] public Text debugOutput;
+    private string textToAdd;
 
     void Start() {
-        debugOutput.text = PlayerStateToLoad.state.Print(true);
+        playerState = playerStateObj.GetComponent<PlayerState>();
+        debugOutput.text = "";
+    }
+
+    void Update() {
+        debugOutput.text = playerState.PrintState();
     }
 }

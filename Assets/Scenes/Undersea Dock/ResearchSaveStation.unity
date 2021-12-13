@@ -5994,6 +5994,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247882501}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &282420739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4208657604598613785, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: ID
+      value: DoorSystem-ResearchHallway-SaveStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 28.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -69.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753893042, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_Name
+      value: DoubleDoor-ResearchHallway-ResearchSaveStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774979953753893042, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092941562770761859, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: sceneName1
+      value: ResearchHallway
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092941562770761859, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: sceneName2
+      value: ResearchSaveStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092941562770761859, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: isStartingInScene1
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
 --- !u!1 &293144042
 GameObject:
   m_ObjectHideFlags: 0
@@ -35018,7 +35095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754016176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.066, y: 19.994, z: -89.59}
+  m_LocalPosition: {x: 31.066, y: 19.17, z: -89.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -199,6 +199,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3582544330550909807, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582544330550909807, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+      propertyPath: movingPlatform.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651827276401944944, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
 --- !u!1 &1009971125 stripped

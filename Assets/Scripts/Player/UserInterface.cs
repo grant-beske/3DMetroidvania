@@ -128,6 +128,16 @@ public class UserInterface : MonoBehaviour {
         SetCombatVisor();
         visorControlVars.overlayMessages.SetActive(true);
         Time.timeScale = 1f;
+        StartCoroutine(DisableCharacterForTeleport());
+    }
+
+    // Disable character motor for 0.1 sec when loading is finished. This is a hacky way
+    // to correctly position the character at the PlayerDockingPoint when loading a
+    // save file.
+    private IEnumerator DisableCharacterForTeleport() {
+        mouseControlVars.mouseXObj.GetComponent<CharacterMotor>().enabled = false;
+        yield return new WaitForSeconds(0.1f);
+        mouseControlVars.mouseXObj.GetComponent<CharacterMotor>().enabled = true;
     }
 
     public void PauseGame() {

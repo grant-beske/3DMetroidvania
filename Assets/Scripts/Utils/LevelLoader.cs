@@ -44,7 +44,9 @@ public class LevelLoader : MonoBehaviour {
     }
 
     private void HandleSceneUnloaded(Scene scene) {
-        player.transform.position = GetDockingPoint().transform.position;
+        GameObject dockingPoint = GetDockingPoint();
+        player.transform.position = dockingPoint.transform.position;
+        player.transform.rotation = dockingPoint.transform.rotation;
         uiController.FinishLoading();
         Destroy(gameObject);
     }

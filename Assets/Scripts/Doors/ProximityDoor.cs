@@ -9,9 +9,10 @@ public class ProximityDoor : MonoBehaviour {
     public string sceneName1;
     public GameObject level1Boundary;
     private LevelBoundary levelBoundaryState;
-    private bool isScene1Loaded = true;
+    public bool isStartingInScene1 = true;
+    private bool isScene1Loaded;
     public string sceneName2;
-    private bool isScene2Loaded = false;
+    private bool isScene2Loaded;
 
     // Door animation variables.
     private int trDoorOpen = Animator.StringToHash("DoorOpen");
@@ -22,6 +23,8 @@ public class ProximityDoor : MonoBehaviour {
 	void Start() {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        isScene1Loaded = isStartingInScene1;
+        isScene2Loaded = !isStartingInScene1;
 	}
 
     void Awake() {

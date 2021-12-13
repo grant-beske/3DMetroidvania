@@ -21216,7 +21216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4208657604598613785, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: ID
-      value: ds-dronepoola-researchhallway
+      value: DoubleDoor-DronePoolA-ResearchHallway
       objectReference: {fileID: 0}
     - target: {fileID: 6774979953753797778, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: m_RootOrder
@@ -21264,7 +21264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6774979953753893042, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: m_Name
-      value: DoubleDoor
+      value: DoubleDoor-DronePoolA-ResearchHallway
       objectReference: {fileID: 0}
     - target: {fileID: 7092941562770761859, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
       propertyPath: sceneName1

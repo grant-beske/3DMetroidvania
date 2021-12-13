@@ -48,7 +48,7 @@ public class DeactivateForcefield : MonoBehaviour {
     }
 
     private void SaveTriggerToPlayerState() {
-        playerState.generalStateDict.TryAdd(id, true);
+        playerState.generalStateDict.TryAdd(id, "");
     }
 
     private PlayerState GetPlayerState() {

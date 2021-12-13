@@ -7,14 +7,17 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour {
 
     public GameObject player;
+    public GameObject playerState;
     public GameObject uiControllerObj;
     private UserInterface uiController;
-    public string targetSceneName;
+    private string targetSceneName;
     private bool sceneLoaded = false;
-    private bool shouldUnload = false;
 
     void Start() {
+        playerState.GetComponent<PlayerState>().Deserialize(PlayerStateToLoad.state);
+        targetSceneName = playerState.GetComponent<PlayerState>().saveFileSceneName;
         SceneManager.sceneLoaded += HandleSceneLoaded;
+        SceneManager.sceneUnloaded += HandleSceneUnloaded;
         if (player == null) {
             player = GetPlayer();
         }
@@ -26,6 +29,7 @@ public class LevelLoader : MonoBehaviour {
 
     void OnDisable() {
         SceneManager.sceneLoaded -= HandleSceneLoaded;
+        SceneManager.sceneUnloaded -= HandleSceneUnloaded;
     }
 
     void Update() {
@@ -33,15 +37,16 @@ public class LevelLoader : MonoBehaviour {
             sceneLoaded = true;
             SceneManager.LoadScene(targetSceneName, LoadSceneMode.Additive);
         }
-        if (shouldUnload) {
-            SceneManager.UnloadSceneAsync("Loader");
-        }
     }
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode) {
+        SceneManager.UnloadSceneAsync("Loader");
+    }
+
+    private void HandleSceneUnloaded(Scene scene) {
         player.transform.position = GetDockingPoint().transform.position;
         uiController.FinishLoading();
-        shouldUnload = true;
+        Destroy(gameObject);
     }
 
     private GameObject GetDockingPoint() {

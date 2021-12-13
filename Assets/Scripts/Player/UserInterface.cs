@@ -27,6 +27,7 @@ public class UserInterface : MonoBehaviour {
         // Visor gameobjects.
         public GameObject loadingState;
         public GameObject pauseMenu;
+        public GameObject overlayMessages;
         public GameObject visorSelect;
         public GameObject combatVisor;
         public GameObject scanVisor;
@@ -58,6 +59,7 @@ public class UserInterface : MonoBehaviour {
         // handle changing state from LOADING to COMBAT.
         visorControlVars.loadingState.SetActive(true);
         visorControlVars.pauseMenu.SetActive(false);
+        visorControlVars.overlayMessages.SetActive(false);
         visorControlVars.visorSelect.SetActive(false);
         visorControlVars.scanVisor.SetActive(false);
         visorControlVars.combatVisor.SetActive(false);
@@ -124,6 +126,7 @@ public class UserInterface : MonoBehaviour {
 
     public void FinishLoading() {
         SetCombatVisor();
+        visorControlVars.overlayMessages.SetActive(true);
         Time.timeScale = 1f;
     }
 

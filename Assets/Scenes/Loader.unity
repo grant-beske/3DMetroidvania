@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -206,6 +206,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3582544329874648097, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
   m_PrefabInstance: {fileID: 1009971124}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1009971126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3582544330647471636, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+  m_PrefabInstance: {fileID: 1009971124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063829241
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1063829243}
   - component: {fileID: 1063829242}
+  - component: {fileID: 1063829244}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -236,8 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1009971125}
+  playerState: {fileID: 1009971126}
   uiControllerObj: {fileID: 578690937}
-  targetSceneName: DronePoolA
 --- !u!4 &1063829243
 Transform:
   m_ObjectHideFlags: 0
@@ -253,3 +259,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063829244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063829241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5c57f71a6dd4644a376caaf7b48aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: LevelLoader

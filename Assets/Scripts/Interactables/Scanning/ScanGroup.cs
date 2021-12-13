@@ -46,7 +46,7 @@ public class ScanGroup : MonoBehaviour {
     }
 
     private void SaveScanToPlayerState() {
-        playerState.generalStateDict.TryAdd(scanId, true);
+        playerState.generalStateDict.TryAdd(scanId, "");
     }
 
     private PlayerState GetPlayerState() {

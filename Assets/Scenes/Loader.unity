@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3582544330115499777, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
+      propertyPath: visorControlVars.debugModeEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3582544330230423347, guid: 48c28f243e35b18498c1c54795c8a2ac, type: 3}
       propertyPath: m_IsActive
       value: 0

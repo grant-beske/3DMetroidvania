@@ -24,10 +24,13 @@ public class UserInterface : MonoBehaviour {
 
     [System.Serializable]
     public class VisorControlVars {
+        // Options.
+        public bool debugModeEnabled = false;
         // Visor gameobjects.
         public GameObject loadingState;
         public GameObject pauseMenu;
         public GameObject overlayMessages;
+        public GameObject debugMode;
         public GameObject visorSelect;
         public GameObject combatVisor;
         public GameObject scanVisor;
@@ -64,6 +67,9 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.scanVisor.SetActive(false);
         visorControlVars.combatVisor.SetActive(false);
         visorControlVars.activeVisorObj = visorControlVars.loadingState;
+
+        // Initialize debug mode.
+        visorControlVars.debugMode.SetActive(visorControlVars.debugModeEnabled);
 
         // Initialize cursor and mouse behavior.
         Cursor.SetCursor(mouseControlVars.mouseCursor, Vector2.zero, CursorMode.Auto);

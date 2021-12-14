@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GenericGunController : MonoBehaviour {
+public class WeaponsCoordinator : MonoBehaviour {
 
     // Gun control state.
     // ACTIVE - gun is onscreen and ready to be fired.

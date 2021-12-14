@@ -14,7 +14,7 @@ public class UserInterface : MonoBehaviour {
 
     // Gun gameobjects.
     public GameObject gunControlObj;
-    private GenericGunController gunControl;
+    private WeaponsCoordinator gunControl;
 
     // Contains visor related variables.
     public VisorControlVars visorControlVars;
@@ -56,7 +56,7 @@ public class UserInterface : MonoBehaviour {
 
     void Start() {
         // Initialize weapon behavior.
-        gunControl = gunControlObj.GetComponent<GenericGunController>();
+        gunControl = gunControlObj.GetComponent<WeaponsCoordinator>();
 
         // Initialize visor behavior. Default to LOADING. The LevelLoader script will
         // handle changing state from LOADING to COMBAT.

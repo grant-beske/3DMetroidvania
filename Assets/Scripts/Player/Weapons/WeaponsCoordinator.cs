@@ -50,6 +50,9 @@ public class WeaponsCoordinator : MonoBehaviour {
         } else {
             // Transition has reached target state. Finalize transition.
             gunObject.transform.position = transitionEndPos.position;
+            if (transitionTargetState == State.ACTIVE)
+                gunObject.GetComponent<BaseGun>().EnableControl();
+            else gunObject.SetActive(false);
             activeState = transitionTargetState;
         }
     }
@@ -57,6 +60,9 @@ public class WeaponsCoordinator : MonoBehaviour {
     /////////////////////////////////////////////////////////////////////////////////////
     // Public API
     /////////////////////////////////////////////////////////////////////////////////////
+
+    // These 2 functions are for when we want to basically equip / unequip the gun,
+    // both functionally and visually.
 
     public void ActivateWeapon() {
         if (activeState != State.ACTIVE) {
@@ -67,6 +73,10 @@ public class WeaponsCoordinator : MonoBehaviour {
             transitionEndPos = gunActivePosition;
             transitionStartPos = gunInactivePosition;
             transitionDifference = gunActivePosition.position - gunInactivePosition.position;
+            gunObject.SetActive(true);
+        } else {
+            // If weapon was already active, just re-enable control.
+            gunObject.GetComponent<BaseGun>().EnableControl();
         }
     }
 
@@ -79,6 +89,18 @@ public class WeaponsCoordinator : MonoBehaviour {
             transitionEndPos = gunInactivePosition;
             transitionStartPos = gunActivePosition;
             transitionDifference = gunInactivePosition.position - gunActivePosition.position;
+            gunObject.GetComponent<BaseGun>().DisableControl();
         }
+    }
+
+    // These functions are just for when we want to disable the firing of the gun.
+    // Useful for some states such as visor select and pause.
+
+    public void DeactivateWeaponControl() {
+        gunObject.GetComponent<BaseGun>().DisableControl();
+    }
+
+    public void ActivateWeaponControl() {
+        gunObject.GetComponent<BaseGun>().EnableControl();
     }
 }

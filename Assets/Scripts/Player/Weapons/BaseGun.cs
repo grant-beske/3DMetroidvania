@@ -18,15 +18,19 @@ public class BaseGun : MonoBehaviour {
     public float projectileTimeToLive;
     private float timeSinceLastShot;
 
+    private bool enableControl = true;
+
     void Start() {
         audioSource = GetComponent<AudioSource>();
     }
 
     void Update() {
-        if (firingMode == FiringMode.SINGLE) {
-            UpdateSingleShot();
-        } else if (firingMode == FiringMode.AUTOMATIC) {
-            // TODO - implement automatic weapons
+        if (enableControl) {
+            if (firingMode == FiringMode.SINGLE) {
+                UpdateSingleShot();
+            } else if (firingMode == FiringMode.AUTOMATIC) {
+                // TODO - implement automatic weapons
+            }
         }
     }
 
@@ -55,5 +59,13 @@ public class BaseGun : MonoBehaviour {
     private void PlayShotSound() {
         audioSource.clip = shotSounds[Random.Range(0, shotSounds.Length)];
         audioSource.Play();
+    }
+
+    public void EnableControl() {
+        enableControl = true;
+    }
+
+    public void DisableControl() {
+        enableControl = false;
     }
 }

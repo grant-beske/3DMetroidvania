@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3832703582346906255}
   - component: {fileID: 3832703582346906253}
   - component: {fileID: 3832703582346906252}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 3832703582438931028}
   - component: {fileID: 3832703582438931114}
   - component: {fileID: 3832703582438931029}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 3832703582474617315}
   - component: {fileID: 3832703582474617313}
   - component: {fileID: 3832703582474617312}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 3832703582600944448}
   - component: {fileID: 1668401609808968765}
   - component: {fileID: 5306817126951618828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 3832703582600944450}
   - component: {fileID: 3832703582604335968}
   - component: {fileID: 3832703582603237792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 3832703582600944452}
   - component: {fileID: 3832703582604335970}
   - component: {fileID: 3832703582603237794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun_Bullet_Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 3832703582600944454}
   - component: {fileID: 3832703582604335972}
   - component: {fileID: 3832703582603237796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun_Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 3832703582600944456}
   - component: {fileID: 3832703582604335974}
   - component: {fileID: 3832703582603237798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun_Tigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 3832703582705633605}
   - component: {fileID: 3832703582705633604}
   - component: {fileID: 3832703582705633607}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

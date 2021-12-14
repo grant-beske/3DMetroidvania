@@ -150,6 +150,8 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.pauseMenu.SetActive(true);
         EnableCursor();
         DisableGameControls();
+        if (activeVisor == Visor.COMBAT)
+            gunControl.DeactivateWeaponControl();
         activeVisor = Visor.PAUSED;
         Time.timeScale = 0f;
     }
@@ -158,6 +160,8 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.pauseMenu.SetActive(false);
         DisableCursor();
         EnableGameControls();
+        if (previouslyActiveVisor == Visor.COMBAT)
+            gunControl.ActivateWeaponControl();
         activeVisor = previouslyActiveVisor;
         Time.timeScale = 1f;
     }
@@ -169,6 +173,9 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.activeVisorObj.SetActive(false);
         visorControlVars.activeVisorObj = visorControlVars.visorSelect;
         visorControlVars.visorSelect.SetActive(true);
+
+        // Disable the control of any open weapons.
+        gunControl.DeactivateWeaponControl();
     }
 
     public void SetCombatVisor() {
@@ -179,7 +186,7 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.activeVisorObj = visorControlVars.combatVisor;
         visorControlVars.combatVisor.SetActive(true);
 
-        // Disable any open weapons.
+        // Enable weapons.
         gunControl.ActivateWeapon();
 
         SetCombatRenderMode();

@@ -8,6 +8,9 @@ public class BaseGun : MonoBehaviour {
     public BaseProjectile projectile;
     public GameObject emitterPoint;
 
+    public GameObject muzzleFlashObj;
+    private ParticleSystem muzzleFlash;
+
     public AudioClip[] shotSounds;
     private AudioSource audioSource;
 
@@ -22,6 +25,7 @@ public class BaseGun : MonoBehaviour {
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
+        muzzleFlash = muzzleFlashObj.GetComponent<ParticleSystem>();
     }
 
     void Update() {
@@ -44,6 +48,7 @@ public class BaseGun : MonoBehaviour {
 
     public void Fire() {
         EmitProjectile();
+        PlayMuzzleFlash();
         PlayShotSound();
     }
 
@@ -54,6 +59,10 @@ public class BaseGun : MonoBehaviour {
         tempProjectile.transform.Rotate(0, 90, 0);
         tempProjectile.velocity = projectileVelocity;
         tempProjectile.timeToLive = projectileTimeToLive;
+    }
+
+    private void PlayMuzzleFlash() {
+        muzzleFlash.Play();
     }
 
     private void PlayShotSound() {

@@ -15,7 +15,7 @@ C:/Users/grant/UnityProjects/3D Metroidvania
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57421
+51013
 Successfully changed project path to: C:/Users/grant/UnityProjects/3D Metroidvania
 C:/Users/grant/UnityProjects/3D Metroidvania
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/grant/UnityProjects/3D Metroidvania
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 85.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 88.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.6f1 (8c4e826ba445)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
@@ -63,42 +63,315 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007029 seconds.
+Registered in 0.007013 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 77.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.599 seconds
+- Completed reload, in  0.577 seconds
 Domain Reload Profiling:
-	ReloadAssembly (599ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (578ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (456ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (435ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (94ms)
+			SetupTypeCache (93ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (286ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (268ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
+				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (137ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006070 seconds.
+Registered in 0.005890 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 83.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.922 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1923ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1727ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (1352ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (1082ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3865 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.8 MB). Loaded Objects now: 4334.
+Memory consumption went from 263.4 MB to 262.6 MB.
+Total: 4.103400 ms (FindLiveObjects: 0.310600 ms CreateObjectMapping: 0.218100 ms MarkObjects: 3.132200 ms  DeleteObjects: 0.441600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007930 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.485 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1485ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1235ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (769ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (540ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3686 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 4336.
+Memory consumption went from 252.1 MB to 251.4 MB.
+Total: 6.371400 ms (FindLiveObjects: 0.393600 ms CreateObjectMapping: 0.309700 ms MarkObjects: 5.189500 ms  DeleteObjects: 0.477400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006834 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.463 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1465ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1211ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (234ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (756ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (536ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3686 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 4338.
+Memory consumption went from 252.1 MB to 251.4 MB.
+Total: 8.468900 ms (FindLiveObjects: 0.540300 ms CreateObjectMapping: 0.541400 ms MarkObjects: 6.371200 ms  DeleteObjects: 1.013200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1431474.961247 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Laser/LaserMuzzleFlashGreen.prefab
+  artifactKey: Guid(305b569edd0d3064dbacb12c18cd793c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Laser/LaserMuzzleFlashGreen.prefab using Guid(305b569edd0d3064dbacb12c18cd793c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046b1d53778804be0e40e05cc6ca9c94') in 0.323279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.102658 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Plasma/PlasmaMuzzleFlashModular.prefab
+  artifactKey: Guid(aa8ad15ed78c6cb47ab62f24850c72bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Plasma/PlasmaMuzzleFlashModular.prefab using Guid(aa8ad15ed78c6cb47ab62f24850c72bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e366b8e456f831d640b8c90ff5db9816') in 0.036228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Plasma/PlasmaMuzzleFlashYellow.prefab
+  artifactKey: Guid(189837baf0e34034881c61044f6b2aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Plasma/PlasmaMuzzleFlashYellow.prefab using Guid(189837baf0e34034881c61044f6b2aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3cf4328d9e1b08d1153f5e0e1652c0') in 0.029710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.875851 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V2/Ring2MuzzleFlashPurple.prefab
+  artifactKey: Guid(0d92b484bf157654999fe346a7fa293c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V2/Ring2MuzzleFlashPurple.prefab using Guid(0d92b484bf157654999fe346a7fa293c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8d69924a116109a74e938e66c767ea') in 0.037375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.411041 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashModular.prefab
+  artifactKey: Guid(1bd5498867738624e8b563d993fa2d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashModular.prefab using Guid(1bd5498867738624e8b563d993fa2d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040ead9436cc020fcd773fe80efee8b2') in 0.062783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashYellow.prefab
+  artifactKey: Guid(bb3d1c802c5a83c4a9fd742aafe8bf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashYellow.prefab using Guid(bb3d1c802c5a83c4a9fd742aafe8bf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b4ca3cdd9b1e24e324885ea914dfcd') in 0.056596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.282982 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/ModularLightningMuzzleFlash.prefab
+  artifactKey: Guid(3f20953d74d5faa40967459599bb988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/ModularLightningMuzzleFlash.prefab using Guid(3f20953d74d5faa40967459599bb988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd208e0c573fa167366efd72bbc36357b') in 0.032693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/PurpleLightningMuzzleFlash.prefab
+  artifactKey: Guid(99561a6f6b140194d8713dfe1e69b1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/PurpleLightningMuzzleFlash.prefab using Guid(99561a6f6b140194d8713dfe1e69b1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d70cd2f678d8f9325227fda48b4837f') in 0.034473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.568166 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/ModularGooMuzzleFlash.prefab
+  artifactKey: Guid(810c22591b032eb4aa3273fc3ac1a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/ModularGooMuzzleFlash.prefab using Guid(810c22591b032eb4aa3273fc3ac1a59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245a2a5e176cfef4701e25a39e745639') in 0.033832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/RedGooMuzzleFlash.prefab
+  artifactKey: Guid(1aa1e33d7bc84184c83d8f3570439276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/RedGooMuzzleFlash.prefab using Guid(1aa1e33d7bc84184c83d8f3570439276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342093847d84810a4a0130c60c1adfe3') in 0.034162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.935875 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/ModularFireSmallMuzzleFlash.prefab
+  artifactKey: Guid(af0d78c4934531748adeb21a1f0871c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/ModularFireSmallMuzzleFlash.prefab using Guid(af0d78c4934531748adeb21a1f0871c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55fd3f0a5640adda9caf2a02e69b9c02') in 0.043353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/YellowFireSmallMuzzleFlash.prefab
+  artifactKey: Guid(3fcbc3d2087395d4abd3ca66488a608d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/YellowFireSmallMuzzleFlash.prefab using Guid(3fcbc3d2087395d4abd3ca66488a608d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6ccb8b34e46d56a3b8f6589100f67e') in 0.036867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.453021 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/ModularFireMuzzleFlash.prefab
+  artifactKey: Guid(9ee0b4127c0de0946a3f0ad60894a811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/ModularFireMuzzleFlash.prefab using Guid(9ee0b4127c0de0946a3f0ad60894a811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdfa92acb1072464ea09ecd82f328040') in 0.033563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/PurpleFireMuzzleFlash.prefab
+  artifactKey: Guid(aa4bbe62ea423a143885e97f37065867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/PurpleFireMuzzleFlash.prefab using Guid(aa4bbe62ea423a143885e97f37065867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd04131e35e98ba970cbcdaf22d29bdf') in 0.033913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.195684 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V1/RingMuzzleFlashPurple.prefab
+  artifactKey: Guid(8676526088b9a76408b386c78e8df4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V1/RingMuzzleFlashPurple.prefab using Guid(8676526088b9a76408b386c78e8df4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dea62329fdd9072e83376fc4e5bc1a1') in 0.037863 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

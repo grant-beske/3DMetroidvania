@@ -1,0 +1,948 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.6f1 (8c4e826ba445) revision 9195138'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 16282 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker13
+-projectPath
+C:/Users/grant/UnityProjects/3D Metroidvania
+-logFile
+Logs/AssetImportWorker13.log
+-srvPort
+51149
+Successfully changed project path to: C:/Users/grant/UnityProjects/3D Metroidvania
+C:/Users/grant/UnityProjects/3D Metroidvania
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 229.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.6f1 (8c4e826ba445)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/grant/UnityProjects/3D Metroidvania/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f10)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006973 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 225.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.734 seconds
+Domain Reload Profiling:
+	ReloadAssembly (735ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (593ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (226ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006100 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 230.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.020 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2021ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1827ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (1415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (231ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (996ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 2.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3866 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.8 MB). Loaded Objects now: 4335.
+Memory consumption went from 277.6 MB to 276.8 MB.
+Total: 4.853800 ms (FindLiveObjects: 0.282600 ms CreateObjectMapping: 0.185800 ms MarkObjects: 3.925400 ms  DeleteObjects: 0.458800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1487330.655392 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Glass/Glass 3.wav
+  artifactKey: Guid(134e3afbdddaff64e9aeaf947eae21d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Glass/Glass 3.wav using Guid(134e3afbdddaff64e9aeaf947eae21d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea0bd27cae2d35ce2c31b4042e6d442') in 0.126823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.445010 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Grass/Grass 3.wav
+  artifactKey: Guid(d651d0c81ce1d01448d9c16fa5d4b032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Grass/Grass 3.wav using Guid(d651d0c81ce1d01448d9c16fa5d4b032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02675298d1f437cb6fc0578cb90be32') in 0.017006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Grass/Grass 6.wav
+  artifactKey: Guid(e3a9d879a38335d4b98736e695c9ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Grass/Grass 6.wav using Guid(e3a9d879a38335d4b98736e695c9ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2dc4a1f7e19a99446fe858265bd326') in 0.019568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.790682 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Body Armor/Body Armor 3.wav
+  artifactKey: Guid(d2e061b56a615254fa3cdc92ad63fb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Body Armor/Body Armor 3.wav using Guid(d2e061b56a615254fa3cdc92ad63fb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ba23cf10cfb82a7195e83cd323ff21') in 0.015743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Body Armor/Body Armor 7.wav
+  artifactKey: Guid(48f5914457ecd1e4aa9ebebcc4c995e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Body Armor/Body Armor 7.wav using Guid(48f5914457ecd1e4aa9ebebcc4c995e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159e5ec303f13612bed383c6526ed1ae') in 0.021656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.308361 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Rock/Rock 3.wav
+  artifactKey: Guid(3abda4a29b704024588471122c489a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Rock/Rock 3.wav using Guid(3abda4a29b704024588471122c489a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8076fa3e0d827fb4ea9bdc9c30f940') in 0.016827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Rock/Rock 7.wav
+  artifactKey: Guid(b2dc1906c9f620549911967cad0a8f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Rock/Rock 7.wav using Guid(b2dc1906c9f620549911967cad0a8f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82467673ad82542251aedfbc8bbc0df2') in 0.016064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Rock/Rock 6.wav
+  artifactKey: Guid(359dca8561283d742874659da65d93dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Rock/Rock 6.wav using Guid(359dca8561283d742874659da65d93dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6841516961bcd96d5ced7cdde3eee1e7') in 0.018790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.994118 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Water/Water 3.wav
+  artifactKey: Guid(e48a9c3406be58c4289b36b137b8a3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Water/Water 3.wav using Guid(e48a9c3406be58c4289b36b137b8a3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0657f48c187963db90409398147f11') in 0.017516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Water/Water 6.wav
+  artifactKey: Guid(7264bf841e28baf4087f39eb15c52e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Water/Water 6.wav using Guid(7264bf841e28baf4087f39eb15c52e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646c5a1800dcdfc9ad9c5ae773caf6dc') in 0.018832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Water/Water 4.wav
+  artifactKey: Guid(32b1d554af9954449a49a461b19f673d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Water/Water 4.wav using Guid(32b1d554af9954449a49a461b19f673d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9015375a5e5dd324054a039edec65cea') in 0.017982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.205013 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Mud/Mud 3.wav
+  artifactKey: Guid(61d4b302bc560284aa47c823b7d379dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Mud/Mud 3.wav using Guid(61d4b302bc560284aa47c823b7d379dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca0aba1f20e6597bf5850a50ee04789') in 0.019509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Mud/Mud 7.wav
+  artifactKey: Guid(17981b9edd4b2cb4d9708fba873d61cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Mud/Mud 7.wav using Guid(17981b9edd4b2cb4d9708fba873d61cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a8b9b80b79dd26ef4f23663542b2af') in 0.015770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Mud/Mud 6.wav
+  artifactKey: Guid(ddf5dfb167dba874a8532a3171962064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Mud/Mud 6.wav using Guid(ddf5dfb167dba874a8532a3171962064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785c5df0f5282183ff485951a6393de0') in 0.018484 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (0.7 MB). Loaded Objects now: 4344.
+Memory consumption went from 194.4 MB to 193.6 MB.
+Total: 4.460100 ms (FindLiveObjects: 0.335600 ms CreateObjectMapping: 0.273500 ms MarkObjects: 3.433800 ms  DeleteObjects: 0.416300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1104.088166 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Aggro_02.wav
+  artifactKey: Guid(a85f4dfcf1f227b4ab9ddbe0b842b89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Aggro_02.wav using Guid(a85f4dfcf1f227b4ab9ddbe0b842b89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb24306c7360fd9a29483984168df1a1') in 0.052522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Death_03.wav
+  artifactKey: Guid(e305d7485074e8e46a2b86be3b25a64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Death_03.wav using Guid(e305d7485074e8e46a2b86be3b25a64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc9f963614cdd792b7dfb761c2e0fb7') in 0.022700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_04.wav
+  artifactKey: Guid(fb4a547644ad872489f31e223d907caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_04.wav using Guid(fb4a547644ad872489f31e223d907caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0e9299c55ada3904c3a0432df92fde') in 0.021825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Die!.wav
+  artifactKey: Guid(26242696f05689344a82dea67800c09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Die!.wav using Guid(26242696f05689344a82dea67800c09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994454d175af25d106b17c04d08cc3b3') in 0.019888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_16.wav
+  artifactKey: Guid(6056e88c2577cd04fab9a9cfc6051393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_16.wav using Guid(6056e88c2577cd04fab9a9cfc6051393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a8a5ee6c9c709f728810d7db88eb19') in 0.021905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Death_04.wav
+  artifactKey: Guid(0b846e1eb2fe8fd4e806257f44eb443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Death_04.wav using Guid(0b846e1eb2fe8fd4e806257f44eb443c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e6639e7db2b849888d4ed46d05d6b6') in 0.026715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_11.wav
+  artifactKey: Guid(42f430f95af6d2d46a1d678e693aa752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_11.wav using Guid(42f430f95af6d2d46a1d678e693aa752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b286bbdad36fd0f467e0abdd15ea2e') in 0.025577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Clicks_02.wav
+  artifactKey: Guid(10673d271e44b0b47835f3ce44e75091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Clicks_02.wav using Guid(10673d271e44b0b47835f3ce44e75091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6146ff9cd9865ba23c14b5bed58624c9') in 0.019251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_05.wav
+  artifactKey: Guid(45c2497ef23e3d04394a33cb250a3404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_05.wav using Guid(45c2497ef23e3d04394a33cb250a3404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047a8d75bca3cb9bbcc89b6303447490') in 0.017025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Baby_02.wav
+  artifactKey: Guid(222188b44a612374891ae152a7448d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Baby_02.wav using Guid(222188b44a612374891ae152a7448d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa4f0d202dfdfc5ed8bc22133046cc6') in 0.025648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien I will kill you_02.wav
+  artifactKey: Guid(b9b4cdd3763ee354dadddab7f12bfea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien I will kill you_02.wav using Guid(b9b4cdd3763ee354dadddab7f12bfea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc8c37b49ce43bf70a19fdead3f96a0') in 0.025905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Attack_04.wav
+  artifactKey: Guid(181e4279ef80d014c9a0a5ee3ad4261f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Attack_04.wav using Guid(181e4279ef80d014c9a0a5ee3ad4261f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f03d59e54e3c191396a98285c4a80c6') in 0.019924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Clicks_03.wav
+  artifactKey: Guid(ef021fe123cbcb142b55d5abce9d931c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Clicks_03.wav using Guid(ef021fe123cbcb142b55d5abce9d931c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e950c555bc336a3273a2900f465a1ca') in 0.019912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Laugh_01.wav
+  artifactKey: Guid(e592eece1b9733641bcdb1910b5d2ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Laugh_01.wav using Guid(e592eece1b9733641bcdb1910b5d2ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0297e1ec8b5b9eb81e08d858c7e845f9') in 0.020171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Death_01.wav
+  artifactKey: Guid(456cb01f65818f04fb70f93b3512ca08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Death_01.wav using Guid(456cb01f65818f04fb70f93b3512ca08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc73becad943c7eaa6eb67c74ea20f0e') in 0.022300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_10.wav
+  artifactKey: Guid(bbc11f57aaad38647b25f87a523b173e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_10.wav using Guid(bbc11f57aaad38647b25f87a523b173e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30660abb603def3cc53aaac7e66eb69') in 0.022270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_06.wav
+  artifactKey: Guid(9e03482256e1f1c4ea41b64ad866e864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_06.wav using Guid(9e03482256e1f1c4ea41b64ad866e864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5075046aac3d0048cafc47909a54c4') in 0.020783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Attack_01.wav
+  artifactKey: Guid(b1d343ba58a4cc84b9114ecef9b731bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Attack_01.wav using Guid(b1d343ba58a4cc84b9114ecef9b731bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bd84532f56734b4d326a3f4bf266c9') in 0.018914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_07.wav
+  artifactKey: Guid(4ff5e54d4ef5b844d83478b79cc9ae5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_07.wav using Guid(4ff5e54d4ef5b844d83478b79cc9ae5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ca91a8bc5fb597dab0ff9329e64c2c') in 0.021793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Excited_01.wav
+  artifactKey: Guid(0b0f3c4ed0dca704aaf2be1188d9e867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Excited_01.wav using Guid(0b0f3c4ed0dca704aaf2be1188d9e867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7174b9d14f2bac7a87695f3d1c41d8b0') in 0.023900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Growl_01.wav
+  artifactKey: Guid(c0c0e1676f96e4643be84f053346c9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Growl_01.wav using Guid(c0c0e1676f96e4643be84f053346c9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b75107ef33b0ac69bd77d0d5f2c140e') in 0.016575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Attack_03.wav
+  artifactKey: Guid(296fe54aac7a1df4cb7bf365a2dd4599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Attack_03.wav using Guid(296fe54aac7a1df4cb7bf365a2dd4599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d60ed5ca6a4a27a40ba50f3d02fe44') in 0.021398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Growl_04.wav
+  artifactKey: Guid(e34ca18649e9535489b53badd18c80bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Growl_04.wav using Guid(e34ca18649e9535489b53badd18c80bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315b7dc14f0161c4d28124c02074d09e') in 0.023632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_01.wav
+  artifactKey: Guid(dbe028fe928aab64ead559d7346e3420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_01.wav using Guid(dbe028fe928aab64ead559d7346e3420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8409cdc0f4cb5b9b75c3532cc4bbcb7') in 0.019633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Hell.wav
+  artifactKey: Guid(dcffe1d63f747e946b761ecec9242001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Hell.wav using Guid(dcffe1d63f747e946b761ecec9242001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b8e4db5b5de3f88b844c0a7512647c') in 0.017937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_15.wav
+  artifactKey: Guid(6511bffcb0d0d1b4ca9e58ddb1d00d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Effect_15.wav using Guid(6511bffcb0d0d1b4ca9e58ddb1d00d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26fb54b1669d5eecc3b237bf91812c5') in 0.019010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien No.wav
+  artifactKey: Guid(95272da2066c55f4ab3b00b89bbe499b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien No.wav using Guid(95272da2066c55f4ab3b00b89bbe499b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e3ca9d9ae2c878de0f09ca2eb92d88') in 0.019614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.690263 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_03.wav
+  artifactKey: Guid(8b775785101d0a34f9516b5b6a2624bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_03.wav using Guid(8b775785101d0a34f9516b5b6a2624bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d0368659f9e9bfe7e1513c09bb7532') in 0.017653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_10.wav
+  artifactKey: Guid(f9bafe0abfaee5a4e99b3403e6cc8f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_10.wav using Guid(f9bafe0abfaee5a4e99b3403e6cc8f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33cd93bc44fa9af469474f9da7a3918') in 0.019633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_08.wav
+  artifactKey: Guid(bcb541adcd1a00749814872fb1af5731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_08.wav using Guid(bcb541adcd1a00749814872fb1af5731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25766f55dbb22ebce70380c3f27885b1') in 0.026394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_05.wav
+  artifactKey: Guid(9c881e71a3bf60f40abc8f6b78d927ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_05.wav using Guid(9c881e71a3bf60f40abc8f6b78d927ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e55c41123a8f6d177f7b801229b362') in 0.023320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_14.wav
+  artifactKey: Guid(31614bb9f3f286a41ac9b139099c6d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_14.wav using Guid(31614bb9f3f286a41ac9b139099c6d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f353b25bcf48b92cf7adddcfffa27a8') in 0.016819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_12.wav
+  artifactKey: Guid(02662a4fd8c1e78418133ca65ae2f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_12.wav using Guid(02662a4fd8c1e78418133ca65ae2f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd30631a8ea29d0b3610c72c9505337e') in 0.014814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_04.wav
+  artifactKey: Guid(0e1d452d429ed6c4da378935526c2382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_04.wav using Guid(0e1d452d429ed6c4da378935526c2382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f365db2ce37400011478a2b539844df5') in 0.021620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Where are you.wav
+  artifactKey: Guid(b74f9c731bf0a0c449a2789e5e0493d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Where are you.wav using Guid(b74f9c731bf0a0c449a2789e5e0493d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5975f6b8b929f5a831f5bb58c5d17cde') in 0.022907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Yes.wav
+  artifactKey: Guid(e7f5a93623008d245b7f0db319a7c129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Yes.wav using Guid(e7f5a93623008d245b7f0db319a7c129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bdc14e605e730973b85533ae8367ae8') in 0.019847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Demo Aliens.wav
+  artifactKey: Guid(916a6b1e25d465d4eac770e99681e0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Demo Aliens.wav using Guid(916a6b1e25d465d4eac770e99681e0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d212afadc9ffddab9fe1a0e241da03') in 0.020690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_01.wav
+  artifactKey: Guid(dfb053d8ae6713245bbe9661d9b595fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_01.wav using Guid(dfb053d8ae6713245bbe9661d9b595fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08d679d947c5fdb71f2ab308a52c9af') in 0.020964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_03.wav
+  artifactKey: Guid(b4ab4c1c6911aba4da1b7d1c1594d6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_03.wav using Guid(b4ab4c1c6911aba4da1b7d1c1594d6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0089b154db53a4c58a23db88a7e1bfe8') in 0.024791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_06.wav
+  artifactKey: Guid(4c73171669cdf864681eff7639ad45b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Alien Phrase_06.wav using Guid(4c73171669cdf864681eff7639ad45b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60f9f6b15af69521dde37b8b3441d27') in 0.019124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.519560 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_06.wav
+  artifactKey: Guid(408c9ccfc7085164a80dfadfe925e889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Alien sounds Pro/Impact Aliens_06.wav using Guid(408c9ccfc7085164a80dfadfe925e889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9685b022fc375bfe48256c1b99c3aa75') in 0.019482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.490710 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Brave.wav
+  artifactKey: Guid(772353393911d8540827a202a1063962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Brave.wav using Guid(772353393911d8540827a202a1063962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380064952d65085e1ed5011caaa416b8') in 0.027250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Click that.wav
+  artifactKey: Guid(01b029ff6936d9f4f9f0d650942c6903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Click that.wav using Guid(01b029ff6936d9f4f9f0d650942c6903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '591bc7686b84047d72c536dad9836a7a') in 0.017544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Changed.wav
+  artifactKey: Guid(3ae84af0d9bbde5439f5f02210856d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Changed.wav using Guid(3ae84af0d9bbde5439f5f02210856d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596319e13477fbd9065cc3cadddd1648') in 0.022423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buying 1.wav
+  artifactKey: Guid(6ddecfe289daddb4eb7a2514370c5cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buying 1.wav using Guid(6ddecfe289daddb4eb7a2514370c5cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e35f17871b88fab316fe83e807597f') in 0.022613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cant do this 2.wav
+  artifactKey: Guid(890e8567d883fba42afb337d23487bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cant do this 2.wav using Guid(890e8567d883fba42afb337d23487bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35d467dc75af5e4d687ff0d8da4c995') in 0.023277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Dagger.wav
+  artifactKey: Guid(b71dd7d7c6f2a734e8ef69a566375be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Dagger.wav using Guid(b71dd7d7c6f2a734e8ef69a566375be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993a574b1b8f8e1dad905e83ba163e05') in 0.019371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cry 1.wav
+  artifactKey: Guid(0567b57a208fa944b9b99ff5f65c687a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cry 1.wav using Guid(0567b57a208fa944b9b99ff5f65c687a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69520f44597940cb573cb75906979808') in 0.018734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buy 1.wav
+  artifactKey: Guid(3a4ee460ecf3a84479cd88f631c518a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buy 1.wav using Guid(3a4ee460ecf3a84479cd88f631c518a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174d732d8713e99429cf2008a0f40366') in 0.022068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Change this.wav
+  artifactKey: Guid(ee0606d3569778a43b239e05f71c1b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Change this.wav using Guid(ee0606d3569778a43b239e05f71c1b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a38a894238b39691c3ac08d9f46a6a9') in 0.020486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cant do that 2.wav
+  artifactKey: Guid(110e551c3fe5a0747b39f3f5c09143fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cant do that 2.wav using Guid(110e551c3fe5a0747b39f3f5c09143fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7573394852867ce5b377c4b6ff75830f') in 0.019174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Checkpoint 2.wav
+  artifactKey: Guid(6d3c65688663f2448bd84ea568344fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Checkpoint 2.wav using Guid(6d3c65688663f2448bd84ea568344fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fefa618e100dce19758e83708d9767e') in 0.019130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Burn 1.wav
+  artifactKey: Guid(e13218446c392494f8aa10c0f57153c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Burn 1.wav using Guid(e13218446c392494f8aa10c0f57153c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4803465927ed71d9a4b5a4b1e4a9c6') in 0.022976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Dead 1.wav
+  artifactKey: Guid(5c49df9a6574ae6418af564659ad36a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Dead 1.wav using Guid(5c49df9a6574ae6418af564659ad36a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e06bfac6c9f4801063d9d4cb75ba84') in 0.023739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cry 2.wav
+  artifactKey: Guid(cdbdde013042c914e9d4a551b47ad6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Cry 2.wav using Guid(cdbdde013042c914e9d4a551b47ad6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b61d64772beb1202aba4ee558ef559e') in 0.020411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buy 3.wav
+  artifactKey: Guid(02e3a3c98813e5a4cac05dfad495a174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buy 3.wav using Guid(02e3a3c98813e5a4cac05dfad495a174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3301e8b4ac2ea39f4dcc419e8e701b21') in 0.020393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Burned.wav
+  artifactKey: Guid(77028d57a90b7c04b857709025e8dace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Burned.wav using Guid(77028d57a90b7c04b857709025e8dace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba552657296c06c5d56a9ccfd7e5ea1') in 0.023660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buy now 1.wav
+  artifactKey: Guid(74fd4f8af4cbc324f99459bb2fb09830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Buy now 1.wav using Guid(74fd4f8af4cbc324f99459bb2fb09830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9677b590bdd0137b405883d56ab97ad9') in 0.017330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Chicken.wav
+  artifactKey: Guid(bdd395ca23ea9b94dbd4c9a6d6bb9fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Chicken.wav using Guid(bdd395ca23ea9b94dbd4c9a6d6bb9fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b85d6954a4c5a72b807d0f40d0db603') in 0.019467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Building 2.wav
+  artifactKey: Guid(569be699ae7cefc4baf97df95a95f472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Casual Game Announcer/Building 2.wav using Guid(569be699ae7cefc4baf97df95a95f472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e07655cbe7152c103a8d3494a9ceca2') in 0.013619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.885632 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Being coldfreezing (misc) 2.wav
+  artifactKey: Guid(5136e8707f6565343b39ca29620e2416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Being coldfreezing (misc) 2.wav using Guid(5136e8707f6565343b39ca29620e2416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427929b95012e6a370b522fa4cd4202e') in 0.026926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Car.wav
+  artifactKey: Guid(802c1438881ac7c409d982d2bcf8403f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Car.wav using Guid(802c1438881ac7c409d982d2bcf8403f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65a44760faa60498f614968e70e397b') in 0.020439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bullets.wav
+  artifactKey: Guid(5a44befb04488f4428912bd359a810dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bullets.wav using Guid(5a44befb04488f4428912bd359a810dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291b5b0347e2b43fcddbf82ef3714b4e') in 0.020791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bullet.wav
+  artifactKey: Guid(b5224a7ce18dead4c85ca3bd8efb98e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bullet.wav using Guid(b5224a7ce18dead4c85ca3bd8efb98e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08459c6f961688a824004c7864867a87') in 0.022828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cry 1(Misc).wav
+  artifactKey: Guid(01be5b28bc83d154d93454ef59bd582a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cry 1(Misc).wav using Guid(01be5b28bc83d154d93454ef59bd582a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b54bb57c5877ca1bc7aaef65f225254') in 0.021231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Boom Baby.wav
+  artifactKey: Guid(7048472af1bea0f47a6d12a29689c540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Boom Baby.wav using Guid(7048472af1bea0f47a6d12a29689c540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe6372f4e69162dc2ff1c2713f1d4d9') in 0.032215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Breach.wav
+  artifactKey: Guid(c67a23bdb94fc9f43b1da1ed01aa0187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Breach.wav using Guid(c67a23bdb94fc9f43b1da1ed01aa0187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3a8b47e338b4d54f0ed01b3e58917f') in 0.022686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Charge.wav
+  artifactKey: Guid(0ddedd5c775ccd744b96d7b53980144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Charge.wav using Guid(0ddedd5c775ccd744b96d7b53980144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b40150294346754ef6122febff0eae') in 0.017889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bomb.wav
+  artifactKey: Guid(43affd12de293b1469caa2fa8d76a102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bomb.wav using Guid(43affd12de293b1469caa2fa8d76a102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d71e4e98b8ac1a91d9e2c3e81e7faf6') in 0.019612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Coin.wav
+  artifactKey: Guid(28393663cd702994eb5d69da02dcc89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Coin.wav using Guid(28393663cd702994eb5d69da02dcc89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7d8d94c6b68053e27ca9891e02ff28') in 0.022714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bye Bye.wav
+  artifactKey: Guid(60563620e15a9a84a9bb9af10a85b595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bye Bye.wav using Guid(60563620e15a9a84a9bb9af10a85b595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daef658aa442fb28e8025dfa4ce2d135') in 0.026486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Breaching.wav
+  artifactKey: Guid(580024d1bd3aa994faae9ad79b5ef0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Breaching.wav using Guid(580024d1bd3aa994faae9ad79b5ef0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7159e4f4e4b213ad293d10bc36c38b16') in 0.017299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Broken.wav
+  artifactKey: Guid(6dae4caf9ea4ffd488e61ed5d8e7315d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Broken.wav using Guid(6dae4caf9ea4ffd488e61ed5d8e7315d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc5cd5daf18361017ff398252217dc3') in 0.020864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cook.wav
+  artifactKey: Guid(2f8f2e9aca609054c834902ba34f609d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cook.wav using Guid(2f8f2e9aca609054c834902ba34f609d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43cfe8b527a2836c34db5f26a03c72a') in 0.023188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bye.wav
+  artifactKey: Guid(604b5034385808849bc5e8c5709532cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Bye.wav using Guid(604b5034385808849bc5e8c5709532cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed814a52538662b8c1e2e161a0b32c10') in 0.020489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cooking.wav
+  artifactKey: Guid(32e013433d03d8a42bf8837c616fe9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cooking.wav using Guid(32e013433d03d8a42bf8837c616fe9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb15ae7337867de38ff6c4a60e92ed4') in 0.024684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Can_t Do That.wav
+  artifactKey: Guid(b9afe1bc45e086d488eab20c6d2cb80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Can_t Do That.wav using Guid(b9afe1bc45e086d488eab20c6d2cb80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db1cc47f7d9e87631e0087a915f997a') in 0.021687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.596264 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Army.wav
+  artifactKey: Guid(29cf220f229d55443be9c133d9804639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Army.wav using Guid(29cf220f229d55443be9c133d9804639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2acd65ff1704d6c3fe4a439de66cc459') in 0.024517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Base.wav
+  artifactKey: Guid(1833bc9134e02ba4f85abb8cec6ea7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Base.wav using Guid(1833bc9134e02ba4f85abb8cec6ea7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a639735f186662cab462dd03b74e9e') in 0.020477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Attack 3.wav
+  artifactKey: Guid(0a16ebcf54283624297e1c41582ea2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Attack 3.wav using Guid(0a16ebcf54283624297e1c41582ea2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d79a70e433e8bf5d744ae232e6ad7a') in 0.018457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/attack!.wav
+  artifactKey: Guid(a6238704e3871d24fb1732f69ffacac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/attack!.wav using Guid(a6238704e3871d24fb1732f69ffacac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97572a582783771d0382a12c5b3819b5') in 0.020109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.037254 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/1000.wav
+  artifactKey: Guid(9efb15433f718134ba593bbe84fb0551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/1000.wav using Guid(9efb15433f718134ba593bbe84fb0551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc1210d509c3d10c5dcf4f6dfdb8a64') in 0.019788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Ammo.wav
+  artifactKey: Guid(627ddac58bb0cc64f8d907f942dc0b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Ammo.wav using Guid(627ddac58bb0cc64f8d907f942dc0b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a827c59ec542bdb714405e02fc07cc36') in 0.020064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Almost.wav
+  artifactKey: Guid(3a4e28386f8c08249a89333eab602d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Almost.wav using Guid(3a4e28386f8c08249a89333eab602d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5d98943cc93129d5ecbdfa66d676f47') in 0.022399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Afternoon.wav
+  artifactKey: Guid(118a0ad2535ef124ab4fba6e9daad71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Afternoon.wav using Guid(118a0ad2535ef124ab4fba6e9daad71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bf38909fe430277d590b2dcf365060') in 0.023218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.688569 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/1.wav
+  artifactKey: Guid(12fe7f2e950a4cb4b8d8b5b4f78192c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/1.wav using Guid(12fe7f2e950a4cb4b8d8b5b4f78192c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417582adc7ac2cfa393ac6dc7afcd989') in 0.019446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/8.wav
+  artifactKey: Guid(698f3c94c45c8b4458602096fe8a1d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/8.wav using Guid(698f3c94c45c8b4458602096fe8a1d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f9a6b3218ca4f16ce12c6c0e63b955') in 0.018903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/3.wav
+  artifactKey: Guid(8b57a70f3c16b3143b6bdd290498bf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/3.wav using Guid(8b57a70f3c16b3143b6bdd290498bf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee3ea5e1353188c877aa662e96b21ff') in 0.019396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/9.wav
+  artifactKey: Guid(ef2d5d1a7de6f1140882f828d82a3a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/9.wav using Guid(ef2d5d1a7de6f1140882f828d82a3a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe710cbf0dd6f892008ff8cd4503ba3a') in 0.020122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.600255 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cry 3(Misc).wav
+  artifactKey: Guid(c79a8b2cc3a633f4b8da317b3c02e5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Cry 3(Misc).wav using Guid(c79a8b2cc3a633f4b8da317b3c02e5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08c4ee1b1db64f4b4002978bcae2947') in 0.016196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Death 2.wav
+  artifactKey: Guid(9bf580767bbc59f44a9c71f785b47746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Death 2.wav using Guid(9bf580767bbc59f44a9c71f785b47746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc8df93c53815122938a393db9dab03') in 0.027215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Damn it_s Cold.wav
+  artifactKey: Guid(b1d378b08eb2492449331299d43a7a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Damn it_s Cold.wav using Guid(b1d378b08eb2492449331299d43a7a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970d47b3a91b228a10e85ab112f6b040') in 0.019758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Damn 2.wav
+  artifactKey: Guid(7159562e5a14468408ecd930d1815687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Damn 2.wav using Guid(7159562e5a14468408ecd930d1815687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06d0ff7d51eb0b6ceae9bd1ca6f3874') in 0.018907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040091 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Destroy it now !.wav
+  artifactKey: Guid(bc5ec124cff2fbc408cc9035a0917a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Destroy it now !.wav using Guid(bc5ec124cff2fbc408cc9035a0917a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a10cb984298c0d63b7250bb3e28d36') in 0.019977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Dodge 1.wav
+  artifactKey: Guid(f7fc501e95ab2fc4d8f3807af6e9517d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Dodge 1.wav using Guid(f7fc501e95ab2fc4d8f3807af6e9517d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31af33c1e622afc752f2069af0d28e45') in 0.020601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Dodge 3.wav
+  artifactKey: Guid(f0c0826cff218d243890f93c8061080e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Dodge 3.wav using Guid(f0c0826cff218d243890f93c8061080e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6713d71a51cbd465ab7a02df91231f') in 0.019576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Do it Now !.wav
+  artifactKey: Guid(9436675199321e748b8cd1743aa248d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Do it Now !.wav using Guid(9436675199321e748b8cd1743aa248d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1021aa875507134c72a01e1196643c1e') in 0.021429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.591133 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Dollars.wav
+  artifactKey: Guid(2e1a9f8cf898bb04791192d17a063261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Dollars.wav using Guid(2e1a9f8cf898bb04791192d17a063261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fa323be70993b4b9b6dd4235abf2f0') in 0.021431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t Forget.wav
+  artifactKey: Guid(356d9548d95de254289cb19c439ad41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t Forget.wav using Guid(356d9548d95de254289cb19c439ad41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3bfd47bbec73ea60f59623f95a4a72') in 0.014367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t let them catch you !.wav
+  artifactKey: Guid(425f97f99cf228e49aa0b097cfd53ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t let them catch you !.wav using Guid(425f97f99cf228e49aa0b097cfd53ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b04a5d914a1f2cf665142b781d176f8') in 0.017770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t do this to me.wav
+  artifactKey: Guid(31953f2a49ae6544bbee7a20ab207bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t do this to me.wav using Guid(31953f2a49ae6544bbee7a20ab207bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5bfde28f068e6b9545537e41e45f471') in 0.018406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t Bea Hero.wav
+  artifactKey: Guid(f19c79b892cc1004e877bf41ab3979a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t Bea Hero.wav using Guid(f19c79b892cc1004e877bf41ab3979a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04bce3d33aa88d3795430ecc70bf8ae') in 0.016005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.705357 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t you Understand !.wav
+  artifactKey: Guid(8130b3f78bf11ae448587eb8265b084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Don_t you Understand !.wav using Guid(8130b3f78bf11ae448587eb8265b084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c64dd2bed338a749ada7261f5d5e701') in 0.022452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Enemy.wav
+  artifactKey: Guid(0d7c01a1106db2b4182c7aa420221ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Enemy.wav using Guid(0d7c01a1106db2b4182c7aa420221ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29bfd2407c62d5c0b7b6c50fceff5982') in 0.020660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Enemy Team.wav
+  artifactKey: Guid(f1bdb1f32d267c142966afdb2fcb769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Enemy Team.wav using Guid(f1bdb1f32d267c142966afdb2fcb769f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e70e6796dc81b0ee7c77ade6640eb65') in 0.022231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Down there 1.wav
+  artifactKey: Guid(52ffb79f86b05b94e98dc60967d2edb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Down there 1.wav using Guid(52ffb79f86b05b94e98dc60967d2edb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cb6a3b6e927c840cbe3be762fdf675') in 0.016436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.019965 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Exactly! 1.wav
+  artifactKey: Guid(862fce051f08ef94d98795c723c35ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Exactly! 1.wav using Guid(862fce051f08ef94d98795c723c35ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0361fddf8931e86b1e37896c8a142f83') in 0.019317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Fire ! 2.wav
+  artifactKey: Guid(1c8ee1259d4edd0439deb0a599b3edaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Fire ! 2.wav using Guid(1c8ee1259d4edd0439deb0a599b3edaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f529af6725b8ddd530d931420f4cc38') in 0.023446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Exactly! 2.wav
+  artifactKey: Guid(a31741c7eb63c43428fc746752f4eefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Exactly! 2.wav using Guid(a31741c7eb63c43428fc746752f4eefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd466ca48c195b928b916fc88a60178d0') in 0.022286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Exactly...2.wav
+  artifactKey: Guid(a5797eb34bd8a3f4a882f7957395b21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/Exactly...2.wav using Guid(a5797eb34bd8a3f4a882f7957395b21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a0ce04ab289933af8204e9bf1d02d0') in 0.015775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/First lieutenant.wav
+  artifactKey: Guid(a8d41df04bb42154b84db98be4ad2747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Hero Voice Jack/First lieutenant.wav using Guid(a8d41df04bb42154b84db98be4ad2747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c8e827275c279de3d5a4615328fb9e') in 0.015386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.567554 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror ambiance - HD Remake/Ambience_Horror_Cave.wav
+  artifactKey: Guid(c633371ac762e694e91be0810b75d3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror ambiance - HD Remake/Ambience_Horror_Cave.wav using Guid(c633371ac762e694e91be0810b75d3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116fdfc38aa7007b5bbb726c8e027879') in 0.041460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror ambiance - HD Remake/Ambience_Horror_Simple.wav
+  artifactKey: Guid(a801f23eed904ba4099b433847af5319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror ambiance - HD Remake/Ambience_Horror_Simple.wav using Guid(a801f23eed904ba4099b433847af5319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8f7eb487e7d619e8706075c4ba2f03') in 0.021679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror ambiance - HD Remake/Ambience_Horror_Hell.wav
+  artifactKey: Guid(3a17e7310cf769643b5e6758593805b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror ambiance - HD Remake/Ambience_Horror_Hell.wav using Guid(3a17e7310cf769643b5e6758593805b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6090644f232ab3231f94c6ab03504a') in 0.021427 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

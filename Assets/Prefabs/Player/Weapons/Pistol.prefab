@@ -327,7 +327,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a4a2f0260a8abce4e8692e51291da79b, type: 3}
   firingMode: 0
   fireRatePerSec: 0.5
-  projectileVelocity: 0.25
+  projectileVelocity: 40
   projectileTimeToLive: 1
 --- !u!82 &5306817126951618828
 AudioSource:

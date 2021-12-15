@@ -2,3 +2,1454 @@ Using pre-set license
 Built from '2021.2/staging' branch; Version is '2021.2.6f1 (8c4e826ba445) revision 9195138'; Using compiler version '192829333'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 16282 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/grant/UnityProjects/3D Metroidvania
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51149
+Successfully changed project path to: C:/Users/grant/UnityProjects/3D Metroidvania
+C:/Users/grant/UnityProjects/3D Metroidvania
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 81.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.6f1 (8c4e826ba445)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/grant/UnityProjects/3D Metroidvania/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f10)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006903 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.582 seconds
+Domain Reload Profiling:
+	ReloadAssembly (582ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (440ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (99ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (267ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005920 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 82.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.745 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1746ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1548ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (202ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (1181ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (926ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3865 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.8 MB). Loaded Objects now: 4334.
+Memory consumption went from 263.5 MB to 262.8 MB.
+Total: 4.286500 ms (FindLiveObjects: 0.285600 ms CreateObjectMapping: 0.192100 ms MarkObjects: 3.363300 ms  DeleteObjects: 0.444800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1454732.855191 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Audio/SFX/Enemies/Hoverbot_Alert.wav
+  artifactKey: Guid(25722734eeccba042a18e26e376ca542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Audio/SFX/Enemies/Hoverbot_Alert.wav using Guid(25722734eeccba042a18e26e376ca542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a10b020b87e48c876c3ce1c16ae6e6d') in 0.134796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.522874 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Audio/SFX/Pickups/Pickup_Health.wav
+  artifactKey: Guid(8dfdbc346713580429db9079ad1ff964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Audio/SFX/Pickups/Pickup_Health.wav using Guid(8dfdbc346713580429db9079ad1ff964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fb39fa76eb4b14f28471b5cf5b2456') in 0.021086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.635662 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Prefabs/Cube.prefab
+  artifactKey: Guid(cf7e257d2b255a84499370f200689835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Prefabs/Cube.prefab using Guid(cf7e257d2b255a84499370f200689835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fc581e81cad27a3b4c1c5ebf4e7b5f') in 0.022233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Prefabs/ObjectiveKillEnemies.prefab
+  artifactKey: Guid(012d63212fd1fe646b661cb8446c7bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Prefabs/ObjectiveKillEnemies.prefab using Guid(012d63212fd1fe646b661cb8446c7bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6593d2dc9c4b0664acb5d45c6fb5c33f') in 0.012500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Prefabs/Player.prefab
+  artifactKey: Guid(761cdc9e4e883334cbdcea062d0befa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Prefabs/Player.prefab using Guid(761cdc9e4e883334cbdcea062d0befa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '5a17c9e9faa9d67884aecb04c1c886c0') in 0.533824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.796882 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Audio/Music/Wind Ambience.mp3
+  artifactKey: Guid(d8003de4be5900347a2c96ef75315675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Audio/Music/Wind Ambience.mp3 using Guid(d8003de4be5900347a2c96ef75315675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2063548d5357b85d8d3af4822fec1b25') in 0.023009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.994139 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Prefabs/Projectiles/Projectile_Blaster.prefab
+  artifactKey: Guid(3c6b27d949cdda749892906e1f1d1b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Prefabs/Projectiles/Projectile_Blaster.prefab using Guid(3c6b27d949cdda749892906e1f1d1b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb07a2b6b34876a2630bb6524309b0ae') in 0.109439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/BaseFpsAssets/FPS/Prefabs/Projectiles/Projectile_Turret.prefab
+  artifactKey: Guid(154bfb4989fe16d439e8f3fb7c20b72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/BaseFpsAssets/FPS/Prefabs/Projectiles/Projectile_Turret.prefab using Guid(154bfb4989fe16d439e8f3fb7c20b72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becc5ce9ac1366df10aca937d51249f8') in 0.025483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.393721 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 1_1.wav
+  artifactKey: Guid(2785821896f8b884cb4f32b009fc3701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 1_1.wav using Guid(2785821896f8b884cb4f32b009fc3701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c80931b714137eeeb90f94e1c9f000e0') in 0.020180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 01_4.wav
+  artifactKey: Guid(5d55f097c0c06044c8775d10a90b5113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 01_4.wav using Guid(5d55f097c0c06044c8775d10a90b5113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f707d3dfcf0f122192aae5f9274d087c') in 0.021022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 05_3.wav
+  artifactKey: Guid(fe1e4fb1636adde46bc24ae8c0fec4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 05_3.wav using Guid(fe1e4fb1636adde46bc24ae8c0fec4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a8b2662133a466b2b8182b7d5f13c5') in 0.022009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 5_6.wav
+  artifactKey: Guid(af778ff892d327040901217ca1c72336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 5_6.wav using Guid(af778ff892d327040901217ca1c72336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997e3ae80fde8c500a6a13d214cf2585') in 0.021148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 4_2.wav
+  artifactKey: Guid(041595a9fc9ea6f41a29b1ad1dd7a09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 4_2.wav using Guid(041595a9fc9ea6f41a29b1ad1dd7a09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82609afa34bbd7bbb2bb1c08e198de49') in 0.021589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 7_5.wav
+  artifactKey: Guid(ac131918f15d0a9438c134c9c60b8830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 7_5.wav using Guid(ac131918f15d0a9438c134c9c60b8830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ead60f208a05f0605be1871315579cf') in 0.022594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 3_1.wav
+  artifactKey: Guid(e30e7413974c0874d8b1ef1b023aef5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 3_1.wav using Guid(e30e7413974c0874d8b1ef1b023aef5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352f17581bfc0387219f640f3ce4de32') in 0.023786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 7_3.wav
+  artifactKey: Guid(ddb0187df05628e41bb60bda9712eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 7_3.wav using Guid(ddb0187df05628e41bb60bda9712eca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a7ba3289eec64e1a8b2e23a1c84575') in 0.023267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 5_1.wav
+  artifactKey: Guid(f857832abc30af44180425edcab90e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 5_1.wav using Guid(f857832abc30af44180425edcab90e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62afe2b3c8fd66343aa00009acab70f') in 0.035796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 04_1.wav
+  artifactKey: Guid(3175e1967b051dd48a6aae67715687b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 04_1.wav using Guid(3175e1967b051dd48a6aae67715687b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3f219ad66fcf28c6b0c7a3a3eb90f8') in 0.022065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 02_3.wav
+  artifactKey: Guid(37f34800453f5cb428fd4a5683337867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 02_3.wav using Guid(37f34800453f5cb428fd4a5683337867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9575ef7222b72f50efd5d91643e78eb') in 0.022759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 5_3.wav
+  artifactKey: Guid(02da358e67fef09449a59045c9bed9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Distant Ship Pass By 5_3.wav using Guid(02da358e67fef09449a59045c9bed9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4255b8298ae8641873737a1b840acc') in 0.022453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 07_1.wav
+  artifactKey: Guid(46e7e039e8be3384db00e002e12ecdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 07_1.wav using Guid(46e7e039e8be3384db00e002e12ecdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d4a1b84a8a7f271a9a0f7f1508df0f') in 0.023665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 06_3.wav
+  artifactKey: Guid(f5a02ad42e1212345a882588132ca14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 06_3.wav using Guid(f5a02ad42e1212345a882588132ca14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d78c2ad4bd7b97052977f80bc952ab') in 0.022176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 01_5.wav
+  artifactKey: Guid(bc2131b524c4e1e40a8db27260188941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 01_5.wav using Guid(bc2131b524c4e1e40a8db27260188941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deee1d60235bb75d590fbbe366976c88') in 0.022662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 02_8.wav
+  artifactKey: Guid(87e77e7cd76d0b74eb1701b1eb33f1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 02_8.wav using Guid(87e77e7cd76d0b74eb1701b1eb33f1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69138c5a1eedf7580e4e72abf54401c5') in 0.027802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 03_3.wav
+  artifactKey: Guid(57bbc7bb6fad4534b8184c5b8e495013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 03_3.wav using Guid(57bbc7bb6fad4534b8184c5b8e495013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d0c5d6fad121412573a2c885c7a586') in 0.023326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 06_4.wav
+  artifactKey: Guid(bc2adfa08ab8bd247baa95be35df2091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 06_4.wav using Guid(bc2adfa08ab8bd247baa95be35df2091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1ccc0a0b86c29a76aad24ef72c9c55') in 0.025677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 01_1.wav
+  artifactKey: Guid(40e18a18513a9e844978af9525ebf49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 01_1.wav using Guid(40e18a18513a9e844978af9525ebf49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f573325d17eea9515444714f8aa18bfa') in 0.025703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 07_4.wav
+  artifactKey: Guid(55015864cfe266b409b83b0db7e449f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 07_4.wav using Guid(55015864cfe266b409b83b0db7e449f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456cc4eea6e9efcd12b42c8f1e024d7d') in 0.021950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.328930 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 11 Foley 2 (Rocket Launcher).wav
+  artifactKey: Guid(4af74a4b1e867d04ba20d20dfede008c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 11 Foley 2 (Rocket Launcher).wav using Guid(4af74a4b1e867d04ba20d20dfede008c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935f5b33bd2a33be7a7c68fd4f502b19') in 0.034818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 12 Stop (Laser).wav
+  artifactKey: Guid(c8f7c2c050674c6478161184a6aff26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 12 Stop (Laser).wav using Guid(c8f7c2c050674c6478161184a6aff26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffccaaa3585ca40a4496629d2eca9f04') in 0.031942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Reload 3.wav
+  artifactKey: Guid(902a6415c26fde341ac20c54d21000c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Reload 3.wav using Guid(902a6415c26fde341ac20c54d21000c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a7449325e1df9601db0c1947570b2e') in 0.031027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 15 Reload 2.wav
+  artifactKey: Guid(cc90e488c419d3c4997affc5c03cb657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 15 Reload 2.wav using Guid(cc90e488c419d3c4997affc5c03cb657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2059efe39f297fee146685fdf709f025') in 0.027879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Shoot 3 (Flamethrower).wav
+  artifactKey: Guid(962e60d93df1edf4e9906fde75181076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Shoot 3 (Flamethrower).wav using Guid(962e60d93df1edf4e9906fde75181076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2fb303e7f78dd7e2fd472f84030eb1e') in 0.025661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 12 Load (Laser).wav
+  artifactKey: Guid(595ee0c3822465849831ec28e3c912a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 12 Load (Laser).wav using Guid(595ee0c3822465849831ec28e3c912a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a348a645747aab946857b3c9d8604b8c') in 0.023626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Foley 3 (Flamethrower).wav
+  artifactKey: Guid(d333a64dca90dc04585fd7b1740d618d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Foley 3 (Flamethrower).wav using Guid(d333a64dca90dc04585fd7b1740d618d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2def7d1c791addcb24dc810d5d31d9d') in 0.022373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Shoot 4 (Flamethrower).wav
+  artifactKey: Guid(1f12deb92200a074486eefacf7ea4499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Shoot 4 (Flamethrower).wav using Guid(1f12deb92200a074486eefacf7ea4499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4248a4e58f66ee6ccbc534a8e2076f') in 0.023408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Foley 2.wav
+  artifactKey: Guid(486141ef6ee445d429ade21509d65d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Foley 2.wav using Guid(486141ef6ee445d429ade21509d65d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e9d9005a8335867a79d32d07852234c') in 0.021407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Loop (Flamethrower).wav
+  artifactKey: Guid(f723be91f3af05841bace2ccddb5f5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Loop (Flamethrower).wav using Guid(f723be91f3af05841bace2ccddb5f5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499822bd2334d5c826ed89b1fb1ca938') in 0.027766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Foley 1.wav
+  artifactKey: Guid(ed358424143fd3e4f8a337b31ccaadbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Foley 1.wav using Guid(ed358424143fd3e4f8a337b31ccaadbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6675f3a1fa44a9ce208e61cbf3deada') in 0.023555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Shoot 3.wav
+  artifactKey: Guid(9ee09fa2fd02d444eb2bfd5ae476fb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Shoot 3.wav using Guid(9ee09fa2fd02d444eb2bfd5ae476fb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f49b54d720c858de91f1446e70c8c1') in 0.022416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Shoot 1 (Flamethrower).wav
+  artifactKey: Guid(e98877693a16b3946a1e069b9d2802b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 14 Shoot 1 (Flamethrower).wav using Guid(e98877693a16b3946a1e069b9d2802b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9994c14c880f830dc9f4fa19f9e41d56') in 0.019445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 11 Reload 3 (Rocket Launcher).wav
+  artifactKey: Guid(4d07247e659ecb34994528f885031685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 11 Reload 3 (Rocket Launcher).wav using Guid(4d07247e659ecb34994528f885031685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f66030528518fc0f93ac9283b128bbf') in 0.018857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Reload 1.wav
+  artifactKey: Guid(ca65645ec1aaa7f478047818000a83e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Reload 1.wav using Guid(ca65645ec1aaa7f478047818000a83e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ef84c3e2e8f0905baf73d1a9055ea2') in 0.021606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Reload 2.wav
+  artifactKey: Guid(ce55ff7647bf0fd47bef756bff6e29cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 13 Reload 2.wav using Guid(ce55ff7647bf0fd47bef756bff6e29cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7834f05b1c292ea96d12851eb03bb1') in 0.023225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.166459 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 16 Foley 3 (Laser).wav
+  artifactKey: Guid(fa16efb4ba50f284eb42e88a268d2840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 16 Foley 3 (Laser).wav using Guid(fa16efb4ba50f284eb42e88a268d2840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6893083c5f5f0ce92dfcb85cb9b101a') in 0.040496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 16 Reload 3 (Laser).wav
+  artifactKey: Guid(b8eff33e4f8e61641b4b060118d50b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 16 Reload 3 (Laser).wav using Guid(b8eff33e4f8e61641b4b060118d50b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1aad1a5f17eea304047248cd3f6e9a') in 0.022806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Weapons/Weapon 16 Reload 2 (Laser).wav
+  artifactKey: Guid(7b5a946504c3b78498a59dc0b42dee65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Weapons/Weapon 16 Reload 2 (Laser).wav using Guid(7b5a946504c3b78498a59dc0b42dee65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82e78609c1c0707702e6392703121d7') in 0.018679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.001268 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley Creak 2.wav
+  artifactKey: Guid(09745a8c56389774b83245f8a9fc74dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley Creak 2.wav using Guid(09745a8c56389774b83245f8a9fc74dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca594857acb34bc8caba15548a67b039') in 0.025495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Tools 01.wav
+  artifactKey: Guid(6c32c62eec310f048ae05d22622770b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Tools 01.wav using Guid(6c32c62eec310f048ae05d22622770b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4df87b9c4054567bf071cea070c1317') in 0.025850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley Creak 9.wav
+  artifactKey: Guid(876e248ad22863842b18870c770a0b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley Creak 9.wav using Guid(876e248ad22863842b18870c770a0b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800c9b7d959d9b85040652feff4cbb54') in 0.020966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 08.wav
+  artifactKey: Guid(951d3485b0374b64ebd3e7f7c3ed722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 08.wav using Guid(951d3485b0374b64ebd3e7f7c3ed722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732e8d062ca0447679ce1dfcc70387d2') in 0.022296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley Impact 4.wav
+  artifactKey: Guid(9fcd398b20ef30d42ad3d0a153c4863e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley Impact 4.wav using Guid(9fcd398b20ef30d42ad3d0a153c4863e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d1d5858d8ced02abf6fe0e5bf554be') in 0.021173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 09.wav
+  artifactKey: Guid(372f5645d4f6e3343bb2f46173123781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 09.wav using Guid(372f5645d4f6e3343bb2f46173123781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d8ad236f04b8dc7342bf1d49149ed66') in 0.023975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley Impact 5.wav
+  artifactKey: Guid(6f9e72fe3443f32458a23d2c96494b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley Impact 5.wav using Guid(6f9e72fe3443f32458a23d2c96494b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95d14ec1b8b553a5bc500dd9e7ae9b0') in 0.022161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley Impact 2.wav
+  artifactKey: Guid(4620145d6f42b214ba4df00f8221cb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley Impact 2.wav using Guid(4620145d6f42b214ba4df00f8221cb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6256bd8aa0a88f87f5516382cdf435') in 0.025518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 15.wav
+  artifactKey: Guid(c00ad679f89a40f43baff49fe7adbe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 15.wav using Guid(c00ad679f89a40f43baff49fe7adbe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dda4e4f9039ea2c56cb7aef27123387') in 0.020705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley Creak 5.wav
+  artifactKey: Guid(475e2e445cb1d474caaee4c7be72e3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley Creak 5.wav using Guid(475e2e445cb1d474caaee4c7be72e3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c339eec953a6882f9e52dffc8b653473') in 0.021379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Tools 09.wav
+  artifactKey: Guid(5780416741be53e4593a683503f4e3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Tools 09.wav using Guid(5780416741be53e4593a683503f4e3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4f0cb11fd0cbde1cdb3854146dbfb5') in 0.021052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 11.wav
+  artifactKey: Guid(f421963262278d140832e45a1cbf0b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley 11.wav using Guid(f421963262278d140832e45a1cbf0b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b53f3ccb46195d7879fbf5d9c18d1bb1') in 0.024775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Tools 07.wav
+  artifactKey: Guid(60d0b1a477350d74f9d5b091e29e3241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Tools 07.wav using Guid(60d0b1a477350d74f9d5b091e29e3241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7ec6da7c54071ad7c5bfe6ca59d41a') in 0.022507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Plastic Foley Impact 3.wav
+  artifactKey: Guid(622d3fbe6fef26a4e808e0ed730eb9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Plastic Foley Impact 3.wav using Guid(622d3fbe6fef26a4e808e0ed730eb9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a268f7a9f8df5c49ed6b37636643ef8d') in 0.021216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Tools 10.wav
+  artifactKey: Guid(d5e5de9905797e74788ca2a3ead92833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Tools 10.wav using Guid(d5e5de9905797e74788ca2a3ead92833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2524939b8f972c0d0851a829e799cde') in 0.021545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.569360 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 1_2.wav
+  artifactKey: Guid(e3b3bcb0c1b72144289c7db4fdb0ce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 1_2.wav using Guid(e3b3bcb0c1b72144289c7db4fdb0ce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0a6445aa20cac416a0bf3679d35554') in 0.040632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Air Hiss 1_05.wav
+  artifactKey: Guid(c1d041dd9941ace4596a4301e5e07215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Air Hiss 1_05.wav using Guid(c1d041dd9941ace4596a4301e5e07215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510d8b2b0e32a9b9549a7abedde65e0e') in 0.029652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Footstep Robot Large 2_01.wav
+  artifactKey: Guid(ece1719538c97834ba64219d500491bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Footstep Robot Large 2_01.wav using Guid(ece1719538c97834ba64219d500491bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbaabdad2131a6cdd7c56e11af61cde7') in 0.021975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Footstep Robot Large 2_09.wav
+  artifactKey: Guid(7b613d6ab39735a4382336f7750da968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Footstep Robot Large 2_09.wav using Guid(7b613d6ab39735a4382336f7750da968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb50ff979ae47ba71e3f993f357af80a') in 0.020848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley 3.wav
+  artifactKey: Guid(f668d9445a0e4af4195ea159cbb3f27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley 3.wav using Guid(f668d9445a0e4af4195ea159cbb3f27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3a002cfcf8a8834c528dda3bb8a02e') in 0.020887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley 1.wav
+  artifactKey: Guid(a029434532e3ab7409bcea9ec45cf54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley 1.wav using Guid(a029434532e3ab7409bcea9ec45cf54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb72b6038d95907c7b5f44528b07809f') in 0.022303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Air Hiss 3_02.wav
+  artifactKey: Guid(4760c1d4f332ae944acf7ed21cac2b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Air Hiss 3_02.wav using Guid(4760c1d4f332ae944acf7ed21cac2b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b43e45d20a721e3ceb3f31675df626') in 0.023196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Foley 2.wav
+  artifactKey: Guid(8ff99f79239e5f44496a83c7f2f7a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Foley 2.wav using Guid(8ff99f79239e5f44496a83c7f2f7a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a673772c323f80dae833f6f43ec59a64') in 0.022716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 2_2.wav
+  artifactKey: Guid(be3576ad504e3ab4080d045e4a842ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 2_2.wav using Guid(be3576ad504e3ab4080d045e4a842ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45393a790d1ad48228ecc07f9fd64ed') in 0.020911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 1-5.wav
+  artifactKey: Guid(d4a0348fabfd67e4182dea0831d34107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 1-5.wav using Guid(d4a0348fabfd67e4182dea0831d34107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3fcd1ab7e958262eb86ea1ab980a5c') in 0.020353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Alarm 1 Loop.wav
+  artifactKey: Guid(19570a929f2eacb43af8edca2308a39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Alarm 1 Loop.wav using Guid(19570a929f2eacb43af8edca2308a39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dae3bf9a66dee2519119765a423eb0e') in 0.020830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 2_4.wav
+  artifactKey: Guid(3d9b82ac24258644daa58d5eb8a7eafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 2_4.wav using Guid(3d9b82ac24258644daa58d5eb8a7eafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19556440a85fef96c4f93a5cb59f4e8c') in 0.020782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 1_1.wav
+  artifactKey: Guid(64940a920327a3144ae897d6c0851778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Metal Box Impact 1_1.wav using Guid(64940a920327a3144ae897d6c0851778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d5e17b9858f29eb06c7b68bb66caff') in 0.020108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Footstep Robot Large 2_02.wav
+  artifactKey: Guid(9668082d7aaed704d8effca8343063bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Footstep Robot Large 2_02.wav using Guid(9668082d7aaed704d8effca8343063bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef87e59d080028a02dd1b9640559eb34') in 0.019712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/MISC/Air Hiss 3_05.wav
+  artifactKey: Guid(99ca8a2ab7d5acb4abe0034c68021bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/MISC/Air Hiss 3_05.wav using Guid(99ca8a2ab7d5acb4abe0034c68021bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1484b0b0a2259ab122d59c9667e9feae') in 0.020651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.811743 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Device Toggle 16.wav
+  artifactKey: Guid(11112832ca5fba14191da85367a8949f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Device Toggle 16.wav using Guid(11112832ca5fba14191da85367a8949f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e09b0b5318fdd3b65ddff8678cd134d') in 0.022437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 5 Loop.wav
+  artifactKey: Guid(a3741d0dd2229dc4eb17466a6fec0e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 5 Loop.wav using Guid(a3741d0dd2229dc4eb17466a6fec0e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0360d26273a0cf1f235d754564c8c2') in 0.025571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 10_1.wav
+  artifactKey: Guid(b4f3f2cf3c6005c478af0e602db39d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 10_1.wav using Guid(b4f3f2cf3c6005c478af0e602db39d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbbbb7639c4aa3917204de5fce38499') in 0.021965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 9_1.wav
+  artifactKey: Guid(0753ea8a0ef263142ae21c4387f4df3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 9_1.wav using Guid(0753ea8a0ef263142ae21c4387f4df3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b1e0710d7ab63f7210901b116957a3') in 0.021306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 6 Start.wav
+  artifactKey: Guid(8bbdc4a4976ed874795df17cce21ac01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 6 Start.wav using Guid(8bbdc4a4976ed874795df17cce21ac01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f266fbeb7fe261b68329275cd6c27c9') in 0.025989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 9 Loop 1.wav
+  artifactKey: Guid(ff6f2bcf5a5c85241a0e2adebf17920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 9 Loop 1.wav using Guid(ff6f2bcf5a5c85241a0e2adebf17920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a737aa7fb4a120f2d56fdcd7b13cc083') in 0.023130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 1 Loop.wav
+  artifactKey: Guid(3cab4171396f2214eb848ee008ab774d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 1 Loop.wav using Guid(3cab4171396f2214eb848ee008ab774d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c7cd162a8833d75e879ac9dd3085d5') in 0.021618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 8 Stop.wav
+  artifactKey: Guid(3771c5b6317e11749b87afe94fcbb8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 8 Stop.wav using Guid(3771c5b6317e11749b87afe94fcbb8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ca18f0d08e56fbdbc756d7a23ba9ba') in 0.021390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 7 Loop.wav
+  artifactKey: Guid(a0436210fa48ca341b746e43e35b386f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 7 Loop.wav using Guid(a0436210fa48ca341b746e43e35b386f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0138e07cdc231aecd9b2d57c23f0acdb') in 0.020738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 1_2.wav
+  artifactKey: Guid(645f64138b3d9c342bcdeb99d92340f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 1_2.wav using Guid(645f64138b3d9c342bcdeb99d92340f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc60610dac1e1dd0ca0ec6959e33c18d') in 0.022487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 1 Start.wav
+  artifactKey: Guid(109ff5ca91a744b45b1e74616276af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 1 Start.wav using Guid(109ff5ca91a744b45b1e74616276af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea76c19bc8e1ccf6912e7a9ba98448fa') in 0.023850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 9 Loop 2.wav
+  artifactKey: Guid(e073b9a1b2c1da847a79ad733b6e1726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 9 Loop 2.wav using Guid(e073b9a1b2c1da847a79ad733b6e1726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0151a22c5aeaa0b577340df5985f6ab') in 0.024628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 2_2.wav
+  artifactKey: Guid(43f1f6d32c996e044bef3c18681f7384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 2_2.wav using Guid(43f1f6d32c996e044bef3c18681f7384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e802cdcf4264eb11112bf58a0c869ede') in 0.026582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 8_1.wav
+  artifactKey: Guid(73773fd00fdcd1842995ec6bea5ab429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 8_1.wav using Guid(73773fd00fdcd1842995ec6bea5ab429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39fc1406e982f0735ac7cc1f750be04') in 0.026255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 3 Stop.wav
+  artifactKey: Guid(76cc3adc6a0940b459c05a906699505f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 3 Stop.wav using Guid(76cc3adc6a0940b459c05a906699505f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c054af30327867434025cc1c7b1ef5f') in 0.020357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 9 Stop 1.wav
+  artifactKey: Guid(9573116cb80b0de4a8bb0ee749e0f7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 9 Stop 1.wav using Guid(9573116cb80b0de4a8bb0ee749e0f7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0442626cc06ece1c39903e1f5acf42bb') in 0.023003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 4_1.wav
+  artifactKey: Guid(dae963abcd0229b4eb6eb4fa20959ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 4_1.wav using Guid(dae963abcd0229b4eb6eb4fa20959ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9dafffe7d8c96e2a06724b503c1a30b') in 0.022960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Device Toggle 19.wav
+  artifactKey: Guid(3173a56886a6aee40a0f90f6d2eab5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Device Toggle 19.wav using Guid(3173a56886a6aee40a0f90f6d2eab5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208d2486bc32b79518f427465b4d945a') in 0.022255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 8_4.wav
+  artifactKey: Guid(d086e56b3924d954aa1e652ba5335111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Servo Big 8_4.wav using Guid(d086e56b3924d954aa1e652ba5335111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604b851ee1f425c8809d1b0a6f3271fd') in 0.020760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Sounds/Mechanical/Engine 8 Loop.wav
+  artifactKey: Guid(5bdb3955ff0e77144ab5ff1a2596a8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Mechanical/Engine 8 Loop.wav using Guid(5bdb3955ff0e77144ab5ff1a2596a8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3576f3d608f6d8a03b11b09a92372cf0') in 0.019256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.814414 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 4_1.wav
+  artifactKey: Guid(2d8e830bdcafe194982abd2034be9d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 4_1.wav using Guid(2d8e830bdcafe194982abd2034be9d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a45213bce9dec419ffa17ec663751c1') in 0.019987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 1_01.wav
+  artifactKey: Guid(5e2b4ad6e290ea44e9e5c84b88f739a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 1_01.wav using Guid(5e2b4ad6e290ea44e9e5c84b88f739a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650e8c2bd35eac7c807b82f0cce7b7b4') in 0.025246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 3_06.wav
+  artifactKey: Guid(d46fb31f306b56a41b45b83a2ee54af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 3_06.wav using Guid(d46fb31f306b56a41b45b83a2ee54af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '614be700794bdf1875ed8d49d9b8b5eb') in 0.022905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 1_04.wav
+  artifactKey: Guid(8920f9e2394772e4aad880333004cff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 1_04.wav using Guid(8920f9e2394772e4aad880333004cff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c55b2cdb0e540b800356af493b5733b') in 0.019952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 4_5.wav
+  artifactKey: Guid(62e0569cdfd9d05438c2e586e5f42001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 4_5.wav using Guid(62e0569cdfd9d05438c2e586e5f42001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a140ca2fa3286a815ed2ef7d8996a7f') in 0.020330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 4_1.wav
+  artifactKey: Guid(fb85c8607b1a9b14c929b85d995ed3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 4_1.wav using Guid(fb85c8607b1a9b14c929b85d995ed3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638cfe7e06f19aeb011f30683fbbc51c') in 0.019342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 1_05.wav
+  artifactKey: Guid(8fbd4e5cc1bf2ca4d931565098477a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 1_05.wav using Guid(8fbd4e5cc1bf2ca4d931565098477a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de241cfb54ab04d3be1bd0111953c357') in 0.020859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Device 1 Stop.wav
+  artifactKey: Guid(2cffdf529f807a2488b9ffe3756bf2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Device 1 Stop.wav using Guid(2cffdf529f807a2488b9ffe3756bf2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b797a82d22d7aafc7102fb5f08d45c3d') in 0.019755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 3_04.wav
+  artifactKey: Guid(622b6c0429553974cbc30d9bc9c6dda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 3_04.wav using Guid(622b6c0429553974cbc30d9bc9c6dda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216707a99024f65fe31bfce402663bd2') in 0.020839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Device 2 Start.wav
+  artifactKey: Guid(548eb0f5362060f42a693fe5f0ae2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Device 2 Start.wav using Guid(548eb0f5362060f42a693fe5f0ae2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde5cdca5bb63c0c0ed79a6b8efe0e5d') in 0.022240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Device 3 Start.wav
+  artifactKey: Guid(5cbb4bc2cf0188a448587ea662374a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Device 3 Start.wav using Guid(5cbb4bc2cf0188a448587ea662374a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4569dfe9e367230f3169588a2e1c2cab') in 0.019623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 1_10.wav
+  artifactKey: Guid(39b1777acef804f449aecc9eb7ec7480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 1_10.wav using Guid(39b1777acef804f449aecc9eb7ec7480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5efcefdf77846113b40bd6bc40005188') in 0.019515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 2_10.wav
+  artifactKey: Guid(0df1a5307bc52024389c86cd0bfc3222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 2_10.wav using Guid(0df1a5307bc52024389c86cd0bfc3222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1e68521cdd6a12131eadbd22af4aaa') in 0.021229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 3_01.wav
+  artifactKey: Guid(776910a1421c3d144a717d788712c868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 3_01.wav using Guid(776910a1421c3d144a717d788712c868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df69721074b13712e29a6e47fc5bb252') in 0.020993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 5_4.wav
+  artifactKey: Guid(3763f18415a7808409a28a6645c6e8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 5_4.wav using Guid(3763f18415a7808409a28a6645c6e8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a966234cb15a90afd0003d4dea5672') in 0.024461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Device 4 Stop.wav
+  artifactKey: Guid(7d50d4d2055514945afe512fa53bcc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Device 4 Stop.wav using Guid(7d50d4d2055514945afe512fa53bcc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0de16f2b557317ef0775c431da84e33') in 0.025268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Device 10 Stop.wav
+  artifactKey: Guid(3b4c515688cab8f43bbe5271bfc2ebf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Device 10 Stop.wav using Guid(3b4c515688cab8f43bbe5271bfc2ebf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1b9bd8afbbd63480b3da07c91fe028') in 0.021938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 2_07.wav
+  artifactKey: Guid(c4cb3b230546568479ec8e769c7aa9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 2_07.wav using Guid(c4cb3b230546568479ec8e769c7aa9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a820db9ffd8c5cb311721383392500') in 0.020127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Device 4 Start.wav
+  artifactKey: Guid(ced141f1e3e66ab4f934aebee58c05ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Device 4 Start.wav using Guid(ced141f1e3e66ab4f934aebee58c05ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214e6693e53fd42a21304e20f633d8b2') in 0.020519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 5_3.wav
+  artifactKey: Guid(5788a0e24a89d1048836bedb038bac6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 5_3.wav using Guid(5788a0e24a89d1048836bedb038bac6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79c82ba776279d4558ec9a9a7ee15b1') in 0.024023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.482461 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 4_5.wav
+  artifactKey: Guid(ac81c3620b74c0843aa6dfaacf6052d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 4_5.wav using Guid(ac81c3620b74c0843aa6dfaacf6052d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf081a2f589befaa51c32a25de22a64') in 0.019385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 8_2.wav
+  artifactKey: Guid(d107f00f3efd2d548b24b7411ece5568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 8_2.wav using Guid(d107f00f3efd2d548b24b7411ece5568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8fadbdfa5cf923eb47431348d37b86') in 0.020629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 10_2.wav
+  artifactKey: Guid(16799f6d199d8d546a67214be6cab059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 10_2.wav using Guid(16799f6d199d8d546a67214be6cab059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16dd5cd8f69af9c9872d7a31ae477184') in 0.021910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 5_1.wav
+  artifactKey: Guid(533413c453380e641b3ef35109bcd35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 5_1.wav using Guid(533413c453380e641b3ef35109bcd35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3355e92c725621157ac187605b5daac4') in 0.022675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 7_4.wav
+  artifactKey: Guid(aa90c3dfd87c8fa4c908daf48532305e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 7_4.wav using Guid(aa90c3dfd87c8fa4c908daf48532305e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f95dd16aaeb0d314507a1c2f88b472b') in 0.032703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 7_2.wav
+  artifactKey: Guid(75409b81b27b5d744bd04c2809b74ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 7_2.wav using Guid(75409b81b27b5d744bd04c2809b74ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915ef8f5a7f0c1a400cb584612a8e75c') in 0.026735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 6_2.wav
+  artifactKey: Guid(ca4ddf3d9840eda46aed5cda8c52fe4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 6_2.wav using Guid(ca4ddf3d9840eda46aed5cda8c52fe4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672339142b071c6e2faf9702526eb2a3') in 0.022736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 8_3.wav
+  artifactKey: Guid(d2c34e47ae9301d43a4a0f8eb059b85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 8_3.wav using Guid(d2c34e47ae9301d43a4a0f8eb059b85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e75b0737a4ceba43d7ead421041ed6a') in 0.020637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 10_2.wav
+  artifactKey: Guid(5baae89064d8bde429aa950de70f4273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 10_2.wav using Guid(5baae89064d8bde429aa950de70f4273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e0227114f8458bfa35f292a828c421e') in 0.021042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 1_2.wav
+  artifactKey: Guid(65a4b4b35bd9c674c8f505073ee1bba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 1_2.wav using Guid(65a4b4b35bd9c674c8f505073ee1bba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbef3c1338709b6c78e23fed2167301') in 0.023402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 7_5.wav
+  artifactKey: Guid(63c74f2e9a0a376499497beca6cd5628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 7_5.wav using Guid(63c74f2e9a0a376499497beca6cd5628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ec1eb132f7dbff061f50f41755867d') in 0.026944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 8_4.wav
+  artifactKey: Guid(e42e0c7416bfbd1449ead22f802692e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 8_4.wav using Guid(e42e0c7416bfbd1449ead22f802692e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def00ab856d3b1a13382287a449215ff') in 0.026296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 6_1.wav
+  artifactKey: Guid(3242e1ef864b5b142b134af9096399cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 6_1.wav using Guid(3242e1ef864b5b142b134af9096399cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d06c3e62d9d8fee59540b767ad21a12') in 0.026511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 2_2.wav
+  artifactKey: Guid(8bb2147841f32fd4dbfcadefc64c6315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 2_2.wav using Guid(8bb2147841f32fd4dbfcadefc64c6315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1eb0a5cb8585f8a89670b0195e15b1') in 0.022255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 6_5.wav
+  artifactKey: Guid(21158c49296a6934287a4dd1eba03d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 6_5.wav using Guid(21158c49296a6934287a4dd1eba03d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc9085a25f5386e674bd59dcc3ef942') in 0.021620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 7_1.wav
+  artifactKey: Guid(1e735a592f53ad54eab4eb5976d8efbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Teleport 7_1.wav using Guid(1e735a592f53ad54eab4eb5976d8efbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3d50806bc73e5f6b32a5bd821934ce') in 0.020424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.154675 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Data 12.wav
+  artifactKey: Guid(2af7c3a5fd9b08a4288737d0ff7d5782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Data 12.wav using Guid(2af7c3a5fd9b08a4288737d0ff7d5782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07725b45ccead18b9056c888cc11cfaf') in 0.021358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 03.wav
+  artifactKey: Guid(f9d62b4e6d5e2eb428414ca7b14d3aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 03.wav using Guid(f9d62b4e6d5e2eb428414ca7b14d3aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec13502537d8cde535c6b7b94d2879ac') in 0.022485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 20.wav
+  artifactKey: Guid(8315ef7722f1ff04f805ed60ddea4cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 20.wav using Guid(8315ef7722f1ff04f805ed60ddea4cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8810ed2e232c7ded7706214881b1862e') in 0.022695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 07.wav
+  artifactKey: Guid(dee6a397c131a0e4f8f4d67c940f4466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 07.wav using Guid(dee6a397c131a0e4f8f4d67c940f4466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92667bb68e9dde4db4b6fdc873e26878') in 0.026207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Data 15.wav
+  artifactKey: Guid(4801bcfd6db96034b85942c9f40ce85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Data 15.wav using Guid(4801bcfd6db96034b85942c9f40ce85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11e38424aec2f9fc3348076e7acb9ca') in 0.021444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Error 17.wav
+  artifactKey: Guid(6f21c01f17106924d873625f7c9505e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Error 17.wav using Guid(6f21c01f17106924d873625f7c9505e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcac1456a9e8fe0221f197dceaaef139') in 0.026215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 18.wav
+  artifactKey: Guid(b161eba9421aac14caed80ad14e64fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 18.wav using Guid(b161eba9421aac14caed80ad14e64fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a8740f7b88c590a9e700043539af0d') in 0.021585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 16.wav
+  artifactKey: Guid(da1102ae2bf74a44f85f0ae7c6ed7a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 16.wav using Guid(da1102ae2bf74a44f85f0ae7c6ed7a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8113f1ee21c6aeab83089b66c13a6aac') in 0.028503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 12.wav
+  artifactKey: Guid(e8fe7721734f1b942889870f8c8c5fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 12.wav using Guid(e8fe7721734f1b942889870f8c8c5fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af4fbb4e3469920340c062316d4aa33d') in 0.028224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Data 23.wav
+  artifactKey: Guid(c843d406010f6f34aae68b1694144adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Data 23.wav using Guid(c843d406010f6f34aae68b1694144adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2a67c94755519ba3670e921041a34f') in 0.026050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Error 05.wav
+  artifactKey: Guid(5c825b22660e5e84b855af968f3bc445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Error 05.wav using Guid(5c825b22660e5e84b855af968f3bc445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7518535f5b2e9340090a307f4ce49ce1') in 0.020455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 01.wav
+  artifactKey: Guid(2d5372e6adf36b04d8ae5d52ed37914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 01.wav using Guid(2d5372e6adf36b04d8ae5d52ed37914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3f6c49891e2f4e19a074326664a6fe') in 0.022296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Error 06.wav
+  artifactKey: Guid(86d72dc374090fa43b57bb370b6a48e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Error 06.wav using Guid(86d72dc374090fa43b57bb370b6a48e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d805f362e59c1f8f5a468b27b7ef2b') in 0.019603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 08.wav
+  artifactKey: Guid(8a9cbdef82c9829489a7aa5e0f133f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 08.wav using Guid(8a9cbdef82c9829489a7aa5e0f133f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7486cf57cbf8c8d7f4199ef5a21e5759') in 0.019723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Error 01.wav
+  artifactKey: Guid(da28710470cb0374fbcfb4ce3cb10c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Error 01.wav using Guid(da28710470cb0374fbcfb4ce3cb10c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bc2392ec06f67ea8cbb23e5ed1c110') in 0.022568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 10.wav
+  artifactKey: Guid(d49dc1fb89459b7409f4e11eb3c7951a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 10.wav using Guid(d49dc1fb89459b7409f4e11eb3c7951a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8165688d23bf38ed45b83dc786888b7f') in 0.026915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 15.wav
+  artifactKey: Guid(4ed79e6a2b8a20d4b888d2df596738f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 15.wav using Guid(4ed79e6a2b8a20d4b888d2df596738f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca1b94cb0e69a96c696249b76d6c8e7') in 0.020606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Digital Click 19.wav
+  artifactKey: Guid(e04069b06bbfca64c902fd23dbc59efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Digital Click 19.wav using Guid(e04069b06bbfca64c902fd23dbc59efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c125ebef2381a09d97a468ddddfcef2') in 0.020077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.159774 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 1_1.wav
+  artifactKey: Guid(038d151d0e5e7bb49b85b8934673d254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 1_1.wav using Guid(038d151d0e5e7bb49b85b8934673d254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0e8bb7631d2941d71a2a482235cd73') in 0.038240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 1_4.wav
+  artifactKey: Guid(bdb2c9c333addd54fa4d06f99b0e6f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 1_4.wav using Guid(bdb2c9c333addd54fa4d06f99b0e6f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605bd18ad1365a11a586141e4762b3cd') in 0.027050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 3_3.wav
+  artifactKey: Guid(8f39eeab405750a46aaa7a7a7827a62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 3_3.wav using Guid(8f39eeab405750a46aaa7a7a7827a62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8efc2f1577200547668f357998b332') in 0.023889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 4_1.wav
+  artifactKey: Guid(f0ce5bb6bc8231049a45856d35ebc88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 4_1.wav using Guid(f0ce5bb6bc8231049a45856d35ebc88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594d2159e5d012d3a27d054da8fec908') in 0.027084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Sounds/Doors and Portals/Door 4_4.wav
+  artifactKey: Guid(8e562039d9df42c43b7c06622b4e2813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Doors and Portals/Door 4_4.wav using Guid(8e562039d9df42c43b7c06622b4e2813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ce14df6692329173d85a7947520854') in 0.026334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.960797 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/City Loop 1.wav
+  artifactKey: Guid(c9fafa5535a0a294683f986e8504e114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/City Loop 1.wav using Guid(c9fafa5535a0a294683f986e8504e114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750dd4672f5e668ae642939239ef041b') in 0.022696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Low Rumble Loop 3.wav
+  artifactKey: Guid(fbebfbbd91393364ebb968927d9ec9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Low Rumble Loop 3.wav using Guid(fbebfbbd91393364ebb968927d9ec9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961496f3a6f6a01f41dd2185f6a7a3dd') in 0.030367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 4.wav
+  artifactKey: Guid(e9b8628704a4790409862cad09c62127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 4.wav using Guid(e9b8628704a4790409862cad09c62127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7735efed71a397625065404765da67') in 0.025255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 1.wav
+  artifactKey: Guid(dccdaa8015fb334489e0cb67531e131a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 1.wav using Guid(dccdaa8015fb334489e0cb67531e131a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5c241805027f4378c9e7b794ceec32') in 0.038004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Wind Loop 1.wav
+  artifactKey: Guid(fd944c3ff9ef07046bffb21039a549d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Wind Loop 1.wav using Guid(fd944c3ff9ef07046bffb21039a549d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eee38b4a6f6261b8f05076c7a393478') in 0.024071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 9.wav
+  artifactKey: Guid(0517414ef1efb164bafe91c37fc90167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 9.wav using Guid(0517414ef1efb164bafe91c37fc90167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d286c6838821ade2b075809641e502') in 0.024020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 8.wav
+  artifactKey: Guid(3873df05f1ff2194da3754f8a40b351c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 8.wav using Guid(3873df05f1ff2194da3754f8a40b351c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62c0bb4d047b96ddcf496e6112d6f2d') in 0.030194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 2.wav
+  artifactKey: Guid(aefbf24bcebad1941a5085c7f4ad85e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Hum Loop 2.wav using Guid(aefbf24bcebad1941a5085c7f4ad85e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2296fe4a33a85eb5e966281314938d05') in 0.025084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/External/Sci-Fi Sounds/Hum and Ambience/Machine Room Loop 1.wav
+  artifactKey: Guid(aeecb3bca1819c344bf14668deccc152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Hum and Ambience/Machine Room Loop 1.wav using Guid(aeecb3bca1819c344bf14668deccc152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54f9cf667e494867904f9994942be07') in 0.025633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.247648 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 1_1.wav
+  artifactKey: Guid(5c4f33bc89f836c47a972fe6a1d4a689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 1_1.wav using Guid(5c4f33bc89f836c47a972fe6a1d4a689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adf0e9e6c8e5e614ee05626f76a9b50') in 0.031615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 3_3.wav
+  artifactKey: Guid(1b1f421daeba26246a4827784baf67c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 3_3.wav using Guid(1b1f421daeba26246a4827784baf67c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff49fbbb75af05698136f67cd130952') in 0.021718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 2_4.wav
+  artifactKey: Guid(d5a86b0611524c14588143a433111046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 2_4.wav using Guid(d5a86b0611524c14588143a433111046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0710bac967869736ab3cc5489255aee1') in 0.023857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 3_5.wav
+  artifactKey: Guid(f7b4e7be8ea0bf248b3a2e0193db7301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 3_5.wav using Guid(f7b4e7be8ea0bf248b3a2e0193db7301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74ad5f7b7d29fb40053f0c6d99c6202') in 0.030416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Data Calculating 3_1.wav
+  artifactKey: Guid(c01d7f1cfe91a964fa081f76f7670e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Data Calculating 3_1.wav using Guid(c01d7f1cfe91a964fa081f76f7670e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5251e3231157164d731b681fd7b70206') in 0.026024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.549702 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 4_3.wav
+  artifactKey: Guid(1a081ab1514fd3943b21144dcbd7fa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 4_3.wav using Guid(1a081ab1514fd3943b21144dcbd7fa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786e9060a55942b96a7d31bc559a4bc8') in 0.023069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 04.wav
+  artifactKey: Guid(6d305e8f638295446a5f805f807a0319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 04.wav using Guid(6d305e8f638295446a5f805f807a0319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885142a6e8e5b96edccedbd2383d98c2') in 0.025589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Shield Device 2 Stop.wav
+  artifactKey: Guid(21fe71ad21d843c4f92d301772f34d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Shield Device 2 Stop.wav using Guid(21fe71ad21d843c4f92d301772f34d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e604c9232fde3417e70ec105798788') in 0.030263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 03.wav
+  artifactKey: Guid(f1e09710e2d2b474a90fbe387630c12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 03.wav using Guid(f1e09710e2d2b474a90fbe387630c12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f58d0616f1001c9c69e52beb0e50d4') in 0.025613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 01.wav
+  artifactKey: Guid(ed684ba036f649042a158ab2f457d35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 01.wav using Guid(ed684ba036f649042a158ab2f457d35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d649897d52196d207f0bd6122563322') in 0.025535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Shield Device 2 Start.wav
+  artifactKey: Guid(3ec4a6494c35d614fb847ef3095b719c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Shield Device 2 Start.wav using Guid(3ec4a6494c35d614fb847ef3095b719c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2625a0f9b9afc9e4f5a92dcb30787a74') in 0.029311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 02.wav
+  artifactKey: Guid(b7f798d0e3cbef849bde75839dd968e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 02.wav using Guid(b7f798d0e3cbef849bde75839dd968e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806e071dace010c42ee607f7ecfd9dbb') in 0.020500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Glitch 7_4.wav
+  artifactKey: Guid(af388dbe6fe6c664fbe08ebd01ec3d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Glitch 7_4.wav using Guid(af388dbe6fe6c664fbe08ebd01ec3d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3218598b59466a31dad3569b6058ed') in 0.021815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Shield Device 4 Start.wav
+  artifactKey: Guid(0192fe1f74e88bf4487cf2c47a96edfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Shield Device 4 Start.wav using Guid(0192fe1f74e88bf4487cf2c47a96edfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c507a4a3672d2dbf14dea56cc120e0') in 0.022592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Shield Device 1 Stop.wav
+  artifactKey: Guid(d017031a1c18c4a4ea4a632a66da97be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Shield Device 1 Stop.wav using Guid(d017031a1c18c4a4ea4a632a66da97be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1657300496d4b829f197819cd4bd7a4') in 0.023492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.328597 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 09.wav
+  artifactKey: Guid(c9e42f58f59d7ea448e8fc288f4c2ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 09.wav using Guid(c9e42f58f59d7ea448e8fc288f4c2ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce90bf7b89fc2ddaf388d536ef6d03aa') in 0.034304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 20.wav
+  artifactKey: Guid(a91befb751115c7468b87da1add005e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 20.wav using Guid(a91befb751115c7468b87da1add005e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ff6e174b8de0eadb1d9d70fb72f1b7') in 0.027325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 12.wav
+  artifactKey: Guid(99738ac34e9a0a34da7aa5b90209f61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 12.wav using Guid(99738ac34e9a0a34da7aa5b90209f61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80921f017bb4a7caaba75e74cdcf8e89') in 0.025529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Sci-Fi Sounds/Electric/Spark 14.wav
+  artifactKey: Guid(06cbe583c436bdb41ba063454ac93440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Electric/Spark 14.wav using Guid(06cbe583c436bdb41ba063454ac93440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4705e0b4bb37f7afe2311494d71bb1ac') in 0.020851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.838176 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Click 1.wav
+  artifactKey: Guid(b62117f928ae5b34f968fd6676ce318c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Click 1.wav using Guid(b62117f928ae5b34f968fd6676ce318c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379a25d5d4fe3c4ba6def3034607b7d6') in 0.033589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Click 12.wav
+  artifactKey: Guid(313cb0d6cac193b46b09dc2844120a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Click 12.wav using Guid(313cb0d6cac193b46b09dc2844120a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e6d62c4caf3ce31630910770e1fbb0') in 0.021237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Complex Interface 3.wav
+  artifactKey: Guid(5d244861e559ab74e82c74ffc01a306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Complex Interface 3.wav using Guid(5d244861e559ab74e82c74ffc01a306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b18b2d2e9b0fab086ff641139544aeb') in 0.025971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Click 11.wav
+  artifactKey: Guid(e816642d32e294046b522287de7f1608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Click 11.wav using Guid(e816642d32e294046b522287de7f1608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8194aed463569bd0c05d3d0d077a2e23') in 0.023473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Complex Interface 2.wav
+  artifactKey: Guid(0ad2f7c27fbae6a4ea46de79196c5e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Complex Interface 2.wav using Guid(0ad2f7c27fbae6a4ea46de79196c5e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c970bb0a00c9dd8dcc817880230229') in 0.019955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Click 6.wav
+  artifactKey: Guid(33d9a78461a291248928f34f5b7d5e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Click 6.wav using Guid(33d9a78461a291248928f34f5b7d5e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c92a8d07a11a6d8a8586cdddc627017') in 0.021977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Click 10.wav
+  artifactKey: Guid(d0badce2e86f3654393a96bf3063107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Click 10.wav using Guid(d0badce2e86f3654393a96bf3063107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbf48b0a931ab87eb9d287f6ad410af') in 0.023648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Click 4.wav
+  artifactKey: Guid(a3c30e751d2f49446905e6c3afafb9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Click 4.wav using Guid(a3c30e751d2f49446905e6c3afafb9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb4ee386f53743445ebabe5d7f5e9a3') in 0.025214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Data 10.wav
+  artifactKey: Guid(f6320071ee559264ab75db52e306e624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Data 10.wav using Guid(f6320071ee559264ab75db52e306e624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe1867e5192c6628837310335f3a6ea') in 0.020743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Sci-Fi Sounds/Interface/Complex Interface 4.wav
+  artifactKey: Guid(81aa6787174fe874b8706a60ccf94415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Interface/Complex Interface 4.wav using Guid(81aa6787174fe874b8706a60ccf94415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af554d65cefa0d90456e0b276d64fb00') in 0.020684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.122442 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Fly By 07_5.wav
+  artifactKey: Guid(4d0935e85104a144cb4a48c9243f9d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Fly By 07_5.wav using Guid(4d0935e85104a144cb4a48c9243f9d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b54250b545f369a9c753f088355f36') in 0.021510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 3_2.wav
+  artifactKey: Guid(7d11de44c1752a84ab73ddd8ec8027c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 3_2.wav using Guid(7d11de44c1752a84ab73ddd8ec8027c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99bd940735960b454a83ac177887c237') in 0.023425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 2_4.wav
+  artifactKey: Guid(e0c78eb81c737034e9242b4619bf7b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 2_4.wav using Guid(e0c78eb81c737034e9242b4619bf7b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3daaddd550f991b59f84c55f8373bb5') in 0.025220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 3_3.wav
+  artifactKey: Guid(96fb674b02da5f549b2196a4f919db42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 3_3.wav using Guid(96fb674b02da5f549b2196a4f919db42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9ab6f2f60b831346435146d503b168') in 0.022218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 1_2.wav
+  artifactKey: Guid(1aa42d3cd91c23445921f7072068c787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 1_2.wav using Guid(1aa42d3cd91c23445921f7072068c787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b765b493e8241c80ccdf5f60ab65eed') in 0.022034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.448507 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 3_4.wav
+  artifactKey: Guid(5e26159eb8f563b4f9420afdcd0959ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 3_4.wav using Guid(5e26159eb8f563b4f9420afdcd0959ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a8d67116c420ebe59a07a1829c312f') in 0.025222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 6_2.wav
+  artifactKey: Guid(99ff9f34f6cf1b644abc442b66993a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 6_2.wav using Guid(99ff9f34f6cf1b644abc442b66993a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce7e3c9d802ca735c1cd5a665bf5d07') in 0.028587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 4_4.wav
+  artifactKey: Guid(ab60c1a8b667b194fa5597e9c9664be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 4_4.wav using Guid(ab60c1a8b667b194fa5597e9c9664be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ad951ea2248bac99eb445887bd0ec1') in 0.023235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 5_2.wav
+  artifactKey: Guid(3e08046b2030b1b459c73b8044039a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 5_2.wav using Guid(3e08046b2030b1b459c73b8044039a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e19083fb7a256d7fb92a162ba4903e') in 0.027098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 6_4.wav
+  artifactKey: Guid(7e1cf369f4fb6b04aa9df90f22c6a66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 6_4.wav using Guid(7e1cf369f4fb6b04aa9df90f22c6a66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186067443cd7033eb497576d9c52ddb2') in 0.025782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.387573 seconds.
+  path: Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 7_1.wav
+  artifactKey: Guid(d91cceb5beee2174ea39c66309acec35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Sounds/Movement/Synth Whoosh 7_1.wav using Guid(d91cceb5beee2174ea39c66309acec35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3007e2a3e04b3318229d48008c561752') in 0.036616 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.333 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1334ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1055ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (365ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3693 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (364.0 KB). Loaded Objects now: 4410.
+Memory consumption went from 261.3 MB to 261.0 MB.
+Total: 3.800900 ms (FindLiveObjects: 0.329100 ms CreateObjectMapping: 0.258100 ms MarkObjects: 2.998100 ms  DeleteObjects: 0.214500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

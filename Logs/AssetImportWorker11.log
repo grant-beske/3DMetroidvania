@@ -1,0 +1,443 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.6f1 (8c4e826ba445) revision 9195138'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 16282 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+C:/Users/grant/UnityProjects/3D Metroidvania
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+51149
+Successfully changed project path to: C:/Users/grant/UnityProjects/3D Metroidvania
+C:/Users/grant/UnityProjects/3D Metroidvania
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 216.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.6f1 (8c4e826ba445)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/grant/UnityProjects/3D Metroidvania/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f10)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007231 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 250.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Domain Reload Profiling:
+	ReloadAssembly (774ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (102ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (451ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (250ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007273 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 237.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.039 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2039ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1828ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (1430ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (238ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (1008ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 3.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3865 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.8 MB). Loaded Objects now: 4334.
+Memory consumption went from 277.5 MB to 276.8 MB.
+Total: 4.394100 ms (FindLiveObjects: 0.282600 ms CreateObjectMapping: 0.197300 ms MarkObjects: 3.446300 ms  DeleteObjects: 0.467100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1484427.701809 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Scary space atmosphere/Scary space atmosphere 2.wav
+  artifactKey: Guid(c6e526347ec1ed54ea64a3c09705db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Scary space atmosphere/Scary space atmosphere 2.wav using Guid(c6e526347ec1ed54ea64a3c09705db6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4843333f5a2b834063a60425df86fdf') in 0.108346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.585702 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Pressure Atmosphere/Pressure Atmosphere 2.wav
+  artifactKey: Guid(1fe86e5b40853ca4f82ea51bce274da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Pressure Atmosphere/Pressure Atmosphere 2.wav using Guid(1fe86e5b40853ca4f82ea51bce274da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4734aec1fa4addccd259dfc96eea0af4') in 0.020831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.668616 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Futuristic machine room/Futuristic machine room 2.wav
+  artifactKey: Guid(9edf746f3566c5b44883aebd3b497a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Futuristic machine room/Futuristic machine room 2.wav using Guid(9edf746f3566c5b44883aebd3b497a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7c850a1b008f5eb38c4d6225442ab1') in 0.023416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.345135 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Space Jungle/Space Jungle 2.wav
+  artifactKey: Guid(8bd3c6777699c904c9d4982839a00360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Sci Fi Ambiances Vol2/Space Jungle/Space Jungle 2.wav using Guid(8bd3c6777699c904c9d4982839a00360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26e42fa5fda08093ea476746291bdd8') in 0.019909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.352216 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_3rd Round.wav
+  artifactKey: Guid(ec3744b038464d549aad3ca5a8ca1741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_3rd Round.wav using Guid(ec3744b038464d549aad3ca5a8ca1741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684bb0d2c6cab61e305f5893bbe34c90') in 0.014277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_General.wav
+  artifactKey: Guid(e97fb515c9b5869469db7e90c03f72df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_General.wav using Guid(e97fb515c9b5869469db7e90c03f72df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eacce2f8c2f8da74c23f75ff8f6fa79') in 0.020110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Enemies are here.wav
+  artifactKey: Guid(a1d235e3130ace549b13d7fe8413af52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Enemies are here.wav using Guid(a1d235e3130ace549b13d7fe8413af52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '829be0e195f067d52ecbbb7feafb8c7e') in 0.015967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Clear.wav
+  artifactKey: Guid(3642656fccdf82d4089dfd86e04b3179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Clear.wav using Guid(3642656fccdf82d4089dfd86e04b3179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fdaf053676b04496a221dafadc5c0fb') in 0.014453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_I am out of ammo.wav
+  artifactKey: Guid(181bcdb1c6bb37246b036668aeafaf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_I am out of ammo.wav using Guid(181bcdb1c6bb37246b036668aeafaf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb194ff56a7a5d2cc1012a707af37308') in 0.016890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Capture the flag_02.wav
+  artifactKey: Guid(bfe8c1337216c1c4b92c06896657ae7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Capture the flag_02.wav using Guid(bfe8c1337216c1c4b92c06896657ae7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'affd471e21d5d7e2b374b58cbb3789cd') in 0.025838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Let's Go Team.wav
+  artifactKey: Guid(b2fb0764e24c08a4fa1e037e583ee307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Let's Go Team.wav using Guid(b2fb0764e24c08a4fa1e037e583ee307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbd1672cb5d2da680a0e828e14e4137') in 0.015291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Double Kill.wav
+  artifactKey: Guid(07c446f178a17d845b3efc5da0323b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Double Kill.wav using Guid(07c446f178a17d845b3efc5da0323b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887872fbbba7714e63613bf9de345d15') in 0.016357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Destroyed.wav
+  artifactKey: Guid(02c1446d46e2e3744a0f7db9c19057c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Destroyed.wav using Guid(02c1446d46e2e3744a0f7db9c19057c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aae2222cb1eb60d7bd11d1f09d074e5') in 0.021288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Let's Go Brother.wav
+  artifactKey: Guid(97ac7396d3ace714fb4824bbe71a8c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Let's Go Brother.wav using Guid(97ac7396d3ace714fb4824bbe71a8c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90c7a40376942d2d50aa1166da05146') in 0.014079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Go Go Go.wav
+  artifactKey: Guid(047569d5650435f40b3664b8918693c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Go Go Go.wav using Guid(047569d5650435f40b3664b8918693c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a6e68bcbd6171acb0e978cc22b71f4') in 0.017458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Enemy Spotted.wav
+  artifactKey: Guid(00186a82c959a6849863f47447744686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Enemy Spotted.wav using Guid(00186a82c959a6849863f47447744686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da2f8cf731c6df2052c9638e73228f5') in 0.015913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Kalachnikov.wav
+  artifactKey: Guid(731ea5fc9fa670a49bd21f758957f1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Kalachnikov.wav using Guid(731ea5fc9fa670a49bd21f758957f1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc61dd615623b756e4990ed48cc45bd') in 0.013691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Don't shoot.wav
+  artifactKey: Guid(06cd72f5d9998444589dd532b4cd7d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Don't shoot.wav using Guid(06cd72f5d9998444589dd532b4cd7d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfb90409b1f460aa3a3aad87568a935') in 0.018439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Eight.wav
+  artifactKey: Guid(f7516e769f67e23498d7a43ddddf73a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Eight.wav using Guid(f7516e769f67e23498d7a43ddddf73a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bb9e4f20f3529fcdf448c4fe25c7d52') in 0.016028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Kalachnikova.wav
+  artifactKey: Guid(b85cc22b31a543442897615266be5fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Kalachnikova.wav using Guid(b85cc22b31a543442897615266be5fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a93a9813f7e3d9b0d22062c95bea5c4') in 0.021050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Bomb Defused.wav
+  artifactKey: Guid(b4c9413cd2d1de84eb41d97bae9ecf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Bomb Defused.wav using Guid(b4c9413cd2d1de84eb41d97bae9ecf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89dd617da9b63ff1bd8d61d8c75a5eb1') in 0.017329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Cover Me_02.wav
+  artifactKey: Guid(06ea848b4a000f842973e439183033a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Russian announcer pack/Russian Announcer_Cover Me_02.wav using Guid(06ea848b4a000f842973e439183033a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e045bb79076d92ce48d5a60b1a8ee5') in 0.015985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.092274 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Cave/Cave_02.wav
+  artifactKey: Guid(82479297860360449b07af617d490324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Cave/Cave_02.wav using Guid(82479297860360449b07af617d490324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ddf7d66571c4ffc4a9044562e4f87f') in 0.014287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.721547 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Horror base breach at night/Horror base breach at night 2.wav
+  artifactKey: Guid(5bcd64a0d6ba7454788175fdb8923112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Horror base breach at night/Horror base breach at night 2.wav using Guid(5bcd64a0d6ba7454788175fdb8923112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7817f8887ae7f8f46b57a1a257e8c4d7') in 0.019188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.483830 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Horror base at night/Horror base at night 2.wav
+  artifactKey: Guid(505bebbc95eda524084d0c81f135348d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Horror base at night/Horror base at night 2.wav using Guid(505bebbc95eda524084d0c81f135348d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a7ccb8a9abc0155185a1582991a7e4') in 0.014734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Horror base at night/Horror base at night 4.wav
+  artifactKey: Guid(fc3815cb95efd80408730c9800e40f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Horror base at night/Horror base at night 4.wav using Guid(fc3815cb95efd80408730c9800e40f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242d048d4821a89c2ac02c582c3bfae2') in 0.018209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.335137 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Abandoned factory/Abandoned factory 2.wav
+  artifactKey: Guid(fab9891ee6739f74ca53800c1a781f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Horror Ambiances Vol2/Abandoned factory/Abandoned factory 2.wav using Guid(fab9891ee6739f74ca53800c1a781f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f52ba8e34adbf8bfa591e092a22125') in 0.020026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.714639 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 2.wav
+  artifactKey: Guid(ab62978ad9cd35049822e21704eb04de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 2.wav using Guid(ab62978ad9cd35049822e21704eb04de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf316a567f11d0c021a441e0995fb4e') in 0.026446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 5.wav
+  artifactKey: Guid(066827db2e4fe404e85dfc6bc8492d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 5.wav using Guid(066827db2e4fe404e85dfc6bc8492d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '175e177209a5dbec6d5bfcbeda1a70a3') in 0.021062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 3.wav
+  artifactKey: Guid(cb5d17a0eee8c1d4ba6e0a173c6599f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 3.wav using Guid(cb5d17a0eee8c1d4ba6e0a173c6599f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523026f258e73a55c9e16b675a22f200') in 0.015887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 7.wav
+  artifactKey: Guid(cbdbc1f6ef23170498d2f9083f80fd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 7.wav using Guid(cbdbc1f6ef23170498d2f9083f80fd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b221161ade0b1e84c6f81fb4268841e1') in 0.020932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 4.wav
+  artifactKey: Guid(484ee1fc1fe81134ea270af9e11be3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Falling on Metal/Bullet Falling on Metal 4.wav using Guid(484ee1fc1fe81134ea270af9e11be3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817ab5c064f620a0aed4dfea84e1e34d') in 0.013561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.521143 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 2.wav
+  artifactKey: Guid(ab2f3f7aeab865c4aae4575b202779be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 2.wav using Guid(ab2f3f7aeab865c4aae4575b202779be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0d622439cf6d778c9cede4e05761b0') in 0.014288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 6.wav
+  artifactKey: Guid(c5cbaa8a9a698fa4da46b26c6c4f2990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 6.wav using Guid(c5cbaa8a9a698fa4da46b26c6c4f2990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5685a1b3814a5e32fec675024ad23b') in 0.014450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 7.wav
+  artifactKey: Guid(2292bd182e18e9344a3f098497e66896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 7.wav using Guid(2292bd182e18e9344a3f098497e66896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f673b411b23e4bf8fdaeb0150d8805d0') in 0.019636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 4.wav
+  artifactKey: Guid(be4e565de8b3d644c98a3f78ebcf46bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Heavy/Metal Heavy 4.wav using Guid(be4e565de8b3d644c98a3f78ebcf46bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99e1dd09c5311b8dc62bb3a05bc24fc') in 0.017285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.738285 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Dirt/Dirt 2.wav
+  artifactKey: Guid(122352cfe9d4fff4fac99a5778a507d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Dirt/Dirt 2.wav using Guid(122352cfe9d4fff4fac99a5778a507d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78142cd3e9e80eb419fa79776ea8fa96') in 0.014233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Dirt/Dirt 8.wav
+  artifactKey: Guid(e24c0d91fb14efd4c9f0d4a2d9e2f7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Dirt/Dirt 8.wav using Guid(e24c0d91fb14efd4c9f0d4a2d9e2f7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47e955a62d15128e518a3b521d6a676') in 0.017617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Dirt/Dirt 6.wav
+  artifactKey: Guid(1d63923f83960f24dbbad3f027309564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Dirt/Dirt 6.wav using Guid(1d63923f83960f24dbbad3f027309564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed499ba1ab0cd46f3193f3ce797989d3') in 0.024691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.512262 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Light/Metal Light 2.wav
+  artifactKey: Guid(7cc76842319c7e14e9ff0a61700566db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Light/Metal Light 2.wav using Guid(7cc76842319c7e14e9ff0a61700566db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a7efa88826528ffa873cb1be2ba484') in 0.014453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Light/Metal Light 8.wav
+  artifactKey: Guid(76f32d945b5cfdc42a3394e3a6191994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Light/Metal Light 8.wav using Guid(76f32d945b5cfdc42a3394e3a6191994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8186c71a74862c0cd35f0d61c9dff365') in 0.013201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Light/Metal Light 4.wav
+  artifactKey: Guid(5dab1723c00196749ac959dcd49185a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Metal Light/Metal Light 4.wav using Guid(5dab1723c00196749ac959dcd49185a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e76b3e507218b71178a672835cb4beb') in 0.017394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.376038 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Flybys/Bullet Flyby 2.wav
+  artifactKey: Guid(4a6721a983e9ce84b9ad0a0bf8335737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Flybys/Bullet Flyby 2.wav using Guid(4a6721a983e9ce84b9ad0a0bf8335737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3ce6eae48df6fda9ca7e93222a88f06') in 0.021717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Flybys/Bullet Flyby 10.wav
+  artifactKey: Guid(bf7326937466129408ef4154493763d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Flybys/Bullet Flyby 10.wav using Guid(bf7326937466129408ef4154493763d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91537f5f2270d4e4677561a8c8df9ff9') in 0.016085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Flybys/Bullet Flyby 5.wav
+  artifactKey: Guid(f1f6b4a7d8b27864a8e3141d86c4c59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Bullet Flybys/Bullet Flyby 5.wav using Guid(f1f6b4a7d8b27864a8e3141d86c4c59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908abad20424ae127ffb805fe7d5a181') in 0.015363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.555728 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Concrete/Concrete 2.wav
+  artifactKey: Guid(2191afc62b80c5c47b01c75f3f754b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Concrete/Concrete 2.wav using Guid(2191afc62b80c5c47b01c75f3f754b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d0132181d64070d1b61a1f3210203b') in 0.014007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Concrete/Concrete 4.wav
+  artifactKey: Guid(72e89f997eb5a954893a634dc73f0729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Everything Bundle/Ultimate SFX Bundle - HD Remaster/Bullet Impacts & Flybys/Concrete/Concrete 4.wav using Guid(72e89f997eb5a954893a634dc73f0729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af807cfb93aa4f6ffe576de13085b2b') in 0.013915 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

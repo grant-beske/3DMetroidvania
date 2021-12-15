@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 8187033771032117879}
   - component: {fileID: 7431027701828661337}
   - component: {fileID: 2862518508184076817}
-  - component: {fileID: 6812952185910133530}
   m_Layer: 0
   m_Name: RedLaser
   m_TagString: Untagged
@@ -148,6 +147,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1453318701097817572}
+  - {fileID: 7557147259557931174}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -163,8 +163,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85a310a79ed7d54cad79a9b09f694fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 0
-  timeToLive: 0
+  radius: 0.03
+  velocity: 40
+  timeToLive: 0.5
+  tip: {fileID: 7557147259557931174}
+  root: {fileID: 6009199960917300561}
+  hittableLayers:
+    serializedVersion: 2
+    m_Bits: 7415
+  hitSfx: {fileID: 1269098869092109487, guid: e1d438193af8a7745980c4470db3e1e4, type: 3}
+  hitVfx: {fileID: 136416, guid: 817e5df2122398544a60922318817440, type: 3}
+  hitVfxSpawnOffset: 0.05
 --- !u!33 &7431027701828661337
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -215,16 +224,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6812952185910133530
-BoxCollider:
+--- !u!1 &7504379963594434579
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5567170371744562434}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7557147259557931174}
+  m_Layer: 0
+  m_Name: Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7557147259557931174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504379963594434579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0.499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6009199960917300561}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

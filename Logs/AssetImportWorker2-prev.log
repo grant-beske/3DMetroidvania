@@ -15,7 +15,7 @@ C:/Users/grant/UnityProjects/3D Metroidvania
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-51022
+51013
 Successfully changed project path to: C:/Users/grant/UnityProjects/3D Metroidvania
 C:/Users/grant/UnityProjects/3D Metroidvania
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/grant/UnityProjects/3D Metroidvania
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 81.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 82.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.6f1 (8c4e826ba445)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
@@ -63,72 +63,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007099 seconds.
+Registered in 0.006809 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 75.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 79.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.560 seconds
+- Completed reload, in  0.565 seconds
 Domain Reload Profiling:
-	ReloadAssembly (560ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (565ms)
+		BeginReloadAssembly (67ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (420ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (426ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (90ms)
+			SetupTypeCache (89ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (256ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (263ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (75ms)
+				RefreshPlugins (79ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (126ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
+				ProcessInitializeOnLoadAttributes (129ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005834 seconds.
+Registered in 0.005727 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 79.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.701 seconds
+- Completed reload, in  1.753 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1702ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (1754ms)
+		BeginReloadAssembly (101ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1514ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1563ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (208ms)
+			SetupTypeCache (203ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (1140ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (1196ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (889ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (922ms)
 				ProcessInitializeOnLoadMethodAttributes (68ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
@@ -138,12 +138,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3871 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 127 unused Assets / (0.8 MB). Loaded Objects now: 4340.
-Memory consumption went from 266.5 MB to 265.7 MB.
-Total: 5.061100 ms (FindLiveObjects: 0.394000 ms CreateObjectMapping: 0.306400 ms MarkObjects: 3.891200 ms  DeleteObjects: 0.468500 ms)
+Unloading 3865 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.8 MB). Loaded Objects now: 4334.
+Memory consumption went from 263.5 MB to 262.8 MB.
+Total: 4.509400 ms (FindLiveObjects: 0.285600 ms CreateObjectMapping: 0.202100 ms MarkObjects: 3.578900 ms  DeleteObjects: 0.442000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -157,13 +157,759 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1376679.647249 seconds.
-  path: Assets/External/ScanlineHighlightShader/Textures/Checker_d.png
-  artifactKey: Guid(608192765b89fca43b24eb118dd224e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/ScanlineHighlightShader/Textures/Checker_d.png using Guid(608192765b89fca43b24eb118dd224e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be24acb7010e3da11ed6aa631e218f2') in 0.091340 seconds 
+  Time since last request: 1431501.384722 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Plasma/PlasmaMuzzleFlashBlue.prefab
+  artifactKey: Guid(2c468bba119f99341871b9ec1a44754d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Plasma/PlasmaMuzzleFlashBlue.prefab using Guid(2c468bba119f99341871b9ec1a44754d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d7893606d7deb95f63a048bc520882') in 0.303366 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 67.766539 seconds.
-  path: Assets/External/ScanlineHighlightShader/Textures/Line_normal_m.png
-  artifactKey: Guid(a8e2396e502a7ce4790a1dc3518651d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External/ScanlineHighlightShader/Textures/Line_normal_m.png using Guid(a8e2396e502a7ce4790a1dc3518651d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fefcec05ba336c4dc280a91532bad19') in 0.018877 seconds 
+  Time since last request: 5.595388 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/BigGlow/bigglow_yellow.mat
+  artifactKey: Guid(1c23f7bae11a3634ab8c1952d378c62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/BigGlow/bigglow_yellow.mat using Guid(1c23f7bae11a3634ab8c1952d378c62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d6e04dadc0ac572c0785438b78b329') in 0.034541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.010184 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V2/Ring2MuzzleFlashBlue.prefab
+  artifactKey: Guid(870431c7ffd0e8e458d7f9c3b74e96ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V2/Ring2MuzzleFlashBlue.prefab using Guid(870431c7ffd0e8e458d7f9c3b74e96ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2115ee33024edac78e570078c19414') in 0.034155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V2/Ring2MuzzleFlashYellow.prefab
+  artifactKey: Guid(c49fa39b3c2529746a81b860db1436e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V2/Ring2MuzzleFlashYellow.prefab using Guid(c49fa39b3c2529746a81b860db1436e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668c1f9ea7c64b5123a23a4f3df6e39b') in 0.052039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.349115 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashBlue.prefab
+  artifactKey: Guid(98a9250958dcceb4c9bdfb84fb46feff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashBlue.prefab using Guid(98a9250958dcceb4c9bdfb84fb46feff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5974b19e1bc5a08d4856088a05268db') in 0.046647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashOrange.prefab
+  artifactKey: Guid(643e23d28f0404d49b425213c208445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashOrange.prefab using Guid(643e23d28f0404d49b425213c208445a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958d0fb8c1a882b3d32c4b253141c78a') in 0.052699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashPurple.prefab
+  artifactKey: Guid(17c777e6648f6f34e90a203e32af36c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Liquid/LiquidMuzzleFlashPurple.prefab using Guid(17c777e6648f6f34e90a203e32af36c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a3566df818552cad85ac50c90c4eff') in 0.056484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.052952 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Liquid/liquid_purple.mat
+  artifactKey: Guid(5755034f288ab9246bc2a253fbc45c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Liquid/liquid_purple.mat using Guid(5755034f288ab9246bc2a253fbc45c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e05429a8c7c2847f648b2dc945939ed') in 0.018374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.351903 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Liquid/liquid_orange.mat
+  artifactKey: Guid(cd47469f955865d4fb659aebe688ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Liquid/liquid_orange.mat using Guid(cd47469f955865d4fb659aebe688ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5769e49a73de7f53616b6a5a881ef0c') in 0.019491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.622100 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Liquid/liquid_red.mat
+  artifactKey: Guid(0e3897835de9c84428cef728d948ba27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Liquid/liquid_red.mat using Guid(0e3897835de9c84428cef728d948ba27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1a8cd7dccd7d90537adfa5fe4b3ae5') in 0.019677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.133102 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/BlueLightningMuzzleFlash.prefab
+  artifactKey: Guid(4a655ad86d1fbd648bb35a9b74bdab24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/BlueLightningMuzzleFlash.prefab using Guid(4a655ad86d1fbd648bb35a9b74bdab24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0239e87aebce4295c353426c3ee526ec') in 0.031711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/RedLightningMuzzleFlash.prefab
+  artifactKey: Guid(01f74ec81d3187243814bfb994fa4c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Lightning/RedLightningMuzzleFlash.prefab using Guid(01f74ec81d3187243814bfb994fa4c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5f445f027fd271655d6e365652ab8b') in 0.043233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.562457 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Lightning/lightning_red.mat
+  artifactKey: Guid(b71b3f61c661a454fbec86d15b44e76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Lightning/lightning_red.mat using Guid(b71b3f61c661a454fbec86d15b44e76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f543717abae86568374e0921a3067f49') in 0.017473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.969028 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/BlueGooMuzzleFlash.prefab
+  artifactKey: Guid(ccbf24a6948207741a0114a2bbad3ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/BlueGooMuzzleFlash.prefab using Guid(ccbf24a6948207741a0114a2bbad3ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d868ac494f6a5fdfa7a2bdec0796816') in 0.033684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/YellowGooMuzzleFlash.prefab
+  artifactKey: Guid(944fd8fde8bd5614787a8929c6ac228c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Goo/YellowGooMuzzleFlash.prefab using Guid(944fd8fde8bd5614787a8929c6ac228c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562b2f68add824cbff4e1ca3e7f26511') in 0.034458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.932898 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/BlueFireSmallMuzzleFlash.prefab
+  artifactKey: Guid(74ad75b782bd48a408074ee224c28435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/BlueFireSmallMuzzleFlash.prefab using Guid(74ad75b782bd48a408074ee224c28435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b00ef4b20eeb5c84d6eb80dcc7b746e') in 0.042432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/RedFireSmallMuzzleFlash.prefab
+  artifactKey: Guid(d9012ab117419954fb8c265a11ce5098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/RedFireSmallMuzzleFlash.prefab using Guid(d9012ab117419954fb8c265a11ce5098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682c274db157b30077ae9a13622faf1b') in 0.051357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/OrangeFireSmallMuzzleFlash.prefab
+  artifactKey: Guid(8dffde1b192d9514293ee897be080612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/FireSmall/OrangeFireSmallMuzzleFlash.prefab using Guid(8dffde1b192d9514293ee897be080612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528673537e98e46900d5c59e6cf986d3') in 0.018708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.025053 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Muzzleflash/muzzle_smallfire_red.mat
+  artifactKey: Guid(be108f5f832cd40498c2eea04c47fe1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Muzzleflash/muzzle_smallfire_red.mat using Guid(be108f5f832cd40498c2eea04c47fe1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b616058f3f739c92199c545cba464c49') in 0.015284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.362840 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/BlueFireMuzzleFlash.prefab
+  artifactKey: Guid(a6327a78b78ad4a4b8b81778344beb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/BlueFireMuzzleFlash.prefab using Guid(a6327a78b78ad4a4b8b81778344beb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d031d7ab672003cbbb6fd48ec3c8fa') in 0.040536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/OrangeFireMuzzleFlash.prefab
+  artifactKey: Guid(45e86b8c01f4b9943857737cb4142936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Fire/OrangeFireMuzzleFlash.prefab using Guid(45e86b8c01f4b9943857737cb4142936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278b16187121d67e59841dffe834de0b') in 0.050641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.457275 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Muzzleflash/muzzle_fire_red.mat
+  artifactKey: Guid(ecfe9811bb7a08b4892a2a74ef08f5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Muzzleflash/muzzle_fire_red.mat using Guid(ecfe9811bb7a08b4892a2a74ef08f5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3fa74fcffcd8aa41af1fc7a2d901268') in 0.016407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.690644 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V1/RingMuzzleFlashBlue.prefab
+  artifactKey: Guid(63621660d930e204fb40d555f221affa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V1/RingMuzzleFlashBlue.prefab using Guid(63621660d930e204fb40d555f221affa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ef1a3765eae932e3499cca098daa7d') in 0.036372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V1/RingMuzzleFlashRed.prefab
+  artifactKey: Guid(e6cf31fb1db1cda49904f00d3263865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Prefabs/Combat/MuzzleFlash/Ring/V1/RingMuzzleFlashRed.prefab using Guid(e6cf31fb1db1cda49904f00d3263865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b5b6bdd83158555240f1fd49bceb60') in 0.036666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.544500 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/BigGlow/bigglow_modular.mat
+  artifactKey: Guid(8222466244f58594c8105d7023742bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/BigGlow/bigglow_modular.mat using Guid(8222466244f58594c8105d7023742bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5bc11890af7d66ebfc1b0738d46009b') in 0.017482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.341855 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/3dbolt_blue.png
+  artifactKey: Guid(a719c4de6aef0d9469ab14c96453b1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/3dbolt_blue.png using Guid(a719c4de6aef0d9469ab14c96453b1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea464b34ba6cb2a22b79ba128964fb5') in 0.040809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bigglow_modular.png
+  artifactKey: Guid(630a3f4a68ab5c447952208de02137f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bigglow_modular.png using Guid(630a3f4a68ab5c447952208de02137f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f95232a38c4f9e3f3a7244577cc00c3e') in 0.016795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glowyringsharp.png
+  artifactKey: Guid(91e7debb039e9ce4d9b3cf01313fa89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glowyringsharp.png using Guid(91e7debb039e9ce4d9b3cf01313fa89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0542424608f506642abe506fb2e02198') in 0.023918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/hologram.png
+  artifactKey: Guid(466a1a57cc310954eb927c02abb3104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/hologram.png using Guid(466a1a57cc310954eb927c02abb3104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d3f210c6546161df508dca2ef3edec') in 0.023343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_red.png
+  artifactKey: Guid(8330285d5351cd541b8f095844c3d25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_red.png using Guid(8330285d5351cd541b8f095844c3d25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2caced2cf12abfcad0f1869574920d5a') in 0.016331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_yellow.png
+  artifactKey: Guid(eb6ed03614f7e7048bdb48c82c7c96e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_yellow.png using Guid(eb6ed03614f7e7048bdb48c82c7c96e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388485d11f1368ae8e15250665f8bebd') in 0.014232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/lasermodular.png
+  artifactKey: Guid(9b7bf77c7509143478dc23f1e35ff353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/lasermodular.png using Guid(9b7bf77c7509143478dc23f1e35ff353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d71cf5d01e0a06022ff7d83ccf2d20') in 0.023557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/jet_modular.png
+  artifactKey: Guid(0b37b4ff5f1939f45a7da493c17946c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/jet_modular.png using Guid(0b37b4ff5f1939f45a7da493c17946c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d44d2f16f3b1a8004b8d97707b7ff98') in 0.021379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/duck.png
+  artifactKey: Guid(d01ba7e3909e71c44b33f67f8a3ae9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/duck.png using Guid(d01ba7e3909e71c44b33f67f8a3ae9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca9d0002764782cd927ccacf2ff17d6') in 0.022298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glow_normal.png
+  artifactKey: Guid(0c559e71a5711774297a52f8f3591447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glow_normal.png using Guid(0c559e71a5711774297a52f8f3591447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88275a80869bd58aa2a8005881917c6') in 0.027186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserbeam_blue.png
+  artifactKey: Guid(5c5207c211d02d44b99af64318485a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserbeam_blue.png using Guid(5c5207c211d02d44b99af64318485a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55098ef25a37678f707f9d4509322f4a') in 0.021582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserball_green.png
+  artifactKey: Guid(bd1c41acbb9391048967bb8865ec43b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserball_green.png using Guid(bd1c41acbb9391048967bb8865ec43b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b7c36e0d91d6e57b90cf23840c021b') in 0.017174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_blue.png
+  artifactKey: Guid(afead6c891d269240ab73569b16de21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_blue.png using Guid(afead6c891d269240ab73569b16de21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8d5657cfc4e34652304c86d5ed06fd') in 0.016161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserbeam_purple.png
+  artifactKey: Guid(b3a6f7b30b85ce448b42ce216af42499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserbeam_purple.png using Guid(b3a6f7b30b85ce448b42ce216af42499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ae89f7879ca45369b8fe7f30b88d94') in 0.022418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_green.png
+  artifactKey: Guid(55e5a4a9edab0a24fb9470556b677ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_green.png using Guid(55e5a4a9edab0a24fb9470556b677ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9286b762cf23be354f1fe105418625e0') in 0.017128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/fire4x4_purple.png
+  artifactKey: Guid(2ea55beb9345a33498fc16106277de3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/fire4x4_purple.png using Guid(2ea55beb9345a33498fc16106277de3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af6d1b0f79f55116e8fda4b331e09d2') in 0.031582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/fire4x4_modular.png
+  artifactKey: Guid(5e1a134d192fcbe4aa05e9d8a5f04a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/fire4x4_modular.png using Guid(5e1a134d192fcbe4aa05e9d8a5f04a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c5da3b231ffba67a9b0396dc2676ee') in 0.031345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bigglow_yellow.png
+  artifactKey: Guid(44426604fab67474c86fbd84fa1c9686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bigglow_yellow.png using Guid(44426604fab67474c86fbd84fa1c9686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a59200404db5e14d9536c49c53b004') in 0.017838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/firering.png
+  artifactKey: Guid(e55efdef48fb88042bd462e055df8423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/firering.png using Guid(e55efdef48fb88042bd462e055df8423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d0434fb4125cd934570500e17661a3') in 0.025980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserpurple.png
+  artifactKey: Guid(274203aabf17b9343bbc8aa9ad4bc023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserpurple.png using Guid(274203aabf17b9343bbc8aa9ad4bc023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83fcbec3ff41ddf84481f2e346d92008') in 0.015064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/3dbolt_purple.png
+  artifactKey: Guid(c775e2cdc55a3a3488609d86f7b49632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/3dbolt_purple.png using Guid(c775e2cdc55a3a3488609d86f7b49632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd5eab9e4ff900a1e98fc92e646b441') in 0.017785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserred.png
+  artifactKey: Guid(215c84a2f36d6ac44a1f04a7ced0a17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserred.png using Guid(215c84a2f36d6ac44a1f04a7ced0a17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87d24fa8c8c82a60ddd49584cd63557') in 0.014938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserball_red.png
+  artifactKey: Guid(cbf3f357dffac1d44b2054a912bb4693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserball_red.png using Guid(cbf3f357dffac1d44b2054a912bb4693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605647496cbea00f4b76fd6b88e7f8e2') in 0.015724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glow_smoke_dusty.png
+  artifactKey: Guid(61f631dd684e8444cad16197ffba70bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glow_smoke_dusty.png using Guid(61f631dd684e8444cad16197ffba70bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a53131b56712db6d1ff632bf911ea1') in 0.016977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserball_orange.png
+  artifactKey: Guid(e1154b10dd737a54c81c10c90c49f827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserball_orange.png using Guid(e1154b10dd737a54c81c10c90c49f827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71c583c7efacc09b428e342d2dfabd9') in 0.016146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/3dbolt_yellow.png
+  artifactKey: Guid(4c1e3effc0c91644b8ff03f8a7973e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/3dbolt_yellow.png using Guid(4c1e3effc0c91644b8ff03f8a7973e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e0f002704d566a8c9402d9808ef811') in 0.019412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_modular.png
+  artifactKey: Guid(c35f5e3a35b17aa4583b2da4a0b30239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/bullet_modular.png using Guid(c35f5e3a35b17aa4583b2da4a0b30239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae54564c31ec3d81b69e0ac47fee98c1') in 0.015780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glow_twirl.png
+  artifactKey: Guid(8ffb66ed336f1a64d9ceeb18c1e9eea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/glow_twirl.png using Guid(8ffb66ed336f1a64d9ceeb18c1e9eea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49000c1bcb53dcf15b73c291f6f21511') in 0.030417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/funnel_modular.png
+  artifactKey: Guid(9e2d6f1e0b5e8bc46bee272b076ff2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/funnel_modular.png using Guid(9e2d6f1e0b5e8bc46bee272b076ff2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82ddc6d21c8deebea70d8272348b0b8') in 0.027780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserbeam_yellow.png
+  artifactKey: Guid(a2a1f82c858f23d4aaf1dee724efd3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/laserbeam_yellow.png using Guid(a2a1f82c858f23d4aaf1dee724efd3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff19cd8f6e45b427ed6adb929cec136a') in 0.021269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.683374 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/lightning_blue.png
+  artifactKey: Guid(aeabc5d302d027d498711ae2ce96fdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Textures/lightning_blue.png using Guid(aeabc5d302d027d498711ae2ce96fdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd95e75d095d0544e2a45faf1c69254') in 0.016626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 182.296009 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Glow/glow_smoke_dusty.mat
+  artifactKey: Guid(c89ba8ee725ace445b48f25f5531b730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Glow/glow_smoke_dusty.mat using Guid(c89ba8ee725ace445b48f25f5531b730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20520d5c67e89cfcbf34127bb9b93b7') in 0.021236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.715186 seconds.
+  path: Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Laser/laserred.mat
+  artifactKey: Guid(49dacde05aa497e44a41eee411e12c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External/Sci-Fi Arsenal/Sci-Fi Effects/Materials/Laser/laserred.mat using Guid(49dacde05aa497e44a41eee411e12c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1706cce40859b296a53886638b64ef0f') in 0.015298 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006128 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.357 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1358ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1082ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (315ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (515ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (357ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3724 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (371.9 KB). Loaded Objects now: 4904.
+Memory consumption went from 307.9 MB to 307.5 MB.
+Total: 4.525500 ms (FindLiveObjects: 0.304700 ms CreateObjectMapping: 0.190800 ms MarkObjects: 3.822400 ms  DeleteObjects: 0.206600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006571 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.489 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1489ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1237ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (230ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (748ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (520ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (46ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (364.0 KB). Loaded Objects now: 4906.
+Memory consumption went from 306.0 MB to 305.7 MB.
+Total: 8.725500 ms (FindLiveObjects: 0.905500 ms CreateObjectMapping: 0.509500 ms MarkObjects: 6.195000 ms  DeleteObjects: 1.105900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 663.047524 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43156e378f5cac9078c62f61ad63fe6') in 0.229288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.077004 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065afe2ab747b392afb4684a5fb0eb90') in 0.026939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.033780 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2549a65c43ce6a59cd9a0c0bfed0f62c') in 0.026939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.952319 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7de0ecee12743b0bfc46d9771fb223') in 0.027579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.253213 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9ce34bff01c35bf6856296a6469ee6') in 0.026542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.911732 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbbb2abf0c8706d2d7625c058f8e2f6') in 0.026697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.812097 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1030cfc208995943bd2a9f2a17c0c4') in 0.025684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.828380 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65e2b2ae97e583ef175455f561ddca6') in 0.028216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.020324 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c0a85d448a2920b200fc57ac298a37') in 0.027475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.948083 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec64f36a7b53681585529678b3241e2') in 0.025853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.940406 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a3672f54d6223afff4b53c33aba005') in 0.025439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.618072 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa938151c40478f287bf563a2ba80a51') in 0.018868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.844918 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6038cfa812e4856cfa4a9eab8539f7') in 0.018435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.395320 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf65d4571aef5ece8e85b2e86a048fd') in 0.018218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.687579 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df85663282cce599cc0baf9d63cab4a6') in 0.011783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.863920 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b1b59f3982eb922686410262344bf6') in 0.018277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.692536 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ae68c95429346861bd2fae2055d376') in 0.017662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.934132 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90173c44d96a97ef547fcf74b2575ac6') in 0.014960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.944913 seconds.
+  path: Assets/Prefabs/Player/Weapons/Pistol.prefab
+  artifactKey: Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Weapons/Pistol.prefab using Guid(bceefb2a39f6db74d9bc9d006687b7f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bfe4d382a55a7b07ecc89fd5c6a06da') in 0.024791 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006584 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.715 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1715ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1445ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (311ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (814ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (558ms)
+				ProcessInitializeOnLoadMethodAttributes (117ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (372.0 KB). Loaded Objects now: 4956.
+Memory consumption went from 306.5 MB to 306.1 MB.
+Total: 4.551700 ms (FindLiveObjects: 0.333800 ms CreateObjectMapping: 0.259700 ms MarkObjects: 3.763200 ms  DeleteObjects: 0.194300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (361.0 KB). Loaded Objects now: 4956.
+Memory consumption went from 231.2 MB to 230.8 MB.
+Total: 5.100700 ms (FindLiveObjects: 0.408700 ms CreateObjectMapping: 0.292600 ms MarkObjects: 4.046000 ms  DeleteObjects: 0.352400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10834.048745 seconds.
+  path: Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab
+  artifactKey: Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/LaserMuzzleFlashRed.prefab using Guid(b740dbea58ef93448811620f3225414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b29a904e644c640b6bd7202b007975') in 0.308635 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010086 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.739 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1739ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (1443ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (857ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (602ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (48ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3684 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (364.1 KB). Loaded Objects now: 5001.
+Memory consumption went from 306.7 MB to 306.4 MB.
+Total: 8.174100 ms (FindLiveObjects: 0.575400 ms CreateObjectMapping: 0.487000 ms MarkObjects: 6.700700 ms  DeleteObjects: 0.409900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (361.4 KB). Loaded Objects now: 5001.
+Memory consumption went from 231.4 MB to 231.1 MB.
+Total: 7.526000 ms (FindLiveObjects: 0.454800 ms CreateObjectMapping: 0.291900 ms MarkObjects: 6.539200 ms  DeleteObjects: 0.239600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

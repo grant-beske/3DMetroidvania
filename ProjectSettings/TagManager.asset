@@ -17,7 +17,7 @@ TagManager:
   - Scannable
   - Terrain
   - Weapons
-  - 
+  - TriggerBoxes
   - ScannableNormal
   - ScannableCritical
   - ScannableScanned

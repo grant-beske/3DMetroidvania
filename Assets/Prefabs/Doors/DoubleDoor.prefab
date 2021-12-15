@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 723000633080310513}
   - component: {fileID: 5241284871127085835}
   - component: {fileID: 4130299770703106092}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level 1 Boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 6774979953753927174}
   - component: {fileID: 4208657604598613785}
   - component: {fileID: 7092941562770761859}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoubleDoor
   m_TagString: DoorSystem
   m_Icon: {fileID: 0}
@@ -799,6 +799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName1: 
   level1Boundary: {fileID: 3729823867105652290}
+  isStartingInScene1: 1
   sceneName2: 
 --- !u!1 &6774979953753893044
 GameObject:

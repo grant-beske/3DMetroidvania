@@ -42,11 +42,11 @@ public class LevelLoader : MonoBehaviour {
         GameObject dockingPoint = GetDockingPoint();
         player.transform.position = dockingPoint.transform.position;
         player.transform.rotation = dockingPoint.transform.rotation;
-        uiController.FinishLoading();
 
         // Deserialize the save file again to make sure PlayerState Start() does not
         // override the coreStateValues and generalStateDict.
         playerState.GetComponent<PlayerState>().Deserialize(PlayerStateToLoad.state);
+        uiController.FinishLoading();
         Destroy(gameObject);
     }
 

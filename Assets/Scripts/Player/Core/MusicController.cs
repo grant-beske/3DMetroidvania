@@ -7,6 +7,7 @@ public class MusicController : MonoBehaviour {
     // List of (song, songLength, shouldLoop)
     private List<(AudioClip, float, bool)> songQueue;
     private float timePlaying = 0;
+    private bool isPaused = false;
 
     private AudioSource audioSource;
 
@@ -22,7 +23,7 @@ public class MusicController : MonoBehaviour {
     void Update() {
         if (songQueue.Count == 0) return;
         if (timePlaying < songQueue[0].Item2) {
-            timePlaying += Time.deltaTime;
+            if (!isPaused) timePlaying += Time.deltaTime;
         } else {
             PlayNextSongOrLoop();
         }
@@ -45,9 +46,15 @@ public class MusicController : MonoBehaviour {
     }
 
     private void PlaySong(AudioClip song) {
-        audioSource.Stop();
-        audioSource.clip = song;
-        audioSource.Play();
+        // Regular play - stop prev song, set clip, play clip.
+        if (song != null) {
+            audioSource.Stop();
+            audioSource.clip = song;
+            audioSource.Play();
+        } else {
+            // Silence play - stop prev song entirely.
+            audioSource.Stop();
+        }
     }
 
     private void StopSong() {
@@ -65,11 +72,17 @@ public class MusicController : MonoBehaviour {
         if (songQueue.Count == 1) PlaySong(songClip);
     }
 
+    public void EnqueueSilence(float silenceLength) {
+        songQueue.Add((null, silenceLength, false));
+    }
+
     public void PauseSong() {
-        audioSource.Pause();
+        isPaused = true;
+        if (songQueue[0].Item1 != null) audioSource.Pause();
     }
 
     public void ResumeSong() {
-        audioSource.Play();
+        isPaused = false;
+        if (songQueue[0].Item1 != null) audioSource.Play();
     }
 }

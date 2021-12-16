@@ -17,6 +17,10 @@ public class PlayerState : MonoBehaviour {
 
     public CoreStateValues coreStateValues;
 
+    // Core location values represent the player's current in game location.
+    // They do not need to be saved.
+    public CoreLocationValues coreLocationValues;
+
     [System.Serializable]
     public class CoreStateValues {
         public float health = 50;
@@ -25,9 +29,16 @@ public class PlayerState : MonoBehaviour {
         public float energyCapacity = 100; 
     }
 
+    [System.Serializable]
+    public class CoreLocationValues {
+        public string currentArea = "Unknown";
+        public string currentRoom = "Unknown";
+    }
+
     void Start() {
         generalStateDict = new Dictionary<string, string>();
         coreStateValues = new CoreStateValues();
+        coreLocationValues = new CoreLocationValues();
     }
 
     public JSONObject Serialize() {
@@ -61,6 +72,10 @@ public class PlayerState : MonoBehaviour {
         coreStateValuesJson.GetField(out coreStateValues.energy, "energy", coreStateValues.energy);
         coreStateValuesJson.GetField(
             out coreStateValues.energyCapacity, "energyCapacity", coreStateValues.energyCapacity);
+
+        // When deserializing, also set the coreLocationValues from the loaded data.
+        coreLocationValues.currentArea = saveFileArea;
+        coreLocationValues.currentRoom = saveFileSceneName;
 
         generalStateDict = saveDataJson.GetField("generalStateDict").ToDictionary();
     }

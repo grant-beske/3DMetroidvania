@@ -15,7 +15,6 @@ public class UserInterface : MonoBehaviour {
     // Music gameobjects.
     public MusicController musicController;
     // TODO - figure out how to dynamically load songs.
-    public AudioClip levelLoadFanfare;
     public AudioClip levelSong;
 
     // Gun gameobjects.
@@ -138,15 +137,21 @@ public class UserInterface : MonoBehaviour {
 
     public void FinishLoading() {
         SetCombatVisor();
-        visorControlVars.overlayMessages.SetActive(true);
         Time.timeScale = 1f;
+
+        // Trigger the "entered area" jingle on game load.
+        visorControlVars.overlayMessages.SetActive(true);
+        visorControlVars.overlayMessages
+            .GetComponent<OverlayMessages>()
+            .TriggerInitialEnterLocationMessage();
+
         StartInitialMusic();
         StartCoroutine(DisableCharacterForTeleport());
     }
 
     private void StartInitialMusic() {
-        if (levelLoadFanfare != null)
-            musicController.EnqueueSong(levelLoadFanfare, levelLoadFanfare.length, false);
+        // Start out with 10s of silence to let enter level jingle play.
+        musicController.EnqueueSilence(10f);
         if (levelSong != null) {
             musicController.EnqueueSong(levelSong, 108f, true);
         }

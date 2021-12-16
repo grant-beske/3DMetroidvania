@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class WeaponsCoordinator : MonoBehaviour {
 
+    // Player state containing the serializable representation of selected gun.
+    public PlayerState playerState;
+
+    // Overlay messages, used to display the selected weapon message.
+    public OverlayMessages overlayMessages;
+
     // Gun control state.
     // ACTIVE - gun is onscreen and ready to be fired. Can switch weapons.
     // INACTIVE - gun is offscreen and can't be fired. Happens in other visors like scan.
@@ -19,7 +25,7 @@ public class WeaponsCoordinator : MonoBehaviour {
     // Gun transitioning variables.
     public Transform gunActivePosition;
     public Transform gunInactivePosition;
-    public float transitionTimeSec = 0.25f;
+    public float transitionTimeSec = 0.5f;
 
     /////////////////////////////////////////////////////////////////////////////////////
     // MonoBehavior
@@ -43,12 +49,12 @@ public class WeaponsCoordinator : MonoBehaviour {
     private void UpdateActiveState() {
         // Switch to laser pistol
         if (Input.GetKeyDown(KeyCode.Alpha1) && selectedGunIndex != 0) {
-            StartCoroutine(SwitchWeapons(gunObjects[0], 0));
+            StartCoroutine(SwitchWeapons(gunObjects[0], 0, "Laser Pistol"));
         }
 
         // Switch to laser rifle
         if (Input.GetKeyDown(KeyCode.Alpha2) && selectedGunIndex != 1) {
-            StartCoroutine(SwitchWeapons(gunObjects[1], 1));
+            StartCoroutine(SwitchWeapons(gunObjects[1], 1, "Laser Rifle"));
         }
     }
 
@@ -56,11 +62,19 @@ public class WeaponsCoordinator : MonoBehaviour {
     // Public API
     /////////////////////////////////////////////////////////////////////////////////////
 
-    private IEnumerator SwitchWeapons(GameObject gunToSwitch, int gunIndex) {
+    private IEnumerator SwitchWeapons(
+            GameObject gunToSwitch, int gunIndex, string gunName) {
         yield return StartCoroutine(TransitionToInactiveState());
+        SwitchWeaponInternalState(gunToSwitch, gunIndex, gunName);
+        yield return StartCoroutine(TransitionToActiveState());
+    }
+
+    private void SwitchWeaponInternalState(
+            GameObject gunToSwitch, int gunIndex, string gunName) {
         selectedGunObject = gunToSwitch;
         selectedGunIndex = gunIndex;
-        yield return StartCoroutine(TransitionToActiveState());
+        playerState.selectedGunName = gunName;
+        overlayMessages.TriggerSelectedWeaponMessage();
     }
 
     // These 2 functions are for when we want to basically equip / unequip the gun,
@@ -84,12 +98,12 @@ public class WeaponsCoordinator : MonoBehaviour {
     private IEnumerator TransitionToActiveState() {
         float timeElapsed = 0;
         selectedGunObject.transform.position = gunInactivePosition.position;
-        Vector3 transitionDifference =
-            gunActivePosition.position - gunInactivePosition.position;
         selectedGunObject.SetActive(true);
         while (timeElapsed < transitionTimeSec) {
             timeElapsed += Time.deltaTime;
             float percentComplete = timeElapsed / transitionTimeSec;
+            Vector3 transitionDifference =
+                gunActivePosition.position - gunInactivePosition.position;
             selectedGunObject.transform.position =
                 gunInactivePosition.position + (transitionDifference * percentComplete);
             yield return null;
@@ -102,12 +116,12 @@ public class WeaponsCoordinator : MonoBehaviour {
     private IEnumerator TransitionToInactiveState() {
         float timeElapsed = 0;
         selectedGunObject.transform.position = gunActivePosition.position;
-        Vector3 transitionDifference =
-            gunInactivePosition.position - gunActivePosition.position;
         selectedGunObject.GetComponent<BaseGun>().DisableControl();
         while (timeElapsed < transitionTimeSec) {
             timeElapsed += Time.deltaTime;
             float percentComplete = timeElapsed / transitionTimeSec;
+            Vector3 transitionDifference =
+                gunInactivePosition.position - gunActivePosition.position;
             selectedGunObject.transform.position =
                 gunActivePosition.position + (transitionDifference * percentComplete);
             yield return null;

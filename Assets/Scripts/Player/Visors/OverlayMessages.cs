@@ -31,9 +31,16 @@ public class OverlayMessages : MonoBehaviour {
 
     [System.Serializable]
     public class MessageElements {
+        // Saved message after interacting with save station
         public GameObject savedMessage;
+
+        // Enter location header message and audio
         [SerializeField] public Text enterLocationMessage;
         public AudioClip enterLocationJingle;
+
+        // Selected weapon message at bottom right
+        [SerializeField] public Text selectedWeaponMessage;
+        [HideInInspector] public IEnumerator selectedWeaponMessageCoroutine;
     }
 
     /////////////////////////////////////////////////////////////////////////////////////
@@ -44,6 +51,7 @@ public class OverlayMessages : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         messageElements.savedMessage.SetActive(false);
         messageElements.enterLocationMessage.gameObject.SetActive(false);
+        messageElements.selectedWeaponMessage.gameObject.SetActive(false);
     }
 
     void Update() {
@@ -102,14 +110,33 @@ public class OverlayMessages : MonoBehaviour {
 
         // Phase III: show overlay UI
         coreUIZones.metricsObj.SetActive(true);
-        yield return StartCoroutine(FadeInBottomLeftIndicators(0.6f));
+        yield return StartCoroutine(FadeInMetricIndicators(0.6f));
+    }
+
+    public void TriggerSelectedWeaponMessage() {
+        if (messageElements.selectedWeaponMessageCoroutine != null) {
+            StopCoroutine(messageElements.selectedWeaponMessageCoroutine);
+            ResetSelectedWeaponMessage();
+        }
+        messageElements.selectedWeaponMessageCoroutine = PlaySelectedWeaponMessage(1.0f);
+        StartCoroutine(messageElements.selectedWeaponMessageCoroutine);
+    }
+
+    private IEnumerator PlaySelectedWeaponMessage(float pauseDuration) {
+        messageElements.selectedWeaponMessage.text = playerState.selectedGunName;
+        messageElements.selectedWeaponMessage.gameObject.SetActive(true);
+        yield return StartCoroutine(
+            TypeOutText(messageElements.selectedWeaponMessage, 0.05f));
+        yield return new WaitForSeconds(pauseDuration);
+        yield return StartCoroutine(
+            FadeOutText(messageElements.selectedWeaponMessage, 0.4f));
     }
 
     /////////////////////////////////////////////////////////////////////////////////////
     // Private helpers
     /////////////////////////////////////////////////////////////////////////////////////
 
-    private IEnumerator FadeInBottomLeftIndicators(float duration) {
+    private IEnumerator FadeInMetricIndicators(float duration) {
         Coroutine fadeInHealthText =
             StartCoroutine(FadeInText(metricElements.healthText, duration));
         Coroutine fadeInHealthNum =
@@ -120,11 +147,27 @@ public class OverlayMessages : MonoBehaviour {
             StartCoroutine(FadeInText(metricElements.energyMetric, duration));
         Coroutine fadeInCurrentLocation =
             StartCoroutine(FadeInText(metricElements.currentLocation, duration));
+        
+        // Start the selected weapon message, we don't care when it finishes.
+        StartCoroutine(PlaySelectedWeaponMessage(0.4f));
+        
         yield return fadeInHealthText;
         yield return fadeInHealthNum;
         yield return fadeInEnergyText;
         yield return fadeInEnergyNum;
         yield return fadeInCurrentLocation;
+    }
+
+    private void ResetSelectedWeaponMessage() {
+        messageElements.selectedWeaponMessage.gameObject.SetActive(false);
+        messageElements.selectedWeaponMessage.text = "";
+        // Reset alpha to initial value.
+        messageElements.selectedWeaponMessage.color =
+            new Color(
+                messageElements.selectedWeaponMessage.color.r,
+                messageElements.selectedWeaponMessage.color.g,
+                messageElements.selectedWeaponMessage.color.b,
+                0.5f);
     }
 
     private IEnumerator TypeOutText(Text text, float typeInterval) {

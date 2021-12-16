@@ -21,6 +21,9 @@ public class PlayerState : MonoBehaviour {
     // They do not need to be saved.
     public CoreLocationValues coreLocationValues;
 
+    // Variables related to weapons.
+    public string selectedGunName = "Laser Pistol";
+
     [System.Serializable]
     public class CoreStateValues {
         public float health = 50;

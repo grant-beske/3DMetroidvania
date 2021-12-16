@@ -603,10 +603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c305cb50a3cc04980b702f29261be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionTimeSec: 0.25
   gunObject: {fileID: 4781917996437930944}
-  gunActiveObj: {fileID: 1836985151928648228}
-  gunInactiveObj: {fileID: 8716700795013553483}
+  gunActivePosition: {fileID: 8135932952414279802}
+  gunInactivePosition: {fileID: 6972306699025340571}
+  transitionTimeSec: 0.25
 --- !u!1 &2838157172037021824
 GameObject:
   m_ObjectHideFlags: 0

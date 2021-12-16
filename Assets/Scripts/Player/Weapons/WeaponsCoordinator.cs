@@ -117,6 +117,7 @@ public class WeaponsCoordinator : MonoBehaviour {
         float timeElapsed = 0;
         selectedGunObject.transform.position = gunActivePosition.position;
         selectedGunObject.GetComponent<BaseGun>().DisableControl();
+        activeState = State.INACTIVE;
         while (timeElapsed < transitionTimeSec) {
             timeElapsed += Time.deltaTime;
             float percentComplete = timeElapsed / transitionTimeSec;
@@ -128,7 +129,6 @@ public class WeaponsCoordinator : MonoBehaviour {
         }
         selectedGunObject.transform.position = gunInactivePosition.position;
         selectedGunObject.SetActive(false);
-        activeState = State.INACTIVE;
     }
 
     // These 2 functions are just for when we want to disable the firing of the gun.

@@ -78,11 +78,11 @@ public class MusicController : MonoBehaviour {
 
     public void PauseSong() {
         isPaused = true;
-        if (songQueue[0].Item1 != null) audioSource.Pause();
+        if (songQueue.Count > 0 && songQueue[0].Item1 != null) audioSource.Pause();
     }
 
     public void ResumeSong() {
         isPaused = false;
-        if (songQueue[0].Item1 != null) audioSource.Play();
+        if (songQueue.Count > 0 && songQueue[0].Item1 != null) audioSource.Play();
     }
 }

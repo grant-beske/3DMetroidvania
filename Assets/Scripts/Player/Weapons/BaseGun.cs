@@ -20,7 +20,7 @@ public class BaseGun : MonoBehaviour {
     public enum FiringMode {SINGLE, AUTOMATIC};
     public FiringMode firingMode;
     public float energyCost;
-    public float fireRatePerSec;
+    public float firingIntervalTime;
     public float projectileVelocity;
     public float projectileTimeToLive;
     private float timeSinceLastShot;
@@ -41,14 +41,24 @@ public class BaseGun : MonoBehaviour {
             if (firingMode == FiringMode.SINGLE) {
                 UpdateSingleShot();
             } else if (firingMode == FiringMode.AUTOMATIC) {
-                // TODO - implement automatic weapons
+               UpdateAutomaticShot();
             }
         }
     }
 
     private void UpdateSingleShot() {
         timeSinceLastShot += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && timeSinceLastShot >= fireRatePerSec) {
+        if (Input.GetMouseButtonDown(0) && timeSinceLastShot >= firingIntervalTime) {
+            timeSinceLastShot = 0;
+
+            if (CanFire()) Fire();
+            else FailToFire();
+        }
+    }
+
+    private void UpdateAutomaticShot() {
+        timeSinceLastShot += Time.deltaTime;
+        if (Input.GetMouseButton(0) && timeSinceLastShot >= firingIntervalTime) {
             timeSinceLastShot = 0;
 
             if (CanFire()) Fire();
@@ -74,8 +84,6 @@ public class BaseGun : MonoBehaviour {
     private void EmitProjectile() {
         BaseProjectile tempProjectile =
             Instantiate(projectile, emitterPoint.transform.position, emitterPoint.transform.rotation);
-        // TODO - figure out a less hacky way to get the correct projectile direction.
-        tempProjectile.transform.Rotate(0, 90, 0);
         tempProjectile.velocity = projectileVelocity;
         tempProjectile.timeToLive = projectileTimeToLive;
     }

@@ -14,8 +14,6 @@ public class UserInterface : MonoBehaviour {
 
     // Music gameobjects.
     public MusicController musicController;
-    // TODO - figure out how to dynamically load songs.
-    public AudioClip levelSong;
 
     // Gun gameobjects.
     public GameObject gunControlObj;
@@ -137,6 +135,7 @@ public class UserInterface : MonoBehaviour {
 
     public void FinishLoading() {
         SetCombatVisor();
+        gunControl.ActivateWeapon();
         Time.timeScale = 1f;
 
         // Trigger the "entered area" jingle on game load.
@@ -152,9 +151,9 @@ public class UserInterface : MonoBehaviour {
     private void StartInitialMusic() {
         // Start out with 10s of silence to let enter level jingle play.
         musicController.EnqueueSilence(10f);
-        if (levelSong != null) {
-            musicController.EnqueueSong(levelSong, 108f, true);
-        }
+        // if (levelSong != null) {
+        //     musicController.EnqueueSong(levelSong, 108f, true);
+        // }
     }
 
     // Disable character motor for 0.1 sec when loading is finished. This is a hacky way

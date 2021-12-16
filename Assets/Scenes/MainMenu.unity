@@ -761,6 +761,10 @@ MonoBehaviour:
     healthCapacity: 100
     energy: 0
     energyCapacity: 100
+    energyRechargeRate: 10
+  coreLocationValues:
+    currentArea: Unknown
+    currentRoom: Unknown
 --- !u!1 &776748971
 GameObject:
   m_ObjectHideFlags: 0

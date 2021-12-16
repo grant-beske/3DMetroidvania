@@ -318,6 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb4e3b379e9f414d9cd69b12de04ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerState: {fileID: 0}
   projectile: {fileID: 8187033771032117879, guid: c6efd200e8fd8b04288f21e130e6bf41, type: 3}
   emitterPoint: {fileID: 3388189451865528718}
   muzzleFlashObj: {fileID: 1385117853769092984}
@@ -325,7 +326,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8736330e7541c7c45aa4856d7248c106, type: 3}
   - {fileID: 8300000, guid: d293b24279de3574eae6d6070e6bf229, type: 3}
   - {fileID: 8300000, guid: a4a2f0260a8abce4e8692e51291da79b, type: 3}
+  failToFireSound: {fileID: 8300000, guid: cd32443d82781574b92abacdee01d14a, type: 3}
   firingMode: 0
+  energyCost: 10
   fireRatePerSec: 0.5
   projectileVelocity: 40
   projectileTimeToLive: 1

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class BaseGun : MonoBehaviour {
 
+    public PlayerState playerState;
+
     public BaseProjectile projectile;
     public GameObject emitterPoint;
 
@@ -12,16 +14,22 @@ public class BaseGun : MonoBehaviour {
     private ParticleSystem muzzleFlash;
 
     public AudioClip[] shotSounds;
+    public AudioClip failToFireSound;
     private AudioSource audioSource;
 
     public enum FiringMode {SINGLE, AUTOMATIC};
     public FiringMode firingMode;
+    public float energyCost;
     public float fireRatePerSec;
     public float projectileVelocity;
     public float projectileTimeToLive;
     private float timeSinceLastShot;
 
     private bool enableControl = true;
+    
+    /////////////////////////////////////////////////////////////////////////////////////
+    // MonoBehavior
+    /////////////////////////////////////////////////////////////////////////////////////
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
@@ -42,14 +50,25 @@ public class BaseGun : MonoBehaviour {
         timeSinceLastShot += Time.deltaTime;
         if (Input.GetMouseButtonDown(0) && timeSinceLastShot >= fireRatePerSec) {
             timeSinceLastShot = 0;
-            Fire();
+
+            if (CanFire()) Fire();
+            else FailToFire();
         }
     }
 
-    public void Fire() {
+    private bool CanFire() {
+        return (energyCost <= playerState.coreStateValues.energy);
+    }
+
+    private void Fire() {
+        SubtractEnergyCost();
         EmitProjectile();
         PlayMuzzleFlash();
         PlayShotSound();
+    }
+
+    private void SubtractEnergyCost() {
+        playerState.SubtractEnergy(energyCost);
     }
 
     private void EmitProjectile() {
@@ -69,6 +88,15 @@ public class BaseGun : MonoBehaviour {
         audioSource.clip = shotSounds[Random.Range(0, shotSounds.Length)];
         audioSource.Play();
     }
+
+    private void FailToFire() {
+        audioSource.clip = failToFireSound;
+        audioSource.Play();
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    // Public API
+    /////////////////////////////////////////////////////////////////////////////////////
 
     public void EnableControl() {
         enableControl = true;

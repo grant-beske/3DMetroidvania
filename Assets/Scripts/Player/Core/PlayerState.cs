@@ -26,7 +26,8 @@ public class PlayerState : MonoBehaviour {
         public float health = 50;
         public float healthCapacity = 100;
         public float energy = 0; 
-        public float energyCapacity = 100; 
+        public float energyCapacity = 100;
+        public float energyRechargeRate = 10f;
     }
 
     [System.Serializable]
@@ -35,11 +36,27 @@ public class PlayerState : MonoBehaviour {
         public string currentRoom = "Unknown";
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////
+    // MonoBehavior
+    /////////////////////////////////////////////////////////////////////////////////////
+
     void Start() {
         generalStateDict = new Dictionary<string, string>();
         coreStateValues = new CoreStateValues();
         coreLocationValues = new CoreLocationValues();
     }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    // Public API
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    public void SubtractEnergy(float quantity) {
+        coreStateValues.energy = Mathf.Max(coreStateValues.energy - quantity, 0);
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    // Serialization / Deserialization API
+    /////////////////////////////////////////////////////////////////////////////////////
 
     public JSONObject Serialize() {
         JSONObject coreStateValuesJson = new JSONObject();
@@ -47,6 +64,7 @@ public class PlayerState : MonoBehaviour {
         coreStateValuesJson.AddField("healthCapacity", coreStateValues.healthCapacity);
         coreStateValuesJson.AddField("energy", coreStateValues.energy);
         coreStateValuesJson.AddField("energyCapacity", coreStateValues.energyCapacity);
+        coreStateValuesJson.AddField("energyRechargeRate", coreStateValues.energyRechargeRate);
 
         JSONObject generalStateDictJson = new JSONObject(generalStateDict);
 
@@ -72,6 +90,10 @@ public class PlayerState : MonoBehaviour {
         coreStateValuesJson.GetField(out coreStateValues.energy, "energy", coreStateValues.energy);
         coreStateValuesJson.GetField(
             out coreStateValues.energyCapacity, "energyCapacity", coreStateValues.energyCapacity);
+        coreStateValuesJson.GetField(
+            out coreStateValues.energyRechargeRate,
+            "energyRechargeRate",
+            coreStateValues.energyRechargeRate);
 
         // When deserializing, also set the coreLocationValues from the loaded data.
         coreLocationValues.currentArea = saveFileArea;

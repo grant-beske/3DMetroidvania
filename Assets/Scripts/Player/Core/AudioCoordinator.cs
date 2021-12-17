@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class AudioCoordinator : MonoBehaviour {
     
+    // SFX Prefab for 3D SFX, will be positioned in scene.
     public AudioSource genericSfxPrefab;
 
+    // UI AudioSource with ignoreListenerPause set to true.
+    public AudioSource uiAudioSource;
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    // MonoBehavior
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    void Start() {
+        uiAudioSource = GetComponent<AudioSource>();
+        uiAudioSource.ignoreListenerPause = true;
+    }
+    
     /////////////////////////////////////////////////////////////////////////////////////
     // Public API
     /////////////////////////////////////////////////////////////////////////////////////
 
     public void PlaySound2D(AudioClip audioClip) {
-        AudioSource audioSource =
-            Instantiate(genericSfxPrefab, transform.position, transform.rotation);
-        // Set as a child of the AudioCoordinator.
-        audioSource.gameObject.transform.parent = gameObject.transform;
-        audioSource.spatialBlend = 0;
-        audioSource.clip = audioClip;
-        audioSource.Play();
-        Destroy(audioSource.gameObject, audioClip.length);
+        uiAudioSource.PlayOneShot(audioClip);
     }
 
     public void PlaySound3D(AudioClip audioClip, Vector3 pos) {
@@ -29,5 +35,13 @@ public class AudioCoordinator : MonoBehaviour {
         audioSource.clip = audioClip;
         audioSource.Play();
         Destroy(audioSource.gameObject, audioClip.length);
+    }
+
+    public void PauseSounds() {
+        AudioListener.pause = true;
+    }
+
+    public void ResumeSounds() {
+        AudioListener.pause = false;
     }
 }

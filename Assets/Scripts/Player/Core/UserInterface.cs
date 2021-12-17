@@ -175,6 +175,7 @@ public class UserInterface : MonoBehaviour {
         activeVisor = Visor.PAUSED;
         Time.timeScale = 0f;
         musicController.PauseSong();
+        audioCoordinator.PauseSounds();
     }
 
     public void UnpauseGame() {
@@ -186,6 +187,7 @@ public class UserInterface : MonoBehaviour {
         activeVisor = previouslyActiveVisor;
         Time.timeScale = 1f;
         musicController.ResumeSong();
+        audioCoordinator.ResumeSounds();
     }
 
     public void SetVisorSelect() {

@@ -7,6 +7,8 @@ Temp/UnityLockfile
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+[Uu]serSettings/
+[Ll]ogs/
 [Mm]onoBleedingEdge/
 Assets/AssetStoreTools*
 
@@ -27,6 +29,9 @@ ExportedObj/
 *.booproj
 *.svd
 *.pdb
+
+# Log files
+*.log
 
 # Unity3D generated meta files
 *.pidb.meta

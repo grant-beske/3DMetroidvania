@@ -12,7 +12,8 @@ public class UserInterface : MonoBehaviour {
     // Enable / disable game control. Useful for displaying menus, etc.
     private bool enableGameControls = true;
 
-    // Music gameobjects.
+    // Sound gameobjects.
+    public AudioCoordinator audioCoordinator;
     public MusicController musicController;
 
     // Gun gameobjects.
@@ -268,8 +269,8 @@ public class UserInterface : MonoBehaviour {
     }
 
     private void PlaySound(AudioClip clip) {
-        GetComponent<AudioSource>().clip = clip;
-        GetComponent<AudioSource>().Play();
+        // All UI sounds are played in 2D.
+        audioCoordinator.PlaySound2D(clip);
     }
 
     // Set the scan render mode by moving all objects tagged scannable into the

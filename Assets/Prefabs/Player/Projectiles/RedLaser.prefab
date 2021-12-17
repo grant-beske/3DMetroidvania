@@ -171,7 +171,8 @@ MonoBehaviour:
   hittableLayers:
     serializedVersion: 2
     m_Bits: 7415
-  hitSfx: {fileID: 1269098869092109487, guid: e1d438193af8a7745980c4470db3e1e4, type: 3}
+  audioCoordinator: {fileID: 0}
+  hitSfx: {fileID: 8300000, guid: e4fc69751acbd6f44b5bd22de5b47ba7, type: 3}
   hitVfx: {fileID: 136416, guid: 817e5df2122398544a60922318817440, type: 3}
   hitVfxSpawnOffset: 0.05
 --- !u!33 &7431027701828661337

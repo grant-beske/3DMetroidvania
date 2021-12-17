@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OverlayMessages : MonoBehaviour {
 
-    private AudioSource audioSource;
+    public AudioCoordinator audioCoordinator;
 
     // Player state variables to get data to display.
     public PlayerState playerState;
@@ -48,7 +48,6 @@ public class OverlayMessages : MonoBehaviour {
     /////////////////////////////////////////////////////////////////////////////////////
 
     void Start() {
-        audioSource = GetComponent<AudioSource>();
         messageElements.savedMessage.SetActive(false);
         messageElements.enterLocationMessage.gameObject.SetActive(false);
         messageElements.selectedWeaponMessage.gameObject.SetActive(false);
@@ -206,7 +205,7 @@ public class OverlayMessages : MonoBehaviour {
     }
 
     private void PlaySound(AudioClip sound) {
-        audioSource.clip = sound;
-        audioSource.Play();
+        // All overlay messages will be 2D sounds.
+        audioCoordinator.PlaySound2D(sound);
     }
 }

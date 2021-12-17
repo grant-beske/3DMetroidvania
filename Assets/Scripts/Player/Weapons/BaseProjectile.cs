@@ -14,7 +14,8 @@ public class BaseProjectile : MonoBehaviour {
     private Vector3 velocityVector;
     private Vector3 lastRootPosition;
 
-    public GameObject hitSfx;
+    public AudioCoordinator audioCoordinator;
+    public AudioClip hitSfx;
 
     public GameObject hitVfx;
     public float hitVfxSpawnOffset = 0.1f;
@@ -74,7 +75,7 @@ public class BaseProjectile : MonoBehaviour {
 
     private void OnHit(Vector3 point, Vector3 normal, Collider collider) {
         PlayHitVfx(point, normal);
-        PlayHitSfx(point, normal);
+        PlayHitSfx(point);
         Destroy(gameObject);
     }
 
@@ -89,10 +90,9 @@ public class BaseProjectile : MonoBehaviour {
         }
     }
 
-    private void PlayHitSfx(Vector3 point, Vector3 normal) {
+    private void PlayHitSfx(Vector3 point) {
         if (hitSfx != null) {
-            GameObject impactSfxInstance =
-                Instantiate(hitSfx, point, Quaternion.LookRotation(normal));
+            audioCoordinator.PlaySound3D(hitSfx, point);
         }
     }
 }

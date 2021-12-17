@@ -765,6 +765,7 @@ MonoBehaviour:
   coreLocationValues:
     currentArea: Unknown
     currentRoom: Unknown
+  selectedGunName: Laser Pistol
 --- !u!1 &776748971
 GameObject:
   m_ObjectHideFlags: 0

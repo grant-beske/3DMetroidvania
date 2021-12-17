@@ -15,7 +15,7 @@ public class BaseGun : MonoBehaviour {
 
     public AudioClip[] shotSounds;
     public AudioClip failToFireSound;
-    private AudioSource audioSource;
+    public AudioCoordinator audioCoordinator;
 
     public enum FiringMode {SINGLE, AUTOMATIC};
     public FiringMode firingMode;
@@ -32,7 +32,6 @@ public class BaseGun : MonoBehaviour {
     /////////////////////////////////////////////////////////////////////////////////////
 
     void Start() {
-        audioSource = GetComponent<AudioSource>();
         muzzleFlash = muzzleFlashObj.GetComponent<ParticleSystem>();
     }
 
@@ -86,6 +85,7 @@ public class BaseGun : MonoBehaviour {
             Instantiate(projectile, emitterPoint.transform.position, emitterPoint.transform.rotation);
         tempProjectile.velocity = projectileVelocity;
         tempProjectile.timeToLive = projectileTimeToLive;
+        tempProjectile.audioCoordinator = audioCoordinator;
     }
 
     private void PlayMuzzleFlash() {
@@ -93,13 +93,11 @@ public class BaseGun : MonoBehaviour {
     }
 
     private void PlayShotSound() {
-        audioSource.clip = shotSounds[Random.Range(0, shotSounds.Length)];
-        audioSource.Play();
+        audioCoordinator.PlaySound2D(shotSounds[Random.Range(0, shotSounds.Length)]);
     }
 
     private void FailToFire() {
-        audioSource.clip = failToFireSound;
-        audioSource.Play();
+        audioCoordinator.PlaySound2D(failToFireSound);
     }
 
     /////////////////////////////////////////////////////////////////////////////////////

@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 // Require a character controller to be attached to the same game object
 [RequireComponent (typeof(CharacterController))]
 [AddComponentMenu ("Character/Character Motor")]
-public class CharacterMotor : MonoBehaviour
-{
+public class CharacterMotor : MonoBehaviour {
 
 	// Audio variables
-	public AudioSource jumpLandAudioSource;
-	public AudioSource footstepAudioSource;
-	public AudioClip jumpSound1;
-	public AudioClip jumpSound2;
-	public AudioClip jumpSound3;
-	public AudioClip jumpSound4;
-	public AudioClip landingSound1;
-	public AudioClip footstepSound1;
+	public AudioCoordinator audioCoordinator;
+	public AudioClip[] jumpSounds;
+	public AudioClip[] landingSounds;
+	public AudioClip[] footstepSounds;
 
 	// Audio controlling variables
 	public float footstepSoundInterval = 0.5F;
@@ -282,8 +277,8 @@ public class CharacterMotor : MonoBehaviour
 	
 		// Play footstep sound if the movement magnitude is large enough and we are on the ground.
 		if (lastFootstepTime + footstepSoundInterval < Time.time && newHVelocity.magnitude >= 0.3 && grounded) {
-			footstepAudioSource.clip = footstepSound1;
-			footstepAudioSource.Play();
+			// TODO - add multiple material dependent footstep sounds.
+			PlaySound(footstepSounds[Random.Range(0, footstepSounds.Length)]);
 			lastFootstepTime = Time.time;
 		}
 	
@@ -329,8 +324,7 @@ public class CharacterMotor : MonoBehaviour
 		else if (!grounded && IsGroundedTest()) {
 
 			// Play SFX
-			jumpLandAudioSource.clip = landingSound1;
-			jumpLandAudioSource.Play();
+			PlaySound(landingSounds[Random.Range(0, landingSounds.Length)]);
 
 			grounded = true;
 			jumping.jumping = false;
@@ -469,24 +463,8 @@ public class CharacterMotor : MonoBehaviour
 			// it's confusing and it feels like the game is buggy.
 			if (jumping.enabled && canControl && (Time.time - jumping.lastButtonDownTime < 0.2)) {
 
-				// Play the jumping sounds ----------------
-				switch (Random.Range(0, 4)) {
-					case 0:
-						jumpLandAudioSource.clip = jumpSound1;
-						break;
-
-					case 1:
-						jumpLandAudioSource.clip = jumpSound2;
-						break;
-
-					case 2:
-						jumpLandAudioSource.clip = jumpSound3;
-						break;
-
-					case 3:
-						jumpLandAudioSource.clip = jumpSound4;
-						break;
-				} jumpLandAudioSource.Play();
+				// Play random jumping sound.
+				PlaySound(jumpSounds[Random.Range(0, jumpSounds.Length)]);
 
 				grounded = false;
 				jumping.jumping = true;
@@ -668,4 +646,9 @@ public class CharacterMotor : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
     }
+
+	private void PlaySound(AudioClip clip) {
+		// All sounds coming from the player will be in 2D.
+		audioCoordinator.PlaySound2D(clip);
+	}
 }

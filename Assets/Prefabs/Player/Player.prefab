@@ -3352,14 +3352,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c00394b5a5b346b4a82cd8e0aeadeb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpLandAudioSource: {fileID: 3582544330550909799}
-  footstepAudioSource: {fileID: 3582544330550909792}
-  jumpSound1: {fileID: 8300000, guid: 0ac3b2bf092c8eb4a88dd93d76c5dee0, type: 3}
-  jumpSound2: {fileID: 8300000, guid: 820517c486fef70499738a64bc5f4012, type: 3}
-  jumpSound3: {fileID: 8300000, guid: 32fb43e2465c81f4bbd92ba0b411d6b8, type: 3}
-  jumpSound4: {fileID: 8300000, guid: 50e112862c0a9624d96ffb49b81b62ae, type: 3}
-  landingSound1: {fileID: 8300000, guid: dc98519c8572a144284f1df033a0b4fd, type: 3}
-  footstepSound1: {fileID: 8300000, guid: f404f8d3c2a4b4f48989fb1120e78fb8, type: 3}
+  audioCoordinator: {fileID: 9015914418083912345}
+  jumpSounds:
+  - {fileID: 8300000, guid: 0ac3b2bf092c8eb4a88dd93d76c5dee0, type: 3}
+  - {fileID: 8300000, guid: 820517c486fef70499738a64bc5f4012, type: 3}
+  - {fileID: 8300000, guid: 32fb43e2465c81f4bbd92ba0b411d6b8, type: 3}
+  - {fileID: 8300000, guid: 50e112862c0a9624d96ffb49b81b62ae, type: 3}
+  landingSounds:
+  - {fileID: 8300000, guid: dc98519c8572a144284f1df033a0b4fd, type: 3}
+  footstepSounds:
+  - {fileID: 8300000, guid: f404f8d3c2a4b4f48989fb1120e78fb8, type: 3}
   footstepSoundInterval: 0.5
   canControl: 1
   useFixedUpdate: 1

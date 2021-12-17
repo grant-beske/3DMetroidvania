@@ -37,6 +37,7 @@ public class OverlayMessages : MonoBehaviour {
         // Enter location header message and audio
         [SerializeField] public Text enterLocationMessage;
         public AudioClip enterLocationJingle;
+        public AudioClip enterLocationTextTypeSound;
 
         // Selected weapon message at bottom right
         [SerializeField] public Text selectedWeaponMessage;
@@ -100,7 +101,10 @@ public class OverlayMessages : MonoBehaviour {
         messageElements.enterLocationMessage.text =
             playerState.coreLocationValues.currentArea;
         yield return StartCoroutine(
-            TypeOutText(messageElements.enterLocationMessage, 0.075f));
+            TypeOutText(
+                messageElements.enterLocationMessage,
+                0.075f,
+                messageElements.enterLocationTextTypeSound));
         yield return new WaitForSeconds(2.5f);
 
         // Phase II: fade out initial message
@@ -169,12 +173,14 @@ public class OverlayMessages : MonoBehaviour {
                 0.5f);
     }
 
-    private IEnumerator TypeOutText(Text text, float typeInterval) {
+    private IEnumerator TypeOutText(
+            Text text, float typeInterval, AudioClip typeSfx = null) {
         string targetText = text.text;
         text.text = "";
         text.gameObject.SetActive(true);
         for (int i = 0; i < targetText.Length; i++) {
             text.text += targetText[i];
+            if (typeSfx != null) PlaySound(typeSfx);
             yield return new WaitForSeconds(typeInterval);
         }
     }

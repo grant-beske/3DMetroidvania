@@ -29,8 +29,9 @@ public class AudioCoordinator : MonoBehaviour {
     // Public API
     /////////////////////////////////////////////////////////////////////////////////////
 
-    public void PlaySound2D(AudioClip audioClip) {
-        uiAudioSource.PlayOneShot(audioClip);
+    public void PlaySound2D(AudioClip audioClip, float pitch=1.0f, float volume=1.0f) {
+        uiAudioSource.pitch = pitch;
+        uiAudioSource.PlayOneShot(audioClip, volume);
     }
 
     public void PlaySound3D(AudioClip audioClip, Vector3 pos) {

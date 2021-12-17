@@ -1912,7 +1912,7 @@ RectTransform:
   m_Children:
   - {fileID: 3582544329180320822}
   m_Father: {fileID: 3582544330115499776}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2404,9 +2404,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3582544329359745428}
+  - {fileID: 4651827276401944944}
   - {fileID: 3582544329731588265}
   - {fileID: 3582544330230423356}
-  - {fileID: 4651827276401944944}
   - {fileID: 2757202836602532391}
   - {fileID: 1123842155449012752}
   - {fileID: 3088568442158041201}
@@ -2545,7 +2545,7 @@ RectTransform:
   - {fileID: 3582544330666714554}
   - {fileID: 3582544329377502953}
   m_Father: {fileID: 3582544330115499776}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2565,13 +2565,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userInterface: {fileID: 3582544330115499783}
-  scanHighlightSound: {fileID: 8300000, guid: 6ff19d9139db8dd4f9332ab186629e3a, type: 3}
-  scanViewScanSound: {fileID: 8300000, guid: 1495060bbdc8fcd4a85206fba504169f, type: 3}
+  audioCoordinator: {fileID: 9015914418083912345}
   normalStateVars:
     stateObj: {fileID: 3582544329973719033}
     scanTargetBlank: {fileID: 3582544329885349569}
     scanTargetHighlighted: {fileID: 3582544329810517200}
     targetIsHighlighted: 0
+    highlightSound: {fileID: 8300000, guid: 6ff19d9139db8dd4f9332ab186629e3a, type: 3}
   scanningStateVars:
     stateObj: {fileID: 3582544330666714553}
     scanningText: {fileID: 3582544330583020361}
@@ -2583,7 +2583,13 @@ MonoBehaviour:
     timeElapsed: 0
   viewScanStateVars:
     stateObj: {fileID: 3582544329377502952}
-    scanDescription: {fileID: 3582544328976195246}
+    internalState: 1
+    scanDescriptionDialog: {fileID: 3582544330316576043}
+    scanDescriptionText: {fileID: 3582544328976195246}
+    scanDescription: 
+    showSound: {fileID: 8300000, guid: 1495060bbdc8fcd4a85206fba504169f, type: 3}
+    showDialogSound: {fileID: 8300000, guid: c81b2eee04abdb04e8cdc6b83ef89328, type: 3}
+    typingSfx: {fileID: 8300000, guid: f85bc57ec21e66744aa681272fe53152, type: 3}
 --- !u!82 &3582544330230423357
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4569,7 +4575,7 @@ RectTransform:
   - {fileID: 752176087035650759}
   - {fileID: 4254267730148151773}
   m_Father: {fileID: 3582544330115499776}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4603,6 +4609,7 @@ MonoBehaviour:
     savedMessage: {fileID: 2838157172037021824}
     enterLocationMessage: {fileID: 4229435332974315872}
     enterLocationJingle: {fileID: 8300000, guid: 88997df8a02ab564bae67320173db808, type: 3}
+    enterLocationTextTypeSound: {fileID: 8300000, guid: f85bc57ec21e66744aa681272fe53152, type: 3}
     selectedWeaponMessage: {fileID: 8973923660093396279}
 --- !u!1 &4221295012787556545
 GameObject:

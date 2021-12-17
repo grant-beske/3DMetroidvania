@@ -18,6 +18,12 @@ public class AudioCoordinator : MonoBehaviour {
         uiAudioSource = GetComponent<AudioSource>();
         uiAudioSource.ignoreListenerPause = true;
     }
+
+    // When the gameObject is destroyed, resume all sfx. This handles the case of
+    // quitting to menu then reloading a new save.
+    void OnDisable() {
+        ResumeSounds();
+    }
     
     /////////////////////////////////////////////////////////////////////////////////////
     // Public API

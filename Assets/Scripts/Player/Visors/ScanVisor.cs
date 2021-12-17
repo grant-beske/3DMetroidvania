@@ -8,11 +8,8 @@ public class ScanVisor : MonoBehaviour {
     enum State {NORMAL, SCANNING, VIEWSCAN}
     private State activeState = State.NORMAL;
 
-    // UI controller
-    public GameObject userInterface;
-    private UserInterface uiController;
-
-    // AudioCoordinator to use in playing scan state UI effects.
+    // Common controller variables
+    public UserInterface uiController;
     public AudioCoordinator audioCoordinator;
 
     // Scanning state object containers
@@ -83,7 +80,6 @@ public class ScanVisor : MonoBehaviour {
         InitializeNormalState();
         InitializeScanningState();
         InitializeViewScanState();
-        uiController = userInterface.GetComponent<UserInterface>();
     }
 
     private void InitializeNormalState() {

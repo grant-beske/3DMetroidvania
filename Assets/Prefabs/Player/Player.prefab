@@ -2491,9 +2491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e501466e8eed84bb2cfc1307b1c126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerState: {fileID: 3582544330647471638}
+  gunControl: {fileID: 4004940211472178552}
   audioCoordinator: {fileID: 9015914418083912345}
   musicController: {fileID: 4893874601600023488}
-  gunControlObj: {fileID: 2729579113241120973}
   visorControlVars:
     debugModeEnabled: 0
     loadingState: {fileID: 8412906953553620029}
@@ -2511,6 +2512,9 @@ MonoBehaviour:
     mouseYObj: {fileID: 3582544330550909796}
     mouseYController: {fileID: 0}
     mouseCursor: {fileID: 2800000, guid: bb6f4b7097d4502458adb015b6dea18b, type: 3}
+  visorSelectControlVars:
+    combatVisorButton: {fileID: 3582544329090459825}
+    scanVisorButton: {fileID: 3582544329689216746}
 --- !u!1 &3582544330230423347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,7 +2568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30236757ab67ee848bc51de9e9b37b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userInterface: {fileID: 3582544330115499783}
+  uiController: {fileID: 3582544330115499777}
   audioCoordinator: {fileID: 9015914418083912345}
   normalStateVars:
     stateObj: {fileID: 3582544329973719033}
@@ -3859,6 +3863,10 @@ MonoBehaviour:
     energy: 0
     energyCapacity: 100
     energyRechargeRate: 10
+    hasCombatVisor: 1
+    hasScanVisor: 0
+    hasPistol: 1
+    hasMachineGun: 1
   coreLocationValues:
     currentArea: Unknown
     currentRoom: Unknown

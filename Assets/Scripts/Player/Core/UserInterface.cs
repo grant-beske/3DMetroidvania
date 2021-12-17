@@ -12,19 +12,16 @@ public class UserInterface : MonoBehaviour {
     // Enable / disable game control. Useful for displaying menus, etc.
     private bool enableGameControls = true;
 
-    // Sound gameobjects.
+    // Standard controller variables.
+    public PlayerState playerState;
+    public WeaponsCoordinator gunControl;
     public AudioCoordinator audioCoordinator;
     public MusicController musicController;
 
-    // Gun gameobjects.
-    public GameObject gunControlObj;
-    private WeaponsCoordinator gunControl;
-
-    // Contains visor related variables.
+    // State classes for UserInterface.
     public VisorControlVars visorControlVars;
-
-    // Contains mouse control variables.
     public MouseControlVars mouseControlVars;
+    public VisorSelectControlVars visorSelectControlVars;
 
     [System.Serializable]
     public class VisorControlVars {
@@ -54,14 +51,17 @@ public class UserInterface : MonoBehaviour {
         public Texture2D mouseCursor;
     }
 
+    [System.Serializable]
+    public class VisorSelectControlVars {
+        public GameObject combatVisorButton;
+        public GameObject scanVisorButton;
+    }
+
     /////////////////////////////////////////////////////////////////////////////////////
     // MonoBehavior Functions
     /////////////////////////////////////////////////////////////////////////////////////
 
     void Start() {
-        // Initialize weapon behavior.
-        gunControl = gunControlObj.GetComponent<WeaponsCoordinator>();
-
         // Initialize visor behavior. Default to LOADING. The LevelLoader script will
         // handle changing state from LOADING to COMBAT.
         visorControlVars.loadingState.SetActive(true);
@@ -71,8 +71,6 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.scanVisor.SetActive(false);
         visorControlVars.combatVisor.SetActive(false);
         visorControlVars.activeVisorObj = visorControlVars.loadingState;
-
-        // Initialize debug mode.
         visorControlVars.debugMode.SetActive(visorControlVars.debugModeEnabled);
 
         // Initialize cursor and mouse behavior.
@@ -196,6 +194,12 @@ public class UserInterface : MonoBehaviour {
         activeVisor = Visor.SELECT;
         visorControlVars.activeVisorObj.SetActive(false);
         visorControlVars.activeVisorObj = visorControlVars.visorSelect;
+
+        // Show / hide visor buttons based on what the player has gotten.
+        visorSelectControlVars.combatVisorButton.SetActive(
+            playerState.coreStateValues.hasCombatVisor);
+        visorSelectControlVars.scanVisorButton.SetActive(
+            playerState.coreStateValues.hasScanVisor);
         visorControlVars.visorSelect.SetActive(true);
 
         // Disable the control of any open weapons.

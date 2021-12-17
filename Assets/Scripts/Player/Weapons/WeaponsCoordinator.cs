@@ -49,12 +49,14 @@ public class WeaponsCoordinator : MonoBehaviour {
     private void UpdateActiveState() {
         // Switch to laser pistol
         if (Input.GetKeyDown(KeyCode.Alpha1) && selectedGunIndex != 0) {
-            StartCoroutine(SwitchWeapons(gunObjects[0], 0, "Laser Pistol"));
+            if (playerState.coreStateValues.hasPistol)
+                StartCoroutine(SwitchWeapons(gunObjects[0], 0, "Laser Pistol"));
         }
 
         // Switch to laser rifle
         if (Input.GetKeyDown(KeyCode.Alpha2) && selectedGunIndex != 1) {
-            StartCoroutine(SwitchWeapons(gunObjects[1], 1, "Laser Rifle"));
+            if (playerState.coreStateValues.hasMachineGun)
+                StartCoroutine(SwitchWeapons(gunObjects[1], 1, "Laser Rifle"));
         }
     }
 

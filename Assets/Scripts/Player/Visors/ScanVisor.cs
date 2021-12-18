@@ -59,7 +59,6 @@ public class ScanVisor : MonoBehaviour {
         // Internal state - could be typing out scan, or done typing.
         public enum InternalState {OPENING, OPENED, CLOSING};
         [HideInInspector] public InternalState internalState = InternalState.OPENED;
-        [HideInInspector] public IEnumerator animatorCoroutine;
 
         // UI gameobjects
         public GameObject scanDescriptionDialog;
@@ -274,13 +273,11 @@ public class ScanVisor : MonoBehaviour {
         viewScanStateVars.scanDescriptionText.text = viewScanStateVars.scanDescription;
 
         // If the item scanned was not previously scanned, animate the display.
+        viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENING;
         if (scanInitialState != ScanGroup.State.SCANNED) {
-            viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENING;
-            viewScanStateVars.animatorCoroutine = OpenViewScanInterface();
-            StartCoroutine(viewScanStateVars.animatorCoroutine);
+            StartCoroutine(OpenViewScanInterface(true));
         } else {
-            ResetScanningInterface();
-            viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENED;
+            StartCoroutine(OpenViewScanInterface(false));
         }
 
         // Re-render all scannable objects to update highlight colors.
@@ -289,15 +286,17 @@ public class ScanVisor : MonoBehaviour {
 
     // Plays the full animation on a view scan. This only happens when scanning
     // an object for the first time.
-    private IEnumerator OpenViewScanInterface() {
+    private IEnumerator OpenViewScanInterface(bool isFirstTimeScanning = true) {
         viewScanStateVars.scanDescriptionDialog.transform.localScale =
             new Vector3(1.0f, 0, 1.0f);
         viewScanStateVars.scanDescriptionText.text = "";
         SetTextAlpha(viewScanStateVars.scanCompleteText, 0.0f);
 
         // Wait for a tiny bit to play sfx, this enhances the experience
-        yield return new WaitForSecondsRealtime(0.15f);
-        PlaySound(viewScanStateVars.showDialogSound, 0.8f, 0.4f);
+        if (isFirstTimeScanning) {
+            yield return new WaitForSecondsRealtime(0.15f);
+            PlaySound(viewScanStateVars.showDialogSound, 0.8f, 0.4f);
+        }
 
         // Wait for a tiny bit to give the animation more oomph
         yield return new WaitForSecondsRealtime(0.1f);
@@ -308,8 +307,16 @@ public class ScanVisor : MonoBehaviour {
         yield return fadeInScanComplete;
 
         // Wait for a tiny bit to give the animation more oomph
-        yield return new WaitForSecondsRealtime(0.1f);
-        yield return StartCoroutine(TypeOutScanDescription(0.04f));
+        if (isFirstTimeScanning) {
+            yield return new WaitForSecondsRealtime(0.1f);
+            yield return StartCoroutine(TypeOutScanDescription(0.04f));
+        } else {
+            SetTextAlpha(viewScanStateVars.scanDescriptionText, 0);
+            viewScanStateVars.scanDescriptionText.text =
+                viewScanStateVars.scanDescription;
+            yield return StartCoroutine(
+                FadeInText(viewScanStateVars.scanDescriptionText, 0.5f, 1.0f));
+        }
         
         viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENED;
     }
@@ -336,6 +343,7 @@ public class ScanVisor : MonoBehaviour {
 
     private void ResetScanningInterface() {
         viewScanStateVars.scanDescriptionDialog.transform.localScale = Vector3.one;
+        SetTextAlpha(viewScanStateVars.scanDescriptionText, 1.0f);
         SetTextAlpha(viewScanStateVars.scanCompleteText, 0.5f);
         viewScanStateVars.scanDescriptionText.text = viewScanStateVars.scanDescription;
     }

@@ -10,9 +10,7 @@ public class DialogMessages : MonoBehaviour {
 
     // TODO - select and play sounds.
     public AudioClip openDialogSound;
-    public AudioClip closeDialogSound;
     public AudioClip iterateDialogSound;
-    public AudioClip textTypeSound;
     
     public GameObject dialogBox;
     [SerializeField] public Text dialogMessageText;
@@ -42,23 +40,27 @@ public class DialogMessages : MonoBehaviour {
     }
 
     private IEnumerator InitializeDialogBoxFirstMessage() {
+        PlaySound(openDialogSound, 0.8f, 0.4f);
         yield return StartCoroutine(FlashInDialogBox());
         yield return StartCoroutine(TypeOutText());
     }
 
     private IEnumerator GoToDialogBoxNextMessage() {
+        PlaySound(iterateDialogSound);
         yield return StartCoroutine(FadeOutText(dialogMessageText, 0.5f));
         dialogMessageText.text = dialogMessages[currentMessageIndex];
         yield return StartCoroutine(FadeInText(dialogMessageText, 0.5f));
     }
 
     private IEnumerator ExitDialogBox() {
+        PlaySound(iterateDialogSound);
         yield return StartCoroutine(FadeOutText(dialogMessageText, 0.5f));
         yield return StartCoroutine(FlashOutDialogBox());
         userInterface.ExitDialogMessages();
     }
 
     private IEnumerator TypeOutText() {
+        dialogMessageText.gameObject.SetActive(true);
         string currentMessage = dialogMessages[currentMessageIndex];
         for (int i = 0; i < currentMessage.Length; i++) {
             dialogMessageText.text += currentMessage[i];
@@ -121,7 +123,7 @@ public class DialogMessages : MonoBehaviour {
         dialogBox.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     }
 
-    private void PlaySound(AudioClip clip) {
-        audioCoordinator.PlaySound2D(clip);
+    private void PlaySound(AudioClip clip, float pitch=1.0f, float volume=1.0f) {
+        audioCoordinator.PlaySound2D(clip, pitch, volume);
     }
 }

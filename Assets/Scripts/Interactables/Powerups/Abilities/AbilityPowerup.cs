@@ -6,12 +6,21 @@ public abstract class AbilityPowerup : MonoBehaviour {
 
     public float rotationDegPerSec = 200f;
 
+    private PlayerState playerState;
+
     public GameObject coneTopObj;
     public GameObject coneBottomObj;
     public GameObject powerupObj;
+    public GameObject getPowerupVfxPrefab;
     public Vector3 powerupRotationDirection = Vector3.forward;
 
     public AudioClip[] getPowerupSounds;
+
+    void Start() {
+        if (IsPreviouslyObtained()) Destroy(gameObject);
+    }
+
+    public abstract bool IsPreviouslyObtained();
 
     void Update() {
         coneTopObj.transform.Rotate(
@@ -29,8 +38,16 @@ public abstract class AbilityPowerup : MonoBehaviour {
     }
 
     private void ObtainPowerup() {
+        PlayObtainPowerupVfx();
         PlayObtainPowerupSfx();
         GivePlayerPowerup();
+        Destroy(gameObject);
+    }
+
+    private void PlayObtainPowerupVfx() {
+        GameObject vfx =
+            Instantiate(getPowerupVfxPrefab, transform.position, transform.rotation);
+        Destroy(vfx, 1.0f);
     }
 
     private void PlayObtainPowerupSfx() {
@@ -43,7 +60,9 @@ public abstract class AbilityPowerup : MonoBehaviour {
     public abstract void GivePlayerPowerup();
 
     public PlayerState GetPlayerState() {
-        return GameObject.Find("PlayerState").GetComponent<PlayerState>();
+        if (playerState != null) return playerState;
+        playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
+        return playerState;
     }
 
     public AudioCoordinator GetAudioCoordinator() {

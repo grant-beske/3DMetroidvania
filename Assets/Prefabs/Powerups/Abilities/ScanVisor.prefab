@@ -4880,9 +4880,10 @@ GameObject:
   - component: {fileID: 4698290722679578823}
   - component: {fileID: 4698290722679578822}
   - component: {fileID: 4698290722679578821}
+  - component: {fileID: 7929669836953655451}
   m_Layer: 0
   m_Name: ConeBottom
-  m_TagString: Untagged
+  m_TagString: Scannable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5338,6 +5339,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4698290722679578818}
   m_Mesh: {fileID: 0}
+--- !u!114 &7929669836953655451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698290722679578818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 8990176056901613204}
 --- !u!1 &4698290722877568795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,9 +5363,10 @@ GameObject:
   - component: {fileID: 4698290722877568798}
   - component: {fileID: 4698290722877568797}
   - component: {fileID: 4698290722877568796}
+  - component: {fileID: 4868453600066978911}
   m_Layer: 0
   m_Name: ScanVisor
-  m_TagString: Untagged
+  m_TagString: Scannable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5373,6 +5388,7 @@ Transform:
   - {fileID: 4698290723750990894}
   - {fileID: 3278948878844916688}
   - {fileID: 3278948878844940608}
+  - {fileID: 2672988146168450327}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5405,9 +5421,24 @@ MonoBehaviour:
   coneTopObj: {fileID: 4698290723750990893}
   coneBottomObj: {fileID: 4698290722679578818}
   powerupObj: {fileID: 93205290466060809}
+  getPowerupVfxPrefab: {fileID: 4870411420820690760, guid: 7ec7a4d5987ed6b49b5d07181dd8ea3e, type: 3}
+  powerupRotationDirection: {x: 0, y: 0, z: 1}
   getPowerupSounds:
   - {fileID: 8300000, guid: 3bd27b3af42489d4a8c810d52ef6ead1, type: 3}
   - {fileID: 8300000, guid: db3585c6220848249a817bde1ffa4d23, type: 3}
+--- !u!114 &4868453600066978911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698290722877568795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 8990176056901613204}
 --- !u!1 &4698290723750990893
 GameObject:
   m_ObjectHideFlags: 0
@@ -5419,11 +5450,12 @@ GameObject:
   - component: {fileID: 4698290723750990894}
   - component: {fileID: 4698290723750990883}
   - component: {fileID: 4698290723750990882}
+  - component: {fileID: 2775055509957626314}
   - component: {fileID: 4698290723750990881}
   - component: {fileID: 4698290723750990880}
   m_Layer: 0
   m_Name: ConeTop
-  m_TagString: Untagged
+  m_TagString: Scannable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5828,6 +5860,19 @@ MonoBehaviour:
       data:
         m_NumberOfSides: 6
         m_Smooth: 1
+--- !u!114 &2775055509957626314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698290723750990893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 8990176056901613204}
 --- !u!23 &4698290723750990881
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5879,6 +5924,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4698290723750990893}
   m_Mesh: {fileID: 0}
+--- !u!1 &8990176056901613204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2672988146168450327}
+  - component: {fileID: 8608705240123282522}
+  m_Layer: 0
+  m_Name: ScanGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2672988146168450327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8990176056901613204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4698290722877568798}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8608705240123282522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8990176056901613204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fb585095744e04597fc0b612370b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanId: Ability-ScanVisor
+  description: Scan Visor upgrade. Collect to obtain the Scan Visor.
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  initialState: 1
 --- !u!1001 &4698290722550053754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5889,6 +5984,10 @@ PrefabInstance:
     - target: {fileID: 4645620463839564147, guid: 39bc5e3f041c7d8449e37a6e56ed1f1a, type: 3}
       propertyPath: m_Name
       value: Chip
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645620463839564147, guid: 39bc5e3f041c7d8449e37a6e56ed1f1a, type: 3}
+      propertyPath: m_TagString
+      value: Scannable
       objectReference: {fileID: 0}
     - target: {fileID: 4645620463839923539, guid: 39bc5e3f041c7d8449e37a6e56ed1f1a, type: 3}
       propertyPath: m_RootOrder
@@ -5953,6 +6052,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4645620463839564147, guid: 39bc5e3f041c7d8449e37a6e56ed1f1a, type: 3}
   m_PrefabInstance: {fileID: 4698290722550053754}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5864977224659200869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93205290466060809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935af47c0f5f3b44a4a8073b7f1b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentScanGroupObj: {fileID: 8990176056901613204}
 --- !u!4 &93205290466227753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4645620463839923539, guid: 39bc5e3f041c7d8449e37a6e56ed1f1a, type: 3}

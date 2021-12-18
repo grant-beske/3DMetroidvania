@@ -4,9 +4,12 @@ using UnityEngine;
 
 // Represents the machine gun weapon powerup that you get in the Undersea Dock.
 public class MachineGunPowerup : AbilityPowerup {
+    public override bool IsPreviouslyObtained() {
+        return GetPlayerState().coreStateValues.hasMachineGun;
+    }
+
     public override void GivePlayerPowerup() {
-        PlayerState playerState = GetPlayerState();
-        playerState.coreStateValues.hasMachineGun = true;
+        GetPlayerState().coreStateValues.hasMachineGun = true;
         Destroy(gameObject);
     }
 }

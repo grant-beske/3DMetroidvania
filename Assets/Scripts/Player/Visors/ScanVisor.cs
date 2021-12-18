@@ -289,10 +289,13 @@ public class ScanVisor : MonoBehaviour {
     private IEnumerator AnimateViewScanDisplay() {
         viewScanStateVars.scanDescriptionText.text = "";
 
+
         // Flash in the scan description container element
         float dialogEntryTime = 1.0f;
         viewScanStateVars.scanDescriptionDialog.transform.localScale =
             new Vector3(1.0f, 0, 1.0f);
+        // Wait for a tiny bit to give the animation more oomph
+        yield return new WaitForSecondsRealtime(0.15f);
         PlaySound(viewScanStateVars.showDialogSound, 0.8f, 0.4f);
         // Wait for a tiny bit to give the animation more oomph
         yield return new WaitForSecondsRealtime(0.1f);

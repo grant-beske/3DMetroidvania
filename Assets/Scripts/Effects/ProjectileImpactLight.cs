@@ -6,7 +6,7 @@ public class ProjectileImpactLight : MonoBehaviour {
     public float timeToLive = 0.2f;
     private float timeAlive = 0;
 
-    public Light impactLight;
+    private Light impactLight;
     private float initIntensity;
 
     void Start() {

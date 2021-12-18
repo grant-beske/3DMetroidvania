@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 3963207294359871891}
   - component: {fileID: 6592494043978542382}
   - component: {fileID: 7973278950597865514}
-  - component: {fileID: 3451424231317877574}
+  - component: {fileID: 1938137299324878441}
   m_Layer: 0
   m_Name: MachineGun
   m_TagString: Scannable
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentScanGroupObj: {fileID: 569894960847938584}
---- !u!82 &3451424231317877574
+--- !u!82 &1938137299324878441
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -736,7 +736,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a92769c57c0962f4cb9e8f92c0b66454, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 0.75
   Loop: 1
   Mute: 0
@@ -745,9 +745,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 25
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -763,6 +763,15 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.19941026
+      value: 0.19777882
+      inSlope: -0.46502236
+      outSlope: -0.46502236
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.16287251
     - serializedVersion: 3
       time: 1
       value: 0

@@ -152,7 +152,7 @@ public class OverlayMessages : MonoBehaviour {
             StartCoroutine(FadeInText(metricElements.currentLocation, duration));
         
         // Start the selected weapon message, we don't care when it finishes.
-        StartCoroutine(PlaySelectedWeaponMessage(0.4f));
+        StartCoroutine(PlaySelectedWeaponMessage(1.0f));
         
         yield return fadeInHealthText;
         yield return fadeInHealthNum;

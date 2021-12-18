@@ -2671,10 +2671,12 @@ MonoBehaviour:
     stateObj: {fileID: 3582544329377502952}
     internalState: 1
     scanDescriptionDialog: {fileID: 3582544330316576043}
+    scanCompleteText: {fileID: 3582544329112521134}
     scanDescriptionText: {fileID: 3582544328976195246}
     scanDescription: 
     showSound: {fileID: 8300000, guid: 1495060bbdc8fcd4a85206fba504169f, type: 3}
     showDialogSound: {fileID: 8300000, guid: c81b2eee04abdb04e8cdc6b83ef89328, type: 3}
+    iterateDialogSound: {fileID: 8300000, guid: 90110a6bce8c1f94780fbc2faa271d3c, type: 3}
     typingSfx: {fileID: 8300000, guid: f85bc57ec21e66744aa681272fe53152, type: 3}
 --- !u!82 &3582544330230423357
 AudioSource:
@@ -5594,7 +5596,6 @@ MonoBehaviour:
   userInterface: {fileID: 3582544330115499777}
   audioCoordinator: {fileID: 9015914418083912345}
   openDialogSound: {fileID: 8300000, guid: c81b2eee04abdb04e8cdc6b83ef89328, type: 3}
-  closeDialogSound: {fileID: 8300000, guid: 4abe130bf2db8e943b8deafc77630bcf, type: 3}
   iterateDialogSound: {fileID: 8300000, guid: 90110a6bce8c1f94780fbc2faa271d3c, type: 3}
   dialogBox: {fileID: 7524646786563632908}
   dialogMessageText: {fileID: 6253476029717421539}

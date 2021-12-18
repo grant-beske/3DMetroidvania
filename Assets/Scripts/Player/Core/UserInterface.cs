@@ -5,7 +5,7 @@ using UnityEngine;
 public class UserInterface : MonoBehaviour {
 
     // Visor state variables.
-    enum Visor {LOADING, PAUSED, DIALOG, SELECT, COMBAT, SCAN};
+    public enum Visor {LOADING, PAUSED, DIALOG, SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.LOADING;
     // Previously active visor, not counting technical visor states like SELECT.
     private Visor previouslyActiveVisor = Visor.COMBAT;
@@ -194,7 +194,7 @@ public class UserInterface : MonoBehaviour {
         ResumeSimState();
     }
 
-    private void PauseSimState(Visor visor) {
+    public void PauseSimState(Visor visor) {
         EnableCursor();
         DisableGameControls();
         if (activeVisor == Visor.COMBAT)
@@ -205,7 +205,7 @@ public class UserInterface : MonoBehaviour {
         audioCoordinator.PauseSounds();
     }
 
-    private void ResumeSimState() {
+    public void ResumeSimState() {
         DisableCursor();
         EnableGameControls();
         if (previouslyActiveVisor == Visor.COMBAT)

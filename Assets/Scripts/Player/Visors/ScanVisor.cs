@@ -57,18 +57,20 @@ public class ScanVisor : MonoBehaviour {
         public GameObject stateObj;
 
         // Internal state - could be typing out scan, or done typing.
-        public enum InternalState {ANIMATING, DONE};
-        [HideInInspector] public InternalState internalState = InternalState.DONE;
+        public enum InternalState {OPENING, OPENED, CLOSING};
+        [HideInInspector] public InternalState internalState = InternalState.OPENED;
         [HideInInspector] public IEnumerator animatorCoroutine;
 
         // UI gameobjects
         public GameObject scanDescriptionDialog;
+        [SerializeField] public Text scanCompleteText;
         [SerializeField] public Text scanDescriptionText;
         [HideInInspector] public string scanDescription;
 
         // SFX
         public AudioClip showSound;
         public AudioClip showDialogSound;
+        public AudioClip iterateDialogSound;
         public AudioClip typingSfx;
     }
 
@@ -183,7 +185,7 @@ public class ScanVisor : MonoBehaviour {
     }
 
     private void UpdateViewScanState() {
-        if (viewScanStateVars.internalState == ViewScanStateVars.InternalState.ANIMATING) {
+        if (viewScanStateVars.internalState == ViewScanStateVars.InternalState.OPENING) {
             if (Input.GetKeyDown(KeyCode.Escape)) {
                 TerminateViewScanAnimation();
                 SwitchToNormalState();
@@ -191,10 +193,14 @@ public class ScanVisor : MonoBehaviour {
             if (Input.GetMouseButtonDown(0)) {
                 TerminateViewScanAnimation();
             }
-        } else if (viewScanStateVars.internalState == ViewScanStateVars.InternalState.DONE) {
+        } else if (viewScanStateVars.internalState == ViewScanStateVars.InternalState.OPENED) {
             if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(0)) {
-                SwitchToNormalState();
+                PlaySound(viewScanStateVars.iterateDialogSound);
+                StartCoroutine(CloseViewScanInterface());
             }
+        } else if (viewScanStateVars.internalState == ViewScanStateVars.InternalState.CLOSING) {
+            // Closing is currently a no-op, just wait for UI to close then switch to
+            // normal state.
         }
     }
 
@@ -207,8 +213,7 @@ public class ScanVisor : MonoBehaviour {
         scanningStateVars.stateObj.SetActive(false);
         normalStateVars.stateObj.SetActive(true);
         activeState = State.NORMAL;
-        uiController.DisableCursor();
-        uiController.EnableGameControls();
+        uiController.ResumeSimState();
 
         // Pause the scanning sound for now, may resume later.
         scanningStateVars.scanningAudioSource.Pause();
@@ -222,8 +227,6 @@ public class ScanVisor : MonoBehaviour {
         scanningStateVars.stateObj.SetActive(true);
         normalStateVars.stateObj.SetActive(false);
         activeState = State.SCANNING;
-        uiController.DisableCursor();
-        uiController.EnableGameControls();
 
         // Time flows regularly in scanning mode.
         Time.timeScale = 1f;
@@ -253,8 +256,7 @@ public class ScanVisor : MonoBehaviour {
         scanningStateVars.stateObj.SetActive(false);
         viewScanStateVars.stateObj.SetActive(true);
         activeState = State.VIEWSCAN;
-        uiController.EnableCursor();
-        uiController.DisableGameControls();
+        uiController.PauseSimState(UserInterface.Visor.SCAN);
 
         // Reset the scanning sound.
         scanningStateVars.scanningAudioSource.Stop();
@@ -273,11 +275,12 @@ public class ScanVisor : MonoBehaviour {
 
         // If the item scanned was not previously scanned, animate the display.
         if (scanInitialState != ScanGroup.State.SCANNED) {
-            viewScanStateVars.internalState = ViewScanStateVars.InternalState.ANIMATING;
-            viewScanStateVars.animatorCoroutine = AnimateViewScanDisplay();
+            viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENING;
+            viewScanStateVars.animatorCoroutine = OpenViewScanInterface();
             StartCoroutine(viewScanStateVars.animatorCoroutine);
         } else {
-            viewScanStateVars.internalState = ViewScanStateVars.InternalState.DONE;
+            ResetScanningInterface();
+            viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENED;
         }
 
         // Re-render all scannable objects to update highlight colors.
@@ -286,46 +289,55 @@ public class ScanVisor : MonoBehaviour {
 
     // Plays the full animation on a view scan. This only happens when scanning
     // an object for the first time.
-    private IEnumerator AnimateViewScanDisplay() {
-        viewScanStateVars.scanDescriptionText.text = "";
-
-        // Flash in the scan description container element
-        float dialogEntryTime = 1.0f;
+    private IEnumerator OpenViewScanInterface() {
         viewScanStateVars.scanDescriptionDialog.transform.localScale =
             new Vector3(1.0f, 0, 1.0f);
-        // Wait for a tiny bit to give the animation more oomph
+        viewScanStateVars.scanDescriptionText.text = "";
+        SetTextAlpha(viewScanStateVars.scanCompleteText, 0.0f);
+
+        // Wait for a tiny bit to play sfx, this enhances the experience
         yield return new WaitForSecondsRealtime(0.15f);
         PlaySound(viewScanStateVars.showDialogSound, 0.8f, 0.4f);
-        // Wait for a tiny bit to give the animation more oomph
-        yield return new WaitForSecondsRealtime(0.1f);
-        while (viewScanStateVars.scanDescriptionDialog.transform.localScale.y < 1.0f) {
-            // Use fixed delta time here since the game is paused.
-            viewScanStateVars.scanDescriptionDialog.transform.localScale +=
-                new Vector3(0, Time.fixedDeltaTime / dialogEntryTime, 0);
-            yield return null;
-        }
-        viewScanStateVars.scanDescriptionDialog.transform.localScale =
-            new Vector3(1.0f, 1.0f, 1.0f);
 
         // Wait for a tiny bit to give the animation more oomph
         yield return new WaitForSecondsRealtime(0.1f);
+        Coroutine flashInDialog = StartCoroutine(FlashInScanDialog(1.0f));
+        Coroutine fadeInScanComplete =
+            StartCoroutine(FadeInText(viewScanStateVars.scanCompleteText, 1.0f, 0.5f));
+        yield return flashInDialog;
+        yield return fadeInScanComplete;
 
-        // Type out the scan description
-        for (int i = 0; i < viewScanStateVars.scanDescription.Length; i++) {
-            viewScanStateVars.scanDescriptionText.text +=
-                viewScanStateVars.scanDescription[i];
-            PlaySound(viewScanStateVars.typingSfx);
-            // Must use WaitForSecondsRealtime since the game is paused.
-            yield return new WaitForSecondsRealtime(0.04f);
-        }
-        viewScanStateVars.scanDescriptionText.text = viewScanStateVars.scanDescription;
-        viewScanStateVars.internalState = ViewScanStateVars.InternalState.DONE;
+        // Wait for a tiny bit to give the animation more oomph
+        yield return new WaitForSecondsRealtime(0.1f);
+        yield return StartCoroutine(TypeOutScanDescription(0.04f));
+        
+        viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENED;
+    }
+
+    private IEnumerator CloseViewScanInterface() {
+        viewScanStateVars.internalState = ViewScanStateVars.InternalState.CLOSING;
+        yield return StartCoroutine(FadeOutText(viewScanStateVars.scanDescriptionText, 0.25f));
+
+        Coroutine flashOutDialog = StartCoroutine(FlashOutScanDialog(1.0f));
+        Coroutine fadeOutScanComplete =
+            StartCoroutine(FadeOutText(viewScanStateVars.scanCompleteText, 1.0f));
+        yield return flashOutDialog;
+        yield return fadeOutScanComplete;
+
+        SetTextAlpha(viewScanStateVars.scanDescriptionText, 1.0f);
+        SwitchToNormalState();
     }
 
     private void TerminateViewScanAnimation() {
-        StopCoroutine(viewScanStateVars.animatorCoroutine);
+        StopAllCoroutines();
+        ResetScanningInterface();
+        viewScanStateVars.internalState = ViewScanStateVars.InternalState.OPENED;
+    }
+
+    private void ResetScanningInterface() {
+        viewScanStateVars.scanDescriptionDialog.transform.localScale = Vector3.one;
+        SetTextAlpha(viewScanStateVars.scanCompleteText, 0.5f);
         viewScanStateVars.scanDescriptionText.text = viewScanStateVars.scanDescription;
-        viewScanStateVars.internalState = ViewScanStateVars.InternalState.DONE;
     }
 
     private void ToggleScanHighlight(bool shouldHighlight) {
@@ -353,6 +365,70 @@ public class ScanVisor : MonoBehaviour {
         float percentComplete =
             scanningStateVars.timeElapsed / scanningStateVars.timeRequiredToScan;
         scanningStateVars.progressBar.transform.localScale = new Vector3(percentComplete, 1, 1);
+    }
+
+    private IEnumerator FlashInScanDialog(float duration) {
+        viewScanStateVars.scanDescriptionDialog.transform.localScale =
+            new Vector3(1.0f, 0, 1.0f);
+        while (viewScanStateVars.scanDescriptionDialog.transform.localScale.y < 1.0f) {
+            // Use fixed delta time here since the game is paused.
+            viewScanStateVars.scanDescriptionDialog.transform.localScale +=
+                new Vector3(0, Time.fixedDeltaTime / duration, 0);
+            yield return null;
+        }
+        viewScanStateVars.scanDescriptionDialog.transform.localScale = Vector3.one;
+    }
+
+    private IEnumerator FlashOutScanDialog(float duration) {
+        viewScanStateVars.scanDescriptionDialog.transform.localScale = Vector3.one;
+        while (viewScanStateVars.scanDescriptionDialog.transform.localScale.y > 0.0f) {
+            // Use fixed delta time here since the game is paused.
+            viewScanStateVars.scanDescriptionDialog.transform.localScale -=
+                new Vector3(0, Time.fixedDeltaTime / duration, 0);
+            yield return null;
+        }
+        viewScanStateVars.scanDescriptionDialog.transform.localScale =
+            new Vector3(1.0f, 0, 1.0f);
+    }
+
+    private IEnumerator FadeInText(Text text, float duration, float alpha) {
+        text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
+        while (text.color.a < alpha) {
+            // Use fixedDeltaTime since we are paused.
+            text.color = new Color(
+                text.color.r, text.color.g, text.color.b,
+                text.color.a + ((Time.fixedDeltaTime * (alpha / 1.0f)) / duration));
+            yield return null;
+        }
+        text.color = new Color(text.color.r, text.color.g, text.color.b, alpha);
+    }
+
+    private IEnumerator FadeOutText(Text text, float duration) {
+        float initialAlpha = text.color.a;
+        while (text.color.a > 0) {
+            // Use fixedDeltaTime since we are paused.
+            text.color = new Color(
+                text.color.r, text.color.g, text.color.b,
+                text.color.a - ((Time.fixedDeltaTime * (initialAlpha / 1.0f)) / duration));
+            yield return null;
+        }
+        text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
+    }
+
+    private IEnumerator TypeOutScanDescription(float interval) {
+        viewScanStateVars.scanDescriptionText.text = "";
+        for (int i = 0; i < viewScanStateVars.scanDescription.Length; i++) {
+            viewScanStateVars.scanDescriptionText.text +=
+                viewScanStateVars.scanDescription[i];
+            PlaySound(viewScanStateVars.typingSfx);
+            // Must use WaitForSecondsRealtime since the game is paused.
+            yield return new WaitForSecondsRealtime(interval);
+        }
+        viewScanStateVars.scanDescriptionText.text = viewScanStateVars.scanDescription;
+    }
+
+    private void SetTextAlpha(Text text, float alpha) {
+        text.color = new Color(text.color.r, text.color.g, text.color.b, alpha);
     }
 
     private void PlaySound(AudioClip clip, float pitch=1.0f, float volume=1.0f) {

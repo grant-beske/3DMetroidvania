@@ -41,12 +41,16 @@ public class DialogMessages : MonoBehaviour {
 
     private IEnumerator InitializeDialogBoxFirstMessage() {
         PlaySound(openDialogSound, 0.8f, 0.4f);
-        yield return StartCoroutine(FlashInDialogBox());
+        Coroutine flashInDialogBox = StartCoroutine(FlashInDialogBox());
+        Coroutine fadeInClickText = StartCoroutine(FadeInText(clickToContinueText, 0.8f));
+        yield return flashInDialogBox;
+        yield return fadeInClickText;
         yield return StartCoroutine(TypeOutText());
     }
 
     private IEnumerator GoToDialogBoxNextMessage() {
         PlaySound(iterateDialogSound);
+        ResetClickToContinueText();
         yield return StartCoroutine(FadeOutText(dialogMessageText, 0.5f));
         dialogMessageText.text = dialogMessages[currentMessageIndex];
         yield return StartCoroutine(FadeInText(dialogMessageText, 0.5f));
@@ -55,7 +59,10 @@ public class DialogMessages : MonoBehaviour {
     private IEnumerator ExitDialogBox() {
         PlaySound(iterateDialogSound);
         yield return StartCoroutine(FadeOutText(dialogMessageText, 0.5f));
-        yield return StartCoroutine(FlashOutDialogBox());
+        Coroutine flashOutDialogBox = StartCoroutine(FlashOutDialogBox());
+        Coroutine fadeOutClickText = StartCoroutine(FadeOutText(clickToContinueText, 0.8f));
+        yield return flashOutDialogBox;
+        yield return fadeOutClickText;
         userInterface.ExitDialogMessages();
     }
 
@@ -121,6 +128,15 @@ public class DialogMessages : MonoBehaviour {
         }
         dialogBox.SetActive(false);
         dialogBox.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+    }
+
+    private void ResetClickToContinueText() {
+        clickToContinueText.color =
+            new Color(
+                clickToContinueText.color.r,
+                clickToContinueText.color.g,
+                clickToContinueText.color.b,
+                0.5f);
     }
 
     private void PlaySound(AudioClip clip, float pitch=1.0f, float volume=1.0f) {

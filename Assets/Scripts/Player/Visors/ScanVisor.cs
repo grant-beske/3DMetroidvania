@@ -289,7 +289,6 @@ public class ScanVisor : MonoBehaviour {
     private IEnumerator AnimateViewScanDisplay() {
         viewScanStateVars.scanDescriptionText.text = "";
 
-
         // Flash in the scan description container element
         float dialogEntryTime = 1.0f;
         viewScanStateVars.scanDescriptionDialog.transform.localScale =

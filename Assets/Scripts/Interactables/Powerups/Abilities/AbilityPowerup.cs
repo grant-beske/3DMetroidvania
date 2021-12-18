@@ -43,7 +43,7 @@ public abstract class AbilityPowerup : MonoBehaviour {
         PlayObtainPowerupVfx();
         PlayObtainPowerupSfx();
         GivePlayerPowerup();
-        GetUserInterface().PlayPowerupDialogMessage(powerupDialogMessages, 0.5f);
+        GetUserInterface().PlayPowerupDialogMessage(powerupDialogMessages, 0.25f);
         Destroy(gameObject);
     }
 

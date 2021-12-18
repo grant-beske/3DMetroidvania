@@ -8,6 +8,8 @@ public abstract class AbilityPowerup : MonoBehaviour {
 
     private PlayerState playerState;
 
+    public string[] powerupDialogMessages = new string[]{"New ability acquired."};
+
     public GameObject coneTopObj;
     public GameObject coneBottomObj;
     public GameObject powerupObj;
@@ -41,6 +43,7 @@ public abstract class AbilityPowerup : MonoBehaviour {
         PlayObtainPowerupVfx();
         PlayObtainPowerupSfx();
         GivePlayerPowerup();
+        GetUserInterface().PlayPowerupDialogMessage(powerupDialogMessages, 0.5f);
         Destroy(gameObject);
     }
 
@@ -63,6 +66,10 @@ public abstract class AbilityPowerup : MonoBehaviour {
         if (playerState != null) return playerState;
         playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
         return playerState;
+    }
+
+    public UserInterface GetUserInterface() {
+        return GameObject.Find("UIController").GetComponent<UserInterface>();
     }
 
     public AudioCoordinator GetAudioCoordinator() {

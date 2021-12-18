@@ -699,6 +699,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDegPerSec: 200
+  powerupDialogMessages:
+  - Laser Rifle acquired.
+  - Press 2 to equip. When equipped, hold LMB to fire a stream of projectiles. Check
+    database entry for further details.
   coneTopObj: {fileID: 3963207293622747811}
   coneBottomObj: {fileID: 3963207294702564940}
   powerupObj: {fileID: 7531125394732820169}
@@ -739,7 +743,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0

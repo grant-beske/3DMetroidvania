@@ -5419,6 +5419,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDegPerSec: 200
+  powerupDialogMessages:
+  - Scan Visor acquired.
+  - Equip in visor select. When equipped, hold LMB to scan highlighted items. Check
+    database entry for further details.
   coneTopObj: {fileID: 4698290723750990893}
   coneBottomObj: {fileID: 4698290722679578818}
   powerupObj: {fileID: 93205290466060809}
@@ -5459,7 +5463,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0

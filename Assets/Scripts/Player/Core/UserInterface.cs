@@ -5,7 +5,7 @@ using UnityEngine;
 public class UserInterface : MonoBehaviour {
 
     // Visor state variables.
-    enum Visor {LOADING, PAUSED, SELECT, COMBAT, SCAN};
+    enum Visor {LOADING, PAUSED, DIALOG, SELECT, COMBAT, SCAN};
     private Visor activeVisor = Visor.LOADING;
     // Previously active visor, not counting technical visor states like SELECT.
     private Visor previouslyActiveVisor = Visor.COMBAT;
@@ -31,6 +31,7 @@ public class UserInterface : MonoBehaviour {
         public GameObject loadingState;
         public GameObject pauseMenu;
         public GameObject overlayMessages;
+        public GameObject dialogMessages;
         public GameObject debugMode;
         public GameObject visorSelect;
         public GameObject combatVisor;
@@ -67,6 +68,7 @@ public class UserInterface : MonoBehaviour {
         visorControlVars.loadingState.SetActive(true);
         visorControlVars.pauseMenu.SetActive(false);
         visorControlVars.overlayMessages.SetActive(false);
+        visorControlVars.dialogMessages.SetActive(false);
         visorControlVars.visorSelect.SetActive(false);
         visorControlVars.scanVisor.SetActive(false);
         visorControlVars.combatVisor.SetActive(false);
@@ -86,6 +88,8 @@ public class UserInterface : MonoBehaviour {
             // Loading is currently a noop.
         } else if (activeVisor == Visor.PAUSED) {
             UpdatePauseMenu();
+        } else if (activeVisor == Visor.DIALOG) {
+            UpdateDialogMessages();
         } else if (activeVisor == Visor.SELECT) {
             UpdateVisorSelect();
         } else if (activeVisor == Visor.COMBAT) {
@@ -99,6 +103,10 @@ public class UserInterface : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             UnpauseGame();
         }
+    }
+
+    private void UpdateDialogMessages() {
+        // Currently a no-op, behavior is handled in DialogMessages.
     }
 
     private void UpdateVisorSelect() {
@@ -166,18 +174,38 @@ public class UserInterface : MonoBehaviour {
 
     public void PauseGame() {
         visorControlVars.pauseMenu.SetActive(true);
+        PauseSimState(Visor.PAUSED);
+    }
+
+    public void UnpauseGame() {
+        visorControlVars.pauseMenu.SetActive(false);
+        ResumeSimState();
+    }
+
+    public void EnterDialogMessages(string[] messages) {
+        visorControlVars.dialogMessages.SetActive(true);
+        PauseSimState(Visor.DIALOG);
+        visorControlVars.dialogMessages
+            .GetComponent<DialogMessages>().InitializeMessages(messages);
+    }
+
+    public void ExitDialogMessages() {
+        visorControlVars.dialogMessages.SetActive(false);
+        ResumeSimState();
+    }
+
+    private void PauseSimState(Visor visor) {
         EnableCursor();
         DisableGameControls();
         if (activeVisor == Visor.COMBAT)
             gunControl.DeactivateWeaponControl();
-        activeVisor = Visor.PAUSED;
+        activeVisor = visor;
         Time.timeScale = 0f;
         musicController.PauseSong();
         audioCoordinator.PauseSounds();
     }
 
-    public void UnpauseGame() {
-        visorControlVars.pauseMenu.SetActive(false);
+    private void ResumeSimState() {
         DisableCursor();
         EnableGameControls();
         if (previouslyActiveVisor == Visor.COMBAT)
@@ -233,6 +261,15 @@ public class UserInterface : MonoBehaviour {
         gunControl.DeactivateWeapon();
 
         SetScanRenderMode();
+    }
+
+    public void PlayPowerupDialogMessage(string[] messages, float delay) {
+        StartCoroutine(PlayPowerupDialogMessageWithDelay(messages, delay));
+    }
+
+    public IEnumerator PlayPowerupDialogMessageWithDelay(string[] messages, float delay) {
+        yield return new WaitForSeconds(delay);
+        EnterDialogMessages(messages);
     }
 
     public void EnableCursor() {

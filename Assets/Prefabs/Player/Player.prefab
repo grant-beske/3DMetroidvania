@@ -1598,6 +1598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3582544329359745428}
+  - component: {fileID: 156761916496728496}
   m_Layer: 5
   m_Name: VisorSelect
   m_TagString: Untagged
@@ -1630,6 +1631,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &156761916496728496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3582544329359745419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e789aff70b256f48bb0114dbfd72be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userInterface: {fileID: 3582544330115499777}
 --- !u!1 &3582544329377502952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881f4c90b5bf6034c9f1fe101274939e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  userInterface: {fileID: 3582544330115499777}
 --- !u!1 &3582544329810517200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e501466e8eed84bb2cfc1307b1c126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableGameControls: 1
   playerState: {fileID: 3582544330647471638}
   gunControl: {fileID: 4004940211472178552}
   audioCoordinator: {fileID: 9015914418083912345}

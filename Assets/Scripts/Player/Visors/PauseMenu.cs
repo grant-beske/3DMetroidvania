@@ -12,6 +12,12 @@ public class PauseMenu : MonoBehaviour {
         uiController = uiControllerObj.GetComponent<UserInterface>();
     }
 
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            uiController.UnpauseGame();
+        }
+    }
+
     public void HandleResumeClick() {
         uiController.UnpauseGame();
     }

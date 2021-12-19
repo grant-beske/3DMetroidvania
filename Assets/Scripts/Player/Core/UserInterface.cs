@@ -9,8 +9,9 @@ public class UserInterface : MonoBehaviour {
     private Visor activeVisor = Visor.LOADING;
     // Previously active visor, not counting technical visor states like SELECT.
     private Visor previouslyActiveVisor = Visor.COMBAT;
+
     // Enable / disable game control. Useful for displaying menus, etc.
-    private bool enableGameControls = true;
+    public bool enableGameControls = true;
 
     // Standard controller variables.
     public PlayerState playerState;
@@ -87,42 +88,15 @@ public class UserInterface : MonoBehaviour {
         if (activeVisor == Visor.LOADING) {
             // Loading is currently a noop.
         } else if (activeVisor == Visor.PAUSED) {
-            UpdatePauseMenu();
+            // Currently a no-op, behavior is handled in PauseMenu.
         } else if (activeVisor == Visor.DIALOG) {
-            UpdateDialogMessages();
+            // Currently a no-op, behavior is handled in DialogMessages.
         } else if (activeVisor == Visor.SELECT) {
-            UpdateVisorSelect();
+            // Currently a no-op, behavior is handled in VisorSelect.
         } else if (activeVisor == Visor.COMBAT) {
-            UpdateCombatVisor();
+            // Currently a no-op, behavior is handled in CombatVisor.
         } else if (activeVisor == Visor.SCAN) {
             UpdateScanVisor();
-        }
-    }
-
-    private void UpdatePauseMenu() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            UnpauseGame();
-        }
-    }
-
-    private void UpdateDialogMessages() {
-        // Currently a no-op, behavior is handled in DialogMessages.
-    }
-
-    private void UpdateVisorSelect() {
-        if (!enableGameControls) return;
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(2)) {
-            SetCombatVisor();
-        }
-    }
-
-    private void UpdateCombatVisor() {
-        if (!enableGameControls) return;
-        if (Input.GetMouseButtonDown(2)) {
-            SetVisorSelect();
-        }
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            PauseGame();
         }
     }
 

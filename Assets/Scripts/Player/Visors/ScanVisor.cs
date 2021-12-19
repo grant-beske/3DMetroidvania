@@ -294,7 +294,7 @@ public class ScanVisor : MonoBehaviour {
 
         // Wait for a tiny bit to play sfx, this enhances the experience
         if (isFirstTimeScanning) {
-            yield return new WaitForSecondsRealtime(0.15f);
+            yield return new WaitForSecondsRealtime(0.1f);
             PlaySound(viewScanStateVars.showDialogSound, 0.8f, 0.4f);
         }
 

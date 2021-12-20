@@ -11,11 +11,13 @@ public class CharacterMotor : MonoBehaviour {
 	public AudioCoordinator audioCoordinator;
 	public AudioClip[] jumpSounds;
 	public AudioClip[] landingSounds;
-	public AudioClip[] footstepSounds;
-
-	// Audio controlling variables
+	
+	// Footstep variables
+	public AudioClip[] defaultFootstepSounds;
+	public AudioClip[] metalFootstepSounds;
 	public float footstepSoundInterval = 0.5F;
 	private float lastFootstepTime = 0;
+	private TerrainMaterial.Enum currentGroundMaterial = TerrainMaterial.Enum.DEFAULT;
 
 	// Does this script currently respond to input?
 	public bool canControl = true;
@@ -277,8 +279,7 @@ public class CharacterMotor : MonoBehaviour {
 	
 		// Play footstep sound if the movement magnitude is large enough and we are on the ground.
 		if (lastFootstepTime + footstepSoundInterval < Time.time && newHVelocity.magnitude >= 0.3 && grounded) {
-			// TODO - add multiple material dependent footstep sounds.
-			PlaySound(footstepSounds[Random.Range(0, footstepSounds.Length)]);
+			PlayFootstepSound();
 			lastFootstepTime = Time.time;
 		}
 	
@@ -323,7 +324,7 @@ public class CharacterMotor : MonoBehaviour {
 		// We were not grounded but just landed on something
 		else if (!grounded && IsGroundedTest()) {
 
-			// Play SFX
+			// TODO - play landing sound dependent on terrain material.
 			PlaySound(landingSounds[Random.Range(0, landingSounds.Length)]);
 
 			grounded = true;
@@ -498,13 +499,20 @@ public class CharacterMotor : MonoBehaviour {
 		return velocity;
 	}
 
-	private void OnControllerColliderHit (ControllerColliderHit hit)
-	{
+	private void OnControllerColliderHit (ControllerColliderHit hit) {
 		if (hit.normal.y > 0 && hit.normal.y > groundNormal.y && hit.moveDirection.y < 0) {
-			if ((hit.point - movement.lastHitPoint).sqrMagnitude > 0.001 || lastGroundNormal == Vector3.zero)
+			if ((hit.point - movement.lastHitPoint).sqrMagnitude > 0.001 || lastGroundNormal == Vector3.zero) {
 				groundNormal = hit.normal;
-			else
+
+				// My update: When assigning ground normal on a hit, we should also
+				// store the material type so we can correctly determine what footstep
+				// sound to play.
+				TerrainMaterial terrainMaterial = hit.gameObject.GetComponent<TerrainMaterial>();
+				if (terrainMaterial != null) currentGroundMaterial = terrainMaterial.activeMaterial;
+				else currentGroundMaterial = TerrainMaterial.Enum.DEFAULT;
+			} else {
 				groundNormal = lastGroundNormal;
+			}
 		
 			movingPlatform.hitPlatform = hit.collider.transform;
 			movement.hitPoint = hit.point;
@@ -638,17 +646,17 @@ public class CharacterMotor : MonoBehaviour {
 		SendMessage ("OnExternalVelocity");
 	}
 
-    // Detects if the player hits lava
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Lava")
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
-    }
+	private void PlayFootstepSound() {
+		if (currentGroundMaterial == TerrainMaterial.Enum.METAL) {
+			// Play the metal sound at a lower volume since it is naturally louder.
+			PlaySound(metalFootstepSounds[Random.Range(0, metalFootstepSounds.Length)], 0.1f);
+		} else {
+			PlaySound(defaultFootstepSounds[Random.Range(0, defaultFootstepSounds.Length)], 0.6f);
+		}
+	}
 
-	private void PlaySound(AudioClip clip) {
+	private void PlaySound(AudioClip clip, float volume = 1.0f) {
 		// All sounds coming from the player will be in 2D.
-		audioCoordinator.PlaySound2D(clip);
+		audioCoordinator.PlaySound2D(clip, volume: volume);
 	}
 }

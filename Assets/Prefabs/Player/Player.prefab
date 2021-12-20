@@ -3470,8 +3470,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 50e112862c0a9624d96ffb49b81b62ae, type: 3}
   landingSounds:
   - {fileID: 8300000, guid: dc98519c8572a144284f1df033a0b4fd, type: 3}
-  footstepSounds:
-  - {fileID: 8300000, guid: f404f8d3c2a4b4f48989fb1120e78fb8, type: 3}
+  defaultFootstepSounds:
+  - {fileID: 8300000, guid: 6ad0cf00f050bee41a2dee098475dc78, type: 3}
+  - {fileID: 8300000, guid: 7ca5a9710db4327439c9f8cb8204615e, type: 3}
+  - {fileID: 8300000, guid: 14ae706fef2303e4cb71112dbd5d250b, type: 3}
+  metalFootstepSounds:
+  - {fileID: 8300000, guid: c33f9686940363542a19f0fce88bec0f, type: 3}
+  - {fileID: 8300000, guid: eda46232d7873554bb0f56bedfe4b686, type: 3}
+  - {fileID: 8300000, guid: 7df9bfb7ba10fed4cbe0d70eb322acda, type: 3}
   footstepSoundInterval: 0.5
   canControl: 1
   useFixedUpdate: 1

@@ -7,12 +7,13 @@ public class ProximityDoor : MonoBehaviour {
 
     // Variables to control the loaded scenes. 
     public string sceneName1;
-    public GameObject level1Boundary;
-    private LevelBoundary levelBoundaryState;
-    public bool isStartingInScene1 = true;
-    private bool isScene1Loaded;
     public string sceneName2;
+    private bool isScene1Loaded;
     private bool isScene2Loaded;
+    private bool isDoorOpen = false;
+
+    public LevelBoundary level1Boundary;
+    public bool isStartingInScene1 = true;
 
     // Door animation variables.
     private int trDoorOpen = Animator.StringToHash("DoorOpen");
@@ -27,34 +28,48 @@ public class ProximityDoor : MonoBehaviour {
         isScene2Loaded = !isStartingInScene1;
 	}
 
-    void Awake() {
-        levelBoundaryState = level1Boundary.GetComponent<LevelBoundary>();
-    }
-
     // If player enters the door proximity zone, then open the door.
     void OnTriggerEnter (Collider col) {
-        if (col.gameObject.tag == "Player") {
-            audioSource.Play();
-            animator.SetTrigger(trDoorOpen);
-            if (!isScene1Loaded) {
+        if (col.gameObject.tag == "Player" && !isDoorOpen) {
+            if (CanLoadScene(isScene1Loaded, sceneName1)) {
                 isScene1Loaded = true;
-                SceneManager.LoadScene(sceneName1, LoadSceneMode.Additive);
-                StartCoroutine(RenderNewScenesForCurrentVisor());
+                StartCoroutine(LoadNewScene(sceneName1));
             }
-            if (!isScene2Loaded) {
+            if (CanLoadScene(isScene2Loaded, sceneName2)) {
                 isScene2Loaded = true;
-                SceneManager.LoadScene(sceneName2, LoadSceneMode.Additive);
-                StartCoroutine(RenderNewScenesForCurrentVisor());
+                StartCoroutine(LoadNewScene(sceneName2));
             }
         }
     }
 
-    // If player leaves the zone, then close the door.
-    void OnTriggerExit (Collider col) {
-        if (col.gameObject.tag == "Player") {
+    private bool CanLoadScene(bool isSceneLoaded, string sceneName) {
+        if (!isSceneLoaded && SceneManager.GetSceneByName(sceneName).IsValid()) {
+            // TODO - investigate this case. 99% sure it happens when the next level is
+            // loaded and the door opening collision function on the duplicate door is
+            // triggered before PreserveBetweenScenes runs and destroys the duplicate
+            // door.
+            Debug.Log("Glitch case");
+        }
+        return !isSceneLoaded && !SceneManager.GetSceneByName(sceneName).IsValid();
+    }
+
+    private IEnumerator LoadNewScene(string sceneName) {
+        AsyncOperation asyncLoad =
+            SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        yield return asyncLoad;
+
+        audioSource.Play();
+        animator.SetTrigger(trDoorOpen);
+        isDoorOpen = true;
+        RenderNewScenesForCurrentVisor();
+    }
+
+    public void CloseDoorAndUnloadLevel() {
+        if (isDoorOpen) {
+            isDoorOpen = false;
             audioSource.Play();
             animator.SetTrigger(trDoorClose);
-            if (levelBoundaryState.IsPlayerInLevel()) {
+            if (level1Boundary.IsPlayerInLevel()) {
                 StartCoroutine(UnloadScene2AfterDoorClose());
             } else {
                 StartCoroutine(UnloadScene1AfterDoorClose());
@@ -62,6 +77,7 @@ public class ProximityDoor : MonoBehaviour {
         }
     }
 
+    // TODO - the following 2 functions seem buggy.
     private IEnumerator UnloadScene1AfterDoorClose() {
         yield return new WaitForSeconds(0.75f);
         isScene1Loaded = false;
@@ -78,9 +94,7 @@ public class ProximityDoor : MonoBehaviour {
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName1));
     }
 
-    private IEnumerator RenderNewScenesForCurrentVisor() {
-        // Wait for a tenth of a sec to give the scene time to load.
-        yield return new WaitForSeconds(0.1f);
+    private void RenderNewScenesForCurrentVisor() {
         GameObject.Find("UIController").GetComponent<UserInterface>().ReInitRenderMode();
     }
 }

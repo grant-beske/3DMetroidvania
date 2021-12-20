@@ -21275,8 +21275,23 @@ PrefabInstance:
       propertyPath: sceneName2
       value: ResearchHallway
       objectReference: {fileID: 0}
+    - target: {fileID: 7092941562770761859, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+      propertyPath: level1Boundary
+      value: 
+      objectReference: {fileID: 1103261661}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+--- !u!114 &1103261661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4130299770703106092, guid: 6ae5bdf3e05006444bbed987093a6a55, type: 3}
+  m_PrefabInstance: {fileID: 1103261660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be96fc6b408329946843316671c71994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1214754584
 PrefabInstance:
   m_ObjectHideFlags: 0

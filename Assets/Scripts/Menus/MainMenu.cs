@@ -26,6 +26,11 @@ public class MainMenu : MonoBehaviour {
         mainMenuObj.SetActive(true);
         selectSaveObj.SetActive(false);
         InitializeSaveData();
+
+        // Initially application loading priority will be set to High to load the game
+        // as fast as possible. Once in game this will be set to Low to make level
+        // loading seamless, which happens in LevelLoader.
+        Application.backgroundLoadingPriority = ThreadPriority.High;
     }
 
     public void HandlePlayClick() {

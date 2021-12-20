@@ -43,6 +43,12 @@ public class LevelLoader : MonoBehaviour {
         player.transform.position = dockingPoint.transform.position;
         player.transform.rotation = dockingPoint.transform.rotation;
 
+        // Subsequent loads should have low loading priority since they will all
+        // be performed in-game for doors and such. Priority will be reset to
+        // High when the game goes to MainMenu, either from the pause menu or
+        // from starting up the game i.
+        Application.backgroundLoadingPriority = ThreadPriority.Low;
+
         // Deserialize the save file again to make sure PlayerState Start() does not
         // override the coreStateValues and generalStateDict.
         playerState.GetComponent<PlayerState>().Deserialize(PlayerStateToLoad.state);

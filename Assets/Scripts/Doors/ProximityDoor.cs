@@ -61,6 +61,10 @@ public class ProximityDoor : MonoBehaviour {
         audioSource.Play();
         animator.SetTrigger(trDoorOpen);
         isDoorOpen = true;
+
+        // Wait 1 frame before rendering for current visor to give ScanGroups
+        // time to initialize.
+        yield return null;
         RenderNewScenesForCurrentVisor();
     }
 

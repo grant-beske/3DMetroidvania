@@ -12,13 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Loader.unity
     guid: 96759ae39a1524c4984dd2c7d5c86e23
   - enabled: 1
-    path: Assets/Scenes/Undersea Dock/DronePoolA.unity
+    path: Assets/Scenes/Undersea Dock/UD-PassengerTerminal.unity
+    guid: 2ea482112c48fae4297f2b751c4608b1
+  - enabled: 0
+    path: Assets/Scenes/Testing/DronePoolA.unity
     guid: 9c7ab3753a8803c47a1fd889e7c4c4e5
-  - enabled: 1
-    path: Assets/Scenes/Undersea Dock/ResearchHallway.unity
+  - enabled: 0
+    path: Assets/Scenes/Testing/ResearchHallway.unity
     guid: ff3e68714539e7e4fb1d043568799189
-  - enabled: 1
-    path: Assets/Scenes/Undersea Dock/ResearchSaveStation.unity
+  - enabled: 0
+    path: Assets/Scenes/Testing/ResearchSaveStation.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/Testing/AdditiveTest.unity

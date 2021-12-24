@@ -116,9 +116,9 @@ public class MainMenu : MonoBehaviour {
     private void StartNewGame(string slotName) {
         PlayerState targetPlayerState = GetComponent<PlayerState>();
         targetPlayerState.saveFileName = slotName;
-        // Player starts out in Undersea Dock - Drone Pool A.
+        // Player starts out in Undersea Dock - Passenger Terminal.
         targetPlayerState.saveFileArea = "Undersea Dock";
-        targetPlayerState.saveFileSceneName = "DronePoolA";
+        targetPlayerState.saveFileSceneName = "UD-PassengerTerminal";
 
         PlayerStateToLoad.state = targetPlayerState.Serialize();
         SceneManager.LoadScene("Loader");

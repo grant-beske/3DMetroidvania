@@ -10,7 +10,7 @@ public class PlayerState : MonoBehaviour {
     // Save file related variables.
     public string saveFileName = "Default";
     public string saveFileArea = "Unknown";
-    public string saveFileSceneName = "DronePoolA";
+    public string saveFileSceneName = "UD-PassengerTerminal";
 
     // General purpose string-string dict. Used for lookup of fields that depend on
     // player state and should persist between rooms, like scan states.

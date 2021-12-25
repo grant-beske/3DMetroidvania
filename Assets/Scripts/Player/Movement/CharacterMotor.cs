@@ -436,9 +436,9 @@ public class CharacterMotor : MonoBehaviour {
 		if (inputJump && jumping.lastButtonDownTime < 0 && canControl)
 			jumping.lastButtonDownTime = Time.time;
 	
-		if (grounded)
+		if (grounded) {
 			velocity.y = Mathf.Min (0, velocity.y) - movement.gravity * Time.deltaTime;
-		else {
+		} else {
 			velocity.y = movement.velocity.y - movement.gravity * Time.deltaTime;
 		
 			// When jumping up we don't apply gravity for some time when the user is holding the jump button.
@@ -462,7 +462,11 @@ public class CharacterMotor : MonoBehaviour {
 			// because players will often try to jump in the exact moment when hitting the ground after a jump
 			// and if they hit the button a fraction of a second too soon and no new jump happens as a consequence,
 			// it's confusing and it feels like the game is buggy.
-			if (jumping.enabled && canControl && (Time.time - jumping.lastButtonDownTime < 0.2)) {
+			// Also only let the player jump if they are on a surface that isn't too steep.
+			if (jumping.enabled 
+				&& canControl
+				&& (Time.time - jumping.lastButtonDownTime < 0.2)
+				&& !TooSteep()) {
 
 				// Play random jumping sound.
 				PlaySound(jumpSounds[Random.Range(0, jumpSounds.Length)]);
@@ -500,7 +504,7 @@ public class CharacterMotor : MonoBehaviour {
 	}
 
 	private void OnControllerColliderHit (ControllerColliderHit hit) {
-		if (hit.normal.y > 0 && hit.normal.y > groundNormal.y && hit.moveDirection.y < 0) {
+		if (hit.normal.y > 0 && hit.normal.y > groundNormal.y && (hit.moveDirection.y < 0f || (hit.moveDirection.y == 0f && hit.normal.y > (1-Mathf.Cos(Mathf.Deg2Rad*controller.slopeLimit))))) {
 			if ((hit.point - movement.lastHitPoint).sqrMagnitude > 0.001 || lastGroundNormal == Vector3.zero) {
 				groundNormal = hit.normal;
 

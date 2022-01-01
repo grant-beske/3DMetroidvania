@@ -22,10 +22,6 @@ public class OverlayMessages : MonoBehaviour {
 
     [System.Serializable]
     public class MetricElements {
-        [SerializeField] public Text healthText;
-        [SerializeField] public Text healthMetric;
-        [SerializeField] public Text energyText;
-        [SerializeField] public Text energyMetric;
         [SerializeField] public Text currentLocation;
     }
 
@@ -55,19 +51,7 @@ public class OverlayMessages : MonoBehaviour {
     }
 
     void Update() {
-        UpdateHealth();
-        UpdateEnergy();
         UpdateCurrentLocation();
-    }
-
-    private void UpdateHealth() {
-        metricElements.healthMetric.text =
-            ((int) playerState.coreStateValues.health).ToString();
-    }
-
-    private void UpdateEnergy() {
-        metricElements.energyMetric.text =
-            ((int) playerState.coreStateValues.energy).ToString();
     }
 
     private void UpdateCurrentLocation() {
@@ -140,24 +124,12 @@ public class OverlayMessages : MonoBehaviour {
     /////////////////////////////////////////////////////////////////////////////////////
 
     private IEnumerator FadeInMetricIndicators(float duration) {
-        Coroutine fadeInHealthText =
-            StartCoroutine(FadeInText(metricElements.healthText, duration));
-        Coroutine fadeInHealthNum =
-            StartCoroutine(FadeInText(metricElements.healthMetric, duration));
-        Coroutine fadeInEnergyText =
-            StartCoroutine(FadeInText(metricElements.energyText, duration));
-        Coroutine fadeInEnergyNum =
-            StartCoroutine(FadeInText(metricElements.energyMetric, duration));
         Coroutine fadeInCurrentLocation =
             StartCoroutine(FadeInText(metricElements.currentLocation, duration));
         
         // Start the selected weapon message, we don't care when it finishes.
         StartCoroutine(PlaySelectedWeaponMessage(1.0f));
-        
-        yield return fadeInHealthText;
-        yield return fadeInHealthNum;
-        yield return fadeInEnergyText;
-        yield return fadeInEnergyNum;
+
         yield return fadeInCurrentLocation;
     }
 

@@ -28,6 +28,14 @@ public class ProximityDoor : MonoBehaviour {
         isScene2Loaded = !isStartingInScene1;
 	}
 
+    void Update() {
+        // Self destruct if neither of the two scenes are loaded.
+        if (!SceneManager.GetSceneByName(sceneName1).isLoaded 
+                && !SceneManager.GetSceneByName(sceneName2).isLoaded) {
+            Destroy(gameObject);
+        }
+    }
+
     // If player enters the door proximity zone, then open the door.
     void OnTriggerEnter (Collider col) {
         if (col.gameObject.tag == "Player" && !isDoorOpen) {

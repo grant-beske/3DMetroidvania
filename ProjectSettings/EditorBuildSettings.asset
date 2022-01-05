@@ -17,19 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Undersea Dock/UD-TerminalAccess.unity
     guid: a005694d19d317a4f86635791361a03f
-  - enabled: 0
-    path: Assets/Scenes/Testing/DronePoolA.unity
-    guid: 9c7ab3753a8803c47a1fd889e7c4c4e5
-  - enabled: 0
-    path: Assets/Scenes/Testing/ResearchHallway.unity
-    guid: ff3e68714539e7e4fb1d043568799189
-  - enabled: 0
-    path: Assets/Scenes/Testing/ResearchSaveStation.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Testing/AdditiveTest.unity
-    guid: 4b83477758dc40d43ade1e0e1589fb88
-  - enabled: 0
-    path: Assets/Scenes/Testing/JunctionPoint.unity
-    guid: cb750f9f3e8b7da4895d0aaad38b8945
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/UD-LoungeAccessA.unity
+    guid: 3d7d4b7c8ead64649a7b7d94e5e887a5
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/UD-MainTerminal.unity
+    guid: c5266f406f758b3499430edbc9f6fa03
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/UD-Lounge.unity
+    guid: 56c48f43f0ae5594982d46b8116258c2
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/UD-ResearchAccess.unity
+    guid: 7903489a3caa2374aa5ce35875e74b8b
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/UD-LoungeAccessB.unity
+    guid: b4d38f9805538c548ba4d3fcee4694a3
+  - enabled: 1
+    path: Assets/Scenes/Undersea Dock/UD-AquaticDroneResearch.unity
+    guid: 0fa158b771dfadd4eb59106edb51ce9d
   m_configObjects: {}

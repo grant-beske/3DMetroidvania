@@ -126,20 +126,12 @@ public class UserInterface : MonoBehaviour {
             .TriggerInitialEnterLocationMessage();
 
         StartInitialMusic();
-        StartInitialAmbiance();
         StartCoroutine(DisableCharacterForTeleport());
     }
 
     private void StartInitialMusic() {
         // Start out with 10s of silence to let enter level jingle play.
-        musicController.EnqueueSilence(10f);
-        // if (levelSong != null) {
-        //     musicController.EnqueueSong(levelSong, 108f, true);
-        // }
-    }
-
-    private void StartInitialAmbiance() {
-        
+        musicController.EnqueueSilence(7f);
     }
 
     // Disable character motor for 0.1 sec when loading is finished. This is a hacky way

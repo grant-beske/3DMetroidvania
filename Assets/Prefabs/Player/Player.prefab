@@ -4476,6 +4476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerState: {fileID: 3582544330647471638}
   ambianceController: {fileID: 1467533210236566358}
+  musicController: {fileID: 4893874601600023488}
 --- !u!114 &3582544330550909801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6214,7 +6215,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

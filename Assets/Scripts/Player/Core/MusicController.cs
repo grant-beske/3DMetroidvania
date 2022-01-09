@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicController : MonoBehaviour {
 
     // List of (song, songLength, shouldLoop)
-    private List<(AudioClip, float, bool)> songQueue;
+    private List<(AudioClip, float, bool, string)> songQueue;
     private float timePlaying = 0;
     private bool isPaused = false;
 
@@ -17,7 +17,7 @@ public class MusicController : MonoBehaviour {
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
-        songQueue = new List<(AudioClip, float, bool)>();
+        songQueue = new List<(AudioClip, float, bool, string)>();
     }
 
     void Update() {
@@ -66,14 +66,18 @@ public class MusicController : MonoBehaviour {
     // Public API
     /////////////////////////////////////////////////////////////////////////////////////
 
-    public void EnqueueSong(AudioClip songClip, float songLength, bool shouldLoop) {
-        songQueue.Add((songClip, songLength, shouldLoop));
+    public void EnqueueSong(AudioClip songClip, float songLength, bool shouldLoop, string songName) {
+        foreach (var song in songQueue) {
+            if (songName == song.Item4) return;
+        }
+        
+        songQueue.Add((songClip, songLength, shouldLoop, songName));
         // If this is the first song being enqueued, play it.
         if (songQueue.Count == 1) PlaySong(songClip);
     }
 
     public void EnqueueSilence(float silenceLength) {
-        songQueue.Add((null, silenceLength, false));
+        songQueue.Add((null, silenceLength, false, "silence"));
     }
 
     public void PauseSong() {
